@@ -24,3 +24,71 @@
 
 
 
+.header__burger {
+	display: none;
+
+	@include res(pad) {
+		display: block;
+		position: absolute;
+		z-index: 1010;
+		top: 22px;
+		right: 25px;
+		width: 30px;
+		height: 30px;
+		box-sizing: border-box;
+		cursor: pointer;
+		-webkit-tap-highlight-color: transparent;
+		transition: opacity $s linear;
+
+		.popup-open & {
+			opacity: 0;
+		}
+	}
+}
+
+.header__burger-ico {
+	@include res(pad) {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 30px;
+		height: 2px;
+		margin: -1px 0 0 0;
+		background: $c_light;
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: -9px;
+			width: 100%;
+			height: 2px;
+			margin: -1px 0 0 0;
+			background: inherit;
+			transition: all $s / 2 linear;
+		}
+
+		&:after {
+			top: auto;
+			bottom: -10px;
+		}
+
+		.nav-open &,
+		.nav-open-bottom & {
+			background: transparent;
+
+			&:before {
+				top: 0;
+				transform: rotate(45deg);
+				background: $c_light;
+			}
+
+			&:after {
+				bottom: 0;
+				transform: rotate(-45deg);
+				background: $c_light;
+			}
+		}
+	}
+}

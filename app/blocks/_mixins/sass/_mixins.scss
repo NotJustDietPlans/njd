@@ -25,6 +25,9 @@
 	@else if $media == pad {
 		@media screen and (max-width: $m_pad) { @content; }
 	}
+	@else if $media == fablet {
+		@media screen and (max-width: $m_fablet) { @content; }
+	}
 	@else if $media == smart {
 		@media screen and (max-width: $m_smart) { @content; }
 	}

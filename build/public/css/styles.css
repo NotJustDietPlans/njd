@@ -1076,55 +1076,211 @@ label.error
     height: 65px;
 
     color: #fff;
-    background: #32422e;
+    background: #32422e url('../images/header_bg.jpg?v=1465384362719') repeat 50% 50%;
 }
 
 .header__wrapper
 {
-    overflow: hidden;
+    position: relative;
 
-    height: 100%; 
-    padding: 0;
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
 }
 
-.header__main
+.header__home
 {
-    height: 100%;
+    display: block;
+    float: left;
+    overflow: hidden;
 
-    -webkit-transition: padding .25s linear;
-            transition: padding .25s linear;
+    height: 65px;
+    padding: 0 40px;
+}
+.header__home:hover
+{
+    background: rgba(255, 255, 255, .05);
+}
+@media screen and (max-width: 600px)
+{
+    .header__home
+    {
+        width: 36px;
+        padding: 0 20px;
+    }
 }
 
 .header__logo
 {
-    position: absolute;
-    z-index: 3;
-    top: 10px;
-    left: 50%;
-
-    width: 215px;
-    margin-left: -107px;
-
-    -webkit-transition: .25s ease-out;
-            transition: .25s ease-out;
+    width: 274px;
+    margin: 14px 0 0;
 }
-.header_fixed .header__logo
-{
-    top: 5px;
 
-    width: 150px;
-    margin-left: -75px;
+.header__nav
+{
+    float: right;
+}
+.header__nav_door
+{
+    border-left: 4px solid rgba(168, 208, 113, .1);
+}
+
+.header__door,
+.header__user
+{
+    line-height: 59px;
+
+    display: block;
+
+    height: 65px;
+    padding: 0 40px;
+
+    text-decoration: none;
+}
+.header__door:hover,
+.header__user:hover
+{
+    background: rgba(255, 255, 255, .05);
+}
+@media screen and (max-width: 767px)
+{
+    .header__door,
+    .header__user
+    {
+        padding: 0 20px;
+    }
+}
+
+.header__ico,
+.header__avatar
+{
+    display: inline-block;
+
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+
+    vertical-align: middle;
+}
+@media screen and (max-width: 767px)
+{
+    .header__ico,
+    .header__avatar
+    {
+        margin-right: 0;
+    }
+}
+
+.header__avatar
+{
+    width: 35px;
+    height: 35px;
+    margin-right: 30px;
+
+    border-radius: 50%;
+}
+@media screen and (max-width: 767px)
+{
+    .header__avatar
+    {
+        margin-right: 0;
+    }
+}
+
+.header__text
+{
+    display: inline-block;
+
+    vertical-align: middle;
+}
+@media screen and (max-width: 767px)
+{
+    .header__text
+    {
+        display: none;
+    }
+}
+
+.section
+{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+        flex: 1;
+}
+
+.section__title
+{
+    margin: 0 0 30px;
+
+    text-align: center;
+}
+
+.section__map
+{
+    width: 808px;
+    max-width: 100%;
+}
+
+.section__gallery
+{
+    margin-top: -60px;
+    margin-bottom: 60px;
+}
+
+.section__set
+{
+    display: table;
+
+    width: 100%; 
+
+    table-layout: fixed;
 }
 @media screen and (max-width: 999px)
 {
-    .header__logo
+    .section__set
     {
-        top: 10px;
-        left: 10px;
-
-        width: 120px; 
-        margin-left: 0;
+        display: block;
     }
+}
+
+.section__set .section__content
+{
+    display: table-cell;
+
+    padding-right: 20px;
+}
+@media screen and (max-width: 999px)
+{
+    .section__set .section__content
+    {
+        display: block;
+
+        padding-right: 0;
+    }
+}
+
+.section__slider
+{
+    position: relative;
+
+    clear: both;
+    overflow: hidden;
+
+    width: 100%; 
+    margin: 60px 0 0;
+}
+
+.nav
+{
+    position: fixed;
+    top: 65px;
+    right: 0;
+    left: 0;
+
+    height: 62px;
+
+    color: #a4a4a4; 
+    background: #fff;
 }
 
 .header__burger
@@ -1221,88 +1377,6 @@ label.error
 
         background: #fff;
     }
-}
-
-.section
-{
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-        flex: 1;
-}
-
-.section__title
-{
-    margin: 0 0 30px;
-
-    text-align: center;
-}
-
-.section__map
-{
-    width: 808px;
-    max-width: 100%;
-}
-
-.section__gallery
-{
-    margin-top: -60px;
-    margin-bottom: 60px;
-}
-
-.section__set
-{
-    display: table;
-
-    width: 100%; 
-
-    table-layout: fixed;
-}
-@media screen and (max-width: 999px)
-{
-    .section__set
-    {
-        display: block;
-    }
-}
-
-.section__set .section__content
-{
-    display: table-cell;
-
-    padding-right: 20px;
-}
-@media screen and (max-width: 999px)
-{
-    .section__set .section__content
-    {
-        display: block;
-
-        padding-right: 0;
-    }
-}
-
-.section__slider
-{
-    position: relative;
-
-    clear: both;
-    overflow: hidden;
-
-    width: 100%; 
-    margin: 60px 0 0;
-}
-
-.nav
-{
-    position: fixed;
-    top: 65px;
-    right: 0;
-    left: 0;
-
-    height: 62px;
-
-    color: #a4a4a4; 
-    background: #fff;
 }
 
 .footer
