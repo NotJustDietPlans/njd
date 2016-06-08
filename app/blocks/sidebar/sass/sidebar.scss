@@ -1,0 +1,42 @@
+.sidebar {
+	display: table-cell;
+	width: 300px;
+	padding-left: 20px;
+	border-left: 1px solid $c_border;
+
+	h3 {
+		margin-top: 0;
+	}
+
+	@include res(pad) {
+		display: block;
+		width: auto;
+		padding-left: 0;
+		border-left: 0;
+	}
+}
+
+.sidebar__box {
+	width: 300px;
+	margin: 30px auto;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.sidebar__content {
+	padding: 20px;
+	background: #eee;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+.layout {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-width: $g_layout_min;
+	margin: 0 auto;
+}
+
+//.layout__blocker
+//	position: fixed
+//	z-index: 300
+//	top: 0
+//	bottom: 0
+//	left: 0
+//	right: 0
+//	background: #000
+//	cursor: pointer
+//	opacity: 0
+//	visibility: hidden
+//	transition: all $s linear
+//	will-change: opacity, transform
+//
+//	.nav-open &
+//		opacity: .5
+//		visibility: visible
+//		transition: all $s linear
+//
+//	.country_open &
+//		opacity: .5
+//		visibility: visible
+//		transition: all $s linear

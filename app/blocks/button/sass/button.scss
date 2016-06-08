@@ -1,0 +1,150 @@
+.button {
+	display: inline-block;
+	min-width: 100px;
+	height: 40px;
+	padding: 0 10px;
+	border: 0;
+	box-sizing: border-box;
+	background: $c_accent;
+	color: $c_light;
+	font-weight: 100;
+	font-size: 26px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	vertical-align: top;
+	outline: none;
+	user-select: none;
+	transition: $s/3 linear;
+
+	&:hover {
+		background: $c_accent_hover;
+		color: $c_light;
+		text-decoration: none;
+		will-change: background;
+	}
+
+	&_accent {
+		background: $c_accent;
+		background: linear-gradient(to bottom, #E33200 0%,#F77E00 100%);
+
+		&:hover {
+			background: $c_accent_hover;
+			background: linear-gradient(to bottom, #E33200 0%,#E33200 100%);
+		}
+	}
+
+	&_light {
+		background: $c_alt;
+
+		&:hover {
+			background: $c_alt_hover;
+		}
+	}
+
+	&_big {
+		height: 44px;
+		line-height: 42px;
+	}
+
+	&_large {
+		height: 64px;
+		line-height: 60px;
+		font-size: 60px;
+	}
+
+	&_lined {
+		border: 1px solid $c_text;
+		background: 0;
+		color: $c_text;
+
+		&:hover {
+			background: rgba($c_text, .1);
+			color: $c_text;
+		}
+	}
+
+	&_lined_light {
+		border: 1px solid $c_light;
+		background: 0;
+
+		&:hover {
+			background: rgba($c_light, .1);
+		}
+	}
+
+	&_link {
+		display: inline-block;
+		width: auto;
+		min-width: 10px;
+		padding-left: $g;
+		padding-right: $g;
+		background: none;
+		color: $c_alt;
+		font-family: $ff;
+
+		&:hover {
+			background: none;
+			color: $c_alt;
+			text-decoration: underline;
+		}
+	}
+
+	&_rounded {
+		border-radius: 22px;
+	}
+
+	&_fix {
+		min-width: 280px;
+	}
+
+	&_wide {
+		display: block;
+		width: 100%;
+	}
+
+	&_up {
+		text-transform: uppercase;
+	}
+
+	&_phone {
+		cursor: default;
+	}
+}
+
+//	&_light
+//		padding-left: 0
+//		padding-right: 0
+//		border-color: transparent
+//		background: none
+//		color: $c_light
+//
+//		&:hover
+//			background: none
+//
+//		&:before
+//			content: ''
+//			display: inline-block
+//			width: 20px
+//			height: 2px
+//			margin-right: 10px
+//			background: $c_accent
+//			vertical-align: middle
+//
+//		.section_cases &
+//			color: $c_text
+//			font-size: 16px
+//
+//.button_complex
+//	position: relative
+//
+//	&_active
+//		.button
+//			border-color: $c_primary
+//			background: $c_primary
+//			color: $c_light
+//			text-decoration: none
+//
+//

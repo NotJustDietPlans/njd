@@ -1,0 +1,156 @@
+.header {
+	position: fixed;
+	z-index: 500;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 120px;
+	color: $c_light;
+	transition: $s / 2 ease-out;
+
+	&_fixed {
+		height: 80px;
+		background: rgba($c_dark, .5);
+
+		@include res(pad) {
+			top: 0;
+		}
+	}
+}
+
+.header__wrapper {
+	//@extend .wrapper;
+	padding: 0;
+	overflow: hidden;
+	height: 100%;
+}
+
+.header__main {
+	height: 100%;
+	transition: padding $s / 2 linear;
+}
+
+.header__logo {
+	position: absolute;
+	z-index: 3;
+	top: 10px;
+	left: 50%;
+	margin-left: -107px;
+	width: 215px;
+	//height: 24px;
+	transition: $s / 2 ease-out;
+
+	.header_fixed & {
+		top: 5px;
+		width: 150px;
+		margin-left: -75px;
+	}
+
+	@include res(pad) {
+		top: 10px;
+		left: 10px;
+		margin-left: 0;
+		width: 120px;
+	}
+}
+
+.header__burger {
+	display: none;
+
+	@include res(pad) {
+		display: block;
+		position: absolute;
+		z-index: 1010;
+		top: 22px;
+		right: 25px;
+		width: 30px;
+		height: 30px;
+		box-sizing: border-box;
+		cursor: pointer;
+		-webkit-tap-highlight-color: transparent;
+		transition: opacity $s linear;
+
+		.popup-open & {
+			opacity: 0;
+		}
+	}
+}
+
+.header__burger-ico {
+	@include res(pad) {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 30px;
+		height: 2px;
+		margin: -1px 0 0 0;
+		background: $c_light;
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: -9px;
+			width: 100%;
+			height: 2px;
+			margin: -1px 0 0 0;
+			background: inherit;
+			transition: all $s / 2 linear;
+		}
+
+		&:after {
+			top: auto;
+			bottom: -10px;
+		}
+
+		.nav-open &,
+		.nav-open-bottom & {
+			background: transparent;
+
+			&:before {
+				top: 0;
+				transform: rotate(45deg);
+				background: $c_light;
+			}
+
+			&:after {
+				bottom: 0;
+				transform: rotate(-45deg);
+				background: $c_light;
+			}
+		}
+	}
+}
+
+
+
+.header__contacts {
+	@include res(pad) {
+		position: fixed;
+		z-index: 2;
+		bottom: 30px;
+		left: 30px;
+		right: 30px;
+		height: auto;
+		background: none;
+		text-align: center;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity $s / 2 linear;
+
+		.nav-open & {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+.header__contact {
+	@include res(pad) {
+		margin-left: 15px;
+		margin-right: 15px;
+		color: $c_light;
+	}
+}
+

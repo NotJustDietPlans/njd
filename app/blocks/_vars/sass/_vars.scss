@@ -1,0 +1,89 @@
+//path
+$path: '..';
+$path_fonts: $path + '/fonts/';
+
+$ver: '?v=' + '/* @echo VER */';			// Timestamp from Gulp for clear browser cache
+
+
+// grid main
+$g: 10px;									// Main grid step
+$g_v: 60px;									// Vertical grid step
+$g_space: 20px;								// Grid side step
+$g_space_pad: 2%;							// Grid side step for pad-devices
+$g_layout_max: 1920px;						// Max size page
+$g_layout_min: 320px;						// Min size page
+$g_panel: 240px;							// Sidebar in mobile view
+$g_icons: 16px;								// Icons size
+$g_narrow: 1000px;							// Narrow size
+$g_post: 808px;								// Post size
+
+
+// media
+$m_hd: 1600px;								// Media for Full screen monitor
+$m_full: 1280px;							// Media for Full screen monitor
+$m_pad: 999px;								// Media for Tablet PC
+$m_smart: 600px;							// Media for Smartphones
+$m_phone: 480px;							// Media for small phones
+
+
+// colors
+$c_dark: #32422e;								// Dark color
+$c_light: #FFF;								// Light color
+$c_primary: #4f9439;						// Primary color
+$c_primary_hover: $c_primary + #111;		// Primary hover color
+$c_accent: #a8d071;							// Accent color
+$c_accent_hover: $c_accent + #111;			// Accent hover color
+$c_warning: #ffb141;						// Warning color
+$c_warning_hover: $c_warning + #111;		// Warning hover color
+$c_danger: #F00;							// Danger color
+$c_text: #626262;							// Text color
+$c_bold: #4c524b;							// Text bold color
+$c_secondary: #9a9a9a;						// Text secondary color
+$c_text_hint: #a4a4a4;						// Text hint color
+$c_text_dark: #828282;						// Text dark color
+$c_text_light: #d4d4d4;						// Text light color
+$c_border: #000;							// Border color
+$c_alt: #2288FF;							// Alternative background color
+$c_alt_hover: $c_alt + #111;				// Alternative hover background color
+$c_link: $c_primary;						// Link color
+$c_link_hover: $c_primary + #111;			// Link hover color
+$c_select: #F7F7F7;							// Selected color
+$c_select_hover: $c_select + #111;			// Selected color
+$c_line: #e5e5e5;							// Line color
+$c_bg: #e8e8e8;								// Background color
+
+// font-family
+$ff: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;						// main stack
+$ff_alt: $ff;																			// second stack
+$ff_title: $ff;																			// alternative stack
+
+// font-size
+$fs_body: 15px;								// main size
+$fs_caption: 12px;							// tiny size
+$fs_subheading: 14px;						// small size
+$fs_big: 24px;								// big size
+$fs_bigger: 32px;							// bigger size
+$fs_title: 40px;							// title
+$fs_headline: 60px;							// headline
+
+
+// elements
+$br: 5px;									// border-radius
+$bs: 0 4px 8px rgba(#000, .4);				// box-shadow
+$bsi: indet 0 4px 8px rgba(#000, .4);		// box-shadow inset
+
+
+// speed animation
+$s: 0.5s;									// Main speed animation
+
+
+
+
+
+
+
+
+
+
+
+

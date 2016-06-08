@@ -1,0 +1,46 @@
+.content__index {
+	max-width: 500px;
+	opacity: 0;
+	transform: translate3d(0, -200px, 0);
+	transition: all $s ease-out 0.7s;
+	will-change: opacity, transform;
+
+	.fp-viewing-home & {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.content__cases {
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	right: 0;
+}
+
+.content__cases-wrapper {
+	@extend .wrapper;
+}
+
+.content__cases-link {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	height: 0;
+	margin-left: -300px;
+	margin-right: -300px;
+	line-height: 1px;
+	background: $c_light;
+	color: $c_text;
+	transition: all $s ease-out;
+	will-change: height, margin, line-height;
+
+	.fp-viewing-home & {
+		height: 68px;
+		margin: 0;
+		line-height: 68px;
+	}
+}
+
+
+

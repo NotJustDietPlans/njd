@@ -1,0 +1,23 @@
+{% extends '../blocks/layout/html/layout.html' %}
+
+{% block meta-title %}NotJustDietPlans - Homepage{% endblock %}
+{% block meta-description %}NotJustDietPlans{% endblock %}
+{% block meta-keywords %}NotJustDietPlans Keywords{% endblock %}
+{% block meta-url %}index.html{% endblock %}
+{% block meta-image %}./public/uploads/soc_index.jpg{% endblock %}
+
+{% set ver = '?v=' + Date.now() %}
+
+{% set path = './public' %}
+
+{% set layout_class = '_home' %}
+
+{% set nav_home = ' nav__item_active' %}
+
+{% block content %}
+	{% include "../blocks/section/html/section_recipes.html" %}
+{% endblock %}
+
+{% block popup %}
+	{# include "../blocks/popup/html/popup_order.html" #}
+{% endblock %}

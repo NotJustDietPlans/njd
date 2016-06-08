@@ -1,0 +1,60 @@
+.tabs {
+	overflow: hidden;
+	display: table;
+	margin: 50px auto;
+}
+
+.tabs__list {
+	display: table-row;
+}
+
+.tabs__item {
+	display: table-cell;
+	padding: 0 20px;
+	border: 1px solid $c_border;
+	border-left: 0;
+	line-height: 48px;
+	color: $c_text;
+	font-size: $fs_big;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+
+	&:first-child {
+		border-left: 1px solid $c_border;
+		border-radius: $br 0 0 $br;
+	}
+
+	&:last-child {
+		border-radius: 0 $br $br 0;
+	}
+
+	&:hover {
+		color: $c_bold;
+		text-decoration: none;
+	}
+
+	&_active {
+		background: $c_primary;
+		border-color: $c_primary;
+		color: $c_light;
+
+		&:first-child {
+			border-color: $c_primary;
+		}
+
+		&:hover {
+			color: $c_light;
+		}
+	}
+
+	.tabs_difference & {
+		min-width: 100px;
+	}
+
+	.tabs_cost & {
+		min-width: 140px;
+	}
+}
+
+

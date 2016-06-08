@@ -1,0 +1,38 @@
+@mixin placeholder {
+	.form__input::-webkit-input-placeholder {
+		@content;
+	}
+	.form__input:-moz-placeholder {
+		@content;
+	}
+	.form__input::-moz-placeholder {
+		@content;
+	}
+	.form__input:-ms-input-placeholder {
+		@content;
+	}
+}
+
+
+
+@mixin res($media) {
+	@if $media == hd {
+		@media screen and (min-width: $m_hd) { @content; }
+	}
+	@if $media == full {
+		@media screen and (min-width: $m_full) { @content; }
+	}
+	@else if $media == pad {
+		@media screen and (max-width: $m_pad) { @content; }
+	}
+	@else if $media == smart {
+		@media screen and (max-width: $m_smart) { @content; }
+	}
+	@else if $media == phone {
+		@media screen and (max-width: $m_phone) { @content; }
+	}
+}
+
+
+
+

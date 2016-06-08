@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{% block meta-title %}Title{% endblock %}</title>
+	<meta name="description" content="{% block meta-description %}Description{% endblock %}">
+	<meta name="keywords" content="{% block meta-keywords %}Keywords{% endblock %}">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<meta property="og:title" content="{% block meta-title %}Title{% endblock %}">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{% block meta-url %}https://google.com{% endblock %}">
+	<meta property="og:image" content="{% block meta-image %}http://blog.salesmanago.com/wp-content/uploads/2015/04/Depositphotos_65204039_original.jpg{% endblock %}">
+	<meta property="og:description" content="{% block meta-description %}Description{% endblock %}">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@site">
+	<meta name="twitter:title" content="{% block meta-title %}Title{% endblock %}">
+	<meta name="twitter:description" content="{% block meta-description %}Description{% endblock %}">
+	<meta name="twitter:creator" content="@author">
+	<meta name="twitter:image:src" content="{% block meta-image %}http://blog.salesmanago.com/wp-content/uploads/2015/04/Depositphotos_65204039_original.jpg{% endblock %}">
+	<meta name="twitter:domain" content="{% block meta-url %}https://google.com{% endblock %}">
+	<meta itemprop="name" content="{% block meta-title %}Title{% endblock %}">
+	<meta itemprop="description" content="{% block meta-description %}Description{% endblock %}">
+	<meta itemprop="image" content="{% block meta-image %}http://blog.salesmanago.com/wp-content/uploads/2015/04/Depositphotos_65204039_original.jpg{% endblock %}">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="{{ path }}/images/apple-touch-icon-57x57.png{{ ver }}">
+	<link rel="apple-touch-icon" sizes="60x60" href="{{ path }}/images/apple-touch-icon-60x60.png{{ ver }}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ path }}/images/apple-touch-icon-72x72.png{{ ver }}">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ path }}/images/apple-touch-icon-76x76.png{{ ver }}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ path }}/images/apple-touch-icon-114x114.png{{ ver }}">
+	<link rel="apple-touch-icon" sizes="120x120" href="{{ path }}/images/apple-touch-icon-120x120.png{{ ver }}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ path }}/images/apple-touch-icon-144x144.png{{ ver }}">
+	<link rel="apple-touch-icon" sizes="152x152" href="{{ path }}/images/apple-touch-icon-152x152.png{{ ver }}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ path }}/images/apple-touch-icon-180x180.png{{ ver }}">
+	<link rel="icon" type="image/png" href="{{ path }}/images/favicon.png{{ ver }}" sizes="32x32">
+	<link rel="icon" type="image/png" href="{{ path }}/images/android-chrome-192x192.png{{ ver }}" sizes="192x192">
+	<link rel="icon" type="image/png" href="{{ path }}/images/favicon-96x96.png{{ ver }}" sizes="96x96">
+	<link rel="icon" type="image/png" href="{{ path }}/images/favicon-16x16.png{{ ver }}" sizes="16x16">
+	<link rel="manifest" href="./manifest.json{{ ver }}">
+	<link rel="mask-icon" href="{{ path }}/images/safari-pinned-tab.svg{{ ver }}" color="#112035">
+	<meta name="msapplication-TileColor" content="#112035">
+	<meta name="msapplication-TileImage" content="{{ path }}/images/mstile-144x144.png{{ ver }}">
+	<meta name="theme-color" content="#112035">
+	<link rel="shortcut icon" href="{{ path }}/images/favicon.ico{{ ver }}" type="image/x-icon">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-touch-fullscreen" content="yes">
+
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	{#<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">#}
+	<link rel="stylesheet" href="{{ path }}/css/swiper.min.css{{ ver }}" media="all">
+	<link rel="stylesheet" href="{{ path }}/css/styles.css{{ ver }}" media="all">
+</head>
+
+<body class="page{{ layout_class }}">
+
+<!-- layout start -->
+<div class="layout">
+
+	{% block header %}
+		{% include "../../header/html/header.html" %}
+	{% endblock %}
+
+	{% block content %}{% endblock %}
+
+	{% block footer %}
+		{% include "../../footer/html/footer.html" %}
+	{% endblock %}
+
+	<a class="top" href="#home"></a>
+
+</div>
+<!-- layout finish -->
+
+{% block popup %}{% endblock %}
+
+<script src="{{ path }}/js/jquery-1.12.1.min.js"></script>
+<script src="{{ path }}/js/jquery.validate.min.js"></script>
+{% block scripts %}{% endblock %}
+<script src="{{ path }}/js/common.js{{ ver }}"></script>
+</body>
+</html>

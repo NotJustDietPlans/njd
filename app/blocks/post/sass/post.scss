@@ -1,0 +1,75 @@
+.post {
+	overflow: hidden;
+	text-align: justify;
+}
+
+.post__title {
+	@extend .title_h3;
+	margin: 0 0 10px;
+	font-weight: bold;
+	text-transform: none;
+	text-align: left;
+
+	.post__header & {
+		@extend .title_h1;
+		margin: 0 0 40px;
+		font-size: 96px;
+		text-align: center;
+	}
+}
+
+.post__header {
+	@extend .title_h1;
+	margin: 0;
+}
+
+.post__header {
+	margin-bottom: $g_v/2;
+}
+
+.post__footer {
+	margin-top: $g_v;
+
+	@include res(pad) {
+		margin-top: 20px;
+	}
+}
+
+
+.post__offer,
+.post__values {
+	margin-top: $g_v;
+
+	&:first-child,
+	&:nth-child(2) {
+		margin-top: 20px;
+	}
+
+	@include res(pad) {
+		margin-top: 20px;
+	}
+}
+
+.post__job {
+	@include res(smart) {
+		margin: 0 0 40px;
+		padding-left: 0 !important;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

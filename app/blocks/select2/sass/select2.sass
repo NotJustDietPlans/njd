@@ -1,0 +1,72 @@
+
+
+.select2-container--default .select2-selection--single
+	border: 1px solid #999
+	border-radius: 3px
+	outline: none
+
+.select2-container--default
+	&.select2-container--open
+		&.select2-container--below,
+		&.select2-container--above
+			.select2-selection--single,
+			.select2-selection--multiple
+				border-color: $c_link
+				box-shadow: 0 0 0 1px $c_link
+
+.select2-container .select2-selection--single
+	height: 50px
+
+.select2-container .select2-selection--single .select2-selection__rendered
+	padding-left: $g
+	padding-right: $g
+	font-weight: 100
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+	line-height: 48px
+
+.select2-selection__arrow
+	display: none
+
+
+
+
+.select2-dropdown
+	top: -1px
+	border-color: $c_link
+	border-radius: 3px
+	box-shadow: 0 1px 0 0 $c_link, 1px 0 0 0 $c_link, -1px 0 0 0 $c_link
+
+	&.select2-dropdown--above
+		top: 1px
+		box-shadow: 0 -1px 0 0 $c_link, 1px 0 0 0 $c_link, -1px 0 0 0 $c_link
+
+.select2-container--default .select2-results__option[aria-selected=true]
+	background: $c_light
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+	background: $c_link
+
+.select2-container--default .select2-results>.select2-results__options
+	max-height: 210px
+
+.select2-results__option
+	padding: 10px $g
+	font-weight: 100
+	min-height: 30px
+
+
+
+
+.select2-container--open
+	z-index: 3000
+
+
+.select2-container--default.select2-container--disabled .select2-selection--single
+	background: #FAFAFA
+	color: $c_secondary
+	opacity: .3
+	cursor: not-allowed
+
+	.select2-selection__rendered
+		color: $c_secondary

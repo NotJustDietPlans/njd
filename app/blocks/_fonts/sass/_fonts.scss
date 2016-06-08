@@ -1,0 +1,48 @@
+@font-face {
+	font-family: 'Futura-Medium';
+	src: url($path_fonts + 'Futura-Medium.eot');
+	src: url($path_fonts + 'Futura-Medium.woff2') format('woff2'),
+	url($path_fonts + 'Futura-Medium.woff') format('woff'),
+	url($path_fonts + 'Futura-Medium.ttf') format('truetype'),
+	url($path_fonts + 'Futura-Medium.svg#Futura-Medium') format('svg'),
+	url($path_fonts + 'Futura-Medium.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura-MediumItalic';
+	src: url($path_fonts + 'Futura-MediumItalic.eot');
+	src: url($path_fonts + 'Futura-MediumItalic.woff2') format('woff2'),
+	url($path_fonts + 'Futura-MediumItalic.woff') format('woff'),
+	url($path_fonts + 'Futura-MediumItalic.ttf') format('truetype'),
+	url($path_fonts + 'Futura-MediumItalic.svg#Futura-MediumItalic') format('svg'),
+	url($path_fonts + 'Futura-MediumItalic.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura-CondensedMedium';
+	src: url($path_fonts + 'Futura-CondensedMedium.eot');
+	src: url($path_fonts + 'Futura-CondensedMedium.woff2') format('woff2'),
+	url($path_fonts + 'Futura-CondensedMedium.woff') format('woff'),
+	url($path_fonts + 'Futura-CondensedMedium.ttf') format('truetype'),
+	url($path_fonts + 'Futura-CondensedMedium.svg#Futura-CondensedMedium') format('svg'),
+	url($path_fonts + 'Futura-CondensedMedium.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura-CondensedExtraBold';
+	src: url($path_fonts + 'Futura-CondensedExtraBold.eot');
+	src: url($path_fonts + 'Futura-CondensedExtraBold.woff2') format('woff2'),
+	url($path_fonts + 'Futura-CondensedExtraBold.woff') format('woff'),
+	url($path_fonts + 'Futura-CondensedExtraBold.ttf') format('truetype'),
+	url($path_fonts + 'Futura-CondensedExtraBold.svg#Futura-CondensedExtraBold') format('svg'),
+	url($path_fonts + 'Futura-CondensedExtraBold.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+

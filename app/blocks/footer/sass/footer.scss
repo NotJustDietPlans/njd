@@ -1,0 +1,58 @@
+.footer {
+	position: relative;
+	margin: 0 10px;
+	border-top: 1px solid $c_text;
+	background: $c_light;
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.footer__inner {
+	@extend .wrapper;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.footer__social {
+	float: right;
+
+	@include res(pad) {
+		float: none;
+		margin: 0 0 20px;
+		text-align: center;
+	}
+}
+
+.footer__network {
+	display: inline-block;
+	vertical-align: top;
+	width: 44px;
+	height: 44px;
+	margin: 0 0 0 10px;
+	border-radius: 50%;
+	background: $c_dark;
+	line-height: 40px;
+	text-align: center;
+}
+
+.footer__ico {
+	width: 28px;
+	vertical-align: middle;
+}
+
+.footer__content {
+	@include res(pad) {
+		text-align: center;
+	}
+}
+
+.footer__partners {
+	height: 32px;
+	margin: 0 5px 0 0;
+}

@@ -1,0 +1,139 @@
+.gallery {
+	position: relative;
+	//max-width: $g_layout_max;
+	//margin: $g_v auto 0;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	@include res(pad) {
+		margin-top: 0;
+	}
+}
+
+.gallery__list {
+	@extend .cell;
+	justify-content: flex-start;
+}
+
+.gallery__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+	margin-top: 35px;
+	background-color: $c_primary;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $c_light;
+	text-align: center;
+	text-decoration: none;
+	cursor: default;
+	transition: $s/2 ease-out;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: -1px;
+		bottom: -1px;
+		left: -1px;
+		right: -1px;
+		//border: 1px solid $c_light;
+		background: $c_light;
+		opacity: 0;
+		transition: $s/2 linear;
+	}
+
+	&:hover {
+		color: $c_dark;
+		text-decoration: none;
+
+		&:before {
+			top: 10px;
+			bottom: 10px;
+			left: 10px;
+			right: 10px;
+			opacity: .6;
+
+			.gallery__list_fifth & {
+				top: 5px;
+				bottom: 5px;
+				left: 5px;
+				right: 5px;
+			}
+		}
+	}
+
+	.gallery__list_third & {
+		width: 33.32%;
+		margin: 0;
+		box-sizing: border-box;
+		height: 306px;
+		padding: 20px;
+	}
+
+	.gallery__list_fifth & {
+		@extend .cell__fifth;
+		height: 172px;
+		padding: 10px;
+	}
+
+	.gallery_simple & {
+		background-size: cover !important;
+		color: #FFF !important;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	.gallery_regions & {
+		width: 19%;
+		margin-top: 15px;
+
+		@include res(pad) {
+			width: $cell_third;
+		}
+
+		@include res(smart) {
+			width: $cell_half;
+		}
+
+		@include res(phone) {
+			width: $cell_full;
+		}
+	}
+}
+
+.gallery__title {
+	position: relative;
+	transition: $s/2 linear;
+
+	.gallery__list_third & {
+		line-height: 1.2;
+		font-size: $fs_headline;
+	}
+}
+
+.gallery__text {
+	overflow: hidden;
+	position: relative;
+	max-height: 0;
+	opacity: 0;
+	transition: $s/2 linear;
+
+	.gallery__item:hover & {
+		max-height: 140px;
+		margin-top: 10px;
+		opacity: 1;
+	}
+}
+
+
+
+
+
