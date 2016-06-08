@@ -4,18 +4,9 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 120px;
+	height: $g_header;
 	color: $c_light;
-	transition: $s / 2 ease-out;
-
-	&_fixed {
-		height: 80px;
-		background: rgba($c_dark, .5);
-
-		@include res(pad) {
-			top: 0;
-		}
-	}
+	background: $c_dark;
 }
 
 .header__wrapper {
@@ -122,35 +113,3 @@
 		}
 	}
 }
-
-
-
-.header__contacts {
-	@include res(pad) {
-		position: fixed;
-		z-index: 2;
-		bottom: 30px;
-		left: 30px;
-		right: 30px;
-		height: auto;
-		background: none;
-		text-align: center;
-		opacity: 0;
-		visibility: hidden;
-		transition: opacity $s / 2 linear;
-
-		.nav-open & {
-			opacity: 1;
-			visibility: visible;
-		}
-	}
-}
-
-.header__contact {
-	@include res(pad) {
-		margin-left: 15px;
-		margin-right: 15px;
-		color: $c_light;
-	}
-}
-

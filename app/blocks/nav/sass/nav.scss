@@ -1,170 +1,26 @@
 .nav {
-	position: relative;
-	margin-top: 30px;
-	transition: margin-top $s / 2 ease-out;
-
-	.header_fixed & {
-		margin-top: 20px;
-	}
-
-	@include res(pad) {
-		position: fixed;
-		z-index: 1;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		margin: 0;
-		opacity: 0;
-		visibility: hidden;
-		transition: opacity $s linear;
-
-		&:after {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			height: 0;
-			background: black;
-			transition: height $s / 2 linear;
-		}
-
-		.nav-open & {
-			opacity: 1;
-			visibility: visible;
-
-			&:after {
-				height: 100%;
-			}
-		}
-	}
+	position: fixed;
+	top: $g_header;
+	left: 0;
+	right: 0;
+	height: $g_nav;
+	background: $c_light;
+	color: $c_text_hint;
 }
 
-.nav__menu {
-	&_start,
-	&_end {
-		width: 50%;
-		box-sizing: border-box;
-		padding: 0 150px;
-	}
-	&_start {
-		float: left;
-		padding-left: 0;
-		text-align: left;
-	}
-	&_end {
-		float: right;
-		padding-right: 0;
-		text-align: right;
-	}
 
-	@include res(pad) {
-		position: relative;
-		z-index: 5;
-		margin: 100px 0 0 0;
 
-		&_start,
-		&_end {
-			float: none;
-			width: auto;
-			padding: 0;
-		}
-	}
-}
 
-.nav__list {
-	display: flex;
-	justify-content: space-between;
-	margin: 0;
-	padding: 0;
-	list-style: none;
 
-	@include res(pad) {
-		display: block;
-	}
-}
 
-.nav__item {
-	display: inline-block;
 
-	@include res(pad) {
-		display: block;
-	}
-}
 
-.nav__link {
-	display: block;
-	position: relative;
-	padding: 0 10px;
-	border-radius: 5px;
-	box-sizing: border-box;
-	color: $c_light;
-	line-height: 40px;
-	font-size: 16px;
-	text-transform: uppercase;
-	text-decoration: none;
-	letter-spacing: 1px;
 
-	&:hover {
-		color: $c_light;
-	}
 
-	.nav__item:first-child & {
-		.nav__menu_start & {
-			border-top-left-radius: 0;
-			border-bottom-left-radius: 0;
-		}
-	}
-	.nav__item:last-child & {
-		.nav__menu_end & {
-			border-top-left-radius: 0;
-			border-bottom-left-radius: 0;
-		}
-	}
 
-	.nav__item_active & {
-		background: $c_accent;
-		color: $c_select;
-	}
 
-	@include res(full) {
-		font-size: 24px;
-	}
 
-	@include res(pad) {
-		clear: right;
-		float: right;
-		display: block;
-		position: relative;
-		height: auto;
-		margin: 0 0 10px;
-		padding: 10px 20px;
-		line-height: 1;
-		font-size: 24px;
-		font-weight: 300;
-		color: $c_light;
 
-		&:after {
-			bottom: 10px;
-		}
-
-		.nav__item_active & {
-			border-radius: 5px 0 0 5px !important;
-		}
-
-		.nav-open & {
-			width: auto;
-		}
-	}
-}
-
-.nav__text {
-	@include res(pad) {
-		opacity: 1;
-		visibility: visible;
-	}
-}
 
 
 
