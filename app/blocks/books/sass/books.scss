@@ -1,0 +1,93 @@
+.books {
+	position: relative;
+}
+
+.books__title {
+	margin: 70px 0;
+	color: $c_accent;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.books__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.books__item {
+	display: table;
+	width: 100%;
+	margin: 40px 0;
+	background: $c_light;
+	box-shadow: 0 5px 13px rgba(#000, .2);
+
+	&:first-child {
+		.books__list:first-child & {
+			margin-top: 0;
+		}
+	}
+
+	&:last-child {
+		.books__list:last-child & {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.books__view {
+	display: table-cell;
+	width: 192px;
+	padding: 8px 0 8px 2%;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.books__photo {
+	width: 150px;
+	height: 160px;
+	display: inline-block;
+}
+
+.books__name {
+	display: table-cell;
+	width: 100px;
+	padding: 0 5%;
+	color: #4f9439;
+	font-size: 30px;
+	font-weight: 100;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.books__page {
+	text-decoration: none;
+}
+
+.books__about {
+	display: table-cell;
+	font-size: 18px;
+	color: $c_bold;
+	vertical-align: middle;
+}
+
+.books__actions {
+	display: table-cell;
+	width: 100px;
+	padding: 0 4%;
+	vertical-align: middle;
+}
+
+.books__action {
+	display: inline-block;
+	height: 58px;
+	padding: 0 40px;
+	border-radius: 58px;
+	background: #4f9439;
+	color: $c_light;
+	line-height: 58px;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+}

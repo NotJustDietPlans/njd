@@ -1,6 +1,6 @@
 {% extends '../blocks/layout/html/layout.html' %}
 
-{% block meta-title %}NotJustDietPlans - Books{% endblock %}
+{% block meta-title %}NotJustDietPlans - Recipe{% endblock %}
 {% block meta-description %}NotJustDietPlans{% endblock %}
 {% block meta-keywords %}NotJustDietPlans Keywords{% endblock %}
 {% block meta-url %}index.html{% endblock %}
@@ -10,10 +10,10 @@
 
 {% set path = './public' %}
 
-{% set layout_class = '_books' %}
+{% set layout_class = '_home' %}
 
-{% set nav_books = ' nav__item_active' %}
+{% set nav_recipes = ' nav__item_active' %}
 
 {% block content %}
-	{% include "../blocks/section/html/section_books.html" %}
+	{% include "../blocks/section/html/section_recipe.html" %}
 {% endblock %}

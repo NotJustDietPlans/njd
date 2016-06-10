@@ -28,6 +28,10 @@
 	height: 57px;
 	text-decoration: none;
 
+	&:hover {
+		color: $c_primary;
+	}
+
 	.nav__item_active & {
 		border-bottom: 5px solid $c_primary;
 		color: $c_primary;

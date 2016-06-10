@@ -1,0 +1,41 @@
+.table {
+	margin: 20px 0 0;
+}
+
+.table__row {
+	display: table;
+	width: 100%;
+
+	.table__body & {
+		margin: 15px 0 0;
+		background: $c_light;
+		box-shadow: 0 5px 13px rgba(#000, .2);
+	}
+}
+
+
+.table_th,
+.table_td {
+	display: table-cell;
+	width: 13%;
+	padding: 0 2%;
+	box-sizing: border-box;
+	vertical-align: middle;
+
+	&:nth-child(1) {
+		width: 18%;
+	}
+}
+
+.table_th {
+	color: #939393;
+	text-transform: uppercase;
+}
+
+.table_td {
+	height: 110px;
+
+	b {
+		color: #88bf3e;
+	}
+}

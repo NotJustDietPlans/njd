@@ -1,0 +1,167 @@
+.mosaic {
+	@extend .clearfix;
+	margin: 40px 0 0;
+}
+
+.mosaic__directions {
+	float: left;
+	width: 49%;
+
+	h2 {
+		margin: 0 0 30px;
+		font-size: 30px;
+		font-weight: bold;
+		color: #88bf3e;
+		text-align: left;
+	}
+
+	ol {
+		margin: 0;
+		padding: 0;
+		counter-reset: myCounter;
+		text-align: left;
+	}
+
+	li {
+		margin: 60px 0 60px 50px;
+		list-style: none;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:before {
+			counter-increment: myCounter;
+			content:counter(myCounter);
+			margin: -9px 0 0 -50px;
+			float: left;
+			color: #88bf3e;
+			line-height: 1;
+			font-size: 30px;
+			font-weight: bold;
+		}
+	}
+}
+
+.mosaic__serving,
+.mosaic__cooking,
+.mosaic__not,
+.mosaic__served {
+	float: left;
+	margin: 0 0 40px 2%;
+	width: 23.5%;
+}
+
+
+.mosaic__cooking {
+	background: #F00;
+}
+
+.mosaic__not {
+	background: #FC0;
+}
+
+.mosaic__served {
+	background: #F0C;
+}
+
+
+
+
+.mosaic__box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 370px;
+	padding: 0 30px;
+	background: $c_light;
+	box-shadow: 0 5px 13px rgba(#000, .2);
+
+	.mosaic__directions & {
+		height: 780px;
+		padding: 0 100px;
+		text-align: left;
+	}
+}
+
+.mosaic__content {
+	width: 100%;
+	text-align: center;
+}
+
+.mosaic__ico {
+	width: 105px;
+	height: 105px;
+	vertical-align: bottom;
+}
+
+.mosaic__name {
+	margin: 10px 0;
+	color: #88bf3e;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.mosaic__serving-table {
+	width: 100%;
+	margin: 50px 0 0;
+	text-align: left;
+
+	td, th {
+		padding: 10px;
+	}
+
+	td {
+		text-align: right;
+	}
+}
+
+.mosaic__time {
+	margin: 34px 0 0;
+
+	b {
+		display: block;
+		margin: 0 0 10px;
+		color: #88bf3e;
+		line-height: 1;
+		font-size: 72px;
+		font-weight: bold;
+	}
+}
+
+.mosaic__taboo {
+	margin: 34px 0 0 15%;
+	padding: 0;
+	list-style: none;
+	text-align: left;
+
+	li {
+		position: relative;
+		margin: 20px 0 0;
+		padding: 0 0 0 50px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 3px;
+			left: 0;
+			width: 14px;
+			height: 14px;
+			background: url($path + '/images/ico_cross.png' + $ver) no-repeat 0 0;
+		}
+	}
+}
+
+.mosaic__menu {
+	margin: 40px 0 36px;
+	padding: 0;
+	list-style: none;
+
+	li {
+		margin: 20px 0 0;
+		font-weight: bold;
+	}
+}
+
+
