@@ -1086,7 +1086,7 @@ label.error
     height: 65px;
 
     color: #fff;
-    background: #32422e url('../images/header_bg.jpg?v=1465548778435') repeat 50% 50%;
+    background: #32422e url('../images/header_bg.jpg?v=1465553146100') repeat 50% 50%;
 }
 
 .header__wrapper
@@ -1322,10 +1322,6 @@ label.error
 
     text-decoration: none;
 }
-.nav__link:hover
-{
-    border-bottom: 5px solid #4f9439;
-}
 .nav__item_active .nav__link
 {
     color: #4f9439; 
@@ -1341,6 +1337,64 @@ label.error
     margin: 0 20px 0 0;
 
     vertical-align: middle;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.nav__item_recipes .nav__symbol
+{
+    background-image: url('../images/ico_recipes.png?v=1465553146100');
+}
+.nav__item_recipes.nav__item_active .nav__symbol,
+.nav__item_recipes:hover .nav__symbol
+{
+    background-image: url('../images/ico_recipes_active.png?v=1465553146100');
+}
+.nav__item_books .nav__symbol
+{
+    background-image: url('../images/ico_books.png?v=1465553146100');
+}
+.nav__item_books.nav__item_active .nav__symbol,
+.nav__item_books:hover .nav__symbol
+{
+    background-image: url('../images/ico_books_active.png?v=1465553146100');
+}
+.nav__item_forum .nav__symbol
+{
+    background-image: url('../images/ico_forum.png?v=1465553146100');
+}
+.nav__item_forum.nav__item_active .nav__symbol,
+.nav__item_forum:hover .nav__symbol
+{
+    background-image: url('../images/ico_forum_active.png?v=1465553146100');
+}
+.nav__item_member .nav__symbol
+{
+    background-image: url('../images/ico_member.png?v=1465553146100');
+}
+.nav__item_member.nav__item_active .nav__symbol,
+.nav__item_member:hover .nav__symbol
+{
+    background-image: url('../images/ico_member_active.png?v=1465553146100');
+}
+.nav__item_menu .nav__symbol
+{
+    background-image: url('../images/ico_menu.png?v=1465553146100');
+}
+.nav__item_menu.nav__item_active .nav__symbol,
+.nav__item_menu:hover .nav__symbol
+{
+    background-image: url('../images/ico_menu_active.png?v=1465553146100');
+}
+.nav__item_contact .nav__symbol
+{
+    background-image: url('../images/ico_contact.png?v=1465553146100');
+}
+.nav__item_contact.nav__item_active .nav__symbol,
+.nav__item_contact:hover .nav__symbol
+{
+    background-image: url('../images/ico_contact_active.png?v=1465553146100');
 }
 
 .nav__ico

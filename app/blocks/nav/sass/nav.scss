@@ -28,10 +28,6 @@
 	height: 57px;
 	text-decoration: none;
 
-	&:hover {
-		border-bottom: 5px solid $c_primary;
-	}
-
 	.nav__item_active & {
 		border-bottom: 5px solid $c_primary;
 		color: $c_primary;
@@ -44,6 +40,57 @@
 	height: $g_icons;
 	margin: 0 20px 0 0;
 	vertical-align: middle;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.nav__item_recipes & {
+		background-image: url($path + '/images/ico_recipes.png' + $ver);
+	}
+	.nav__item_recipes.nav__item_active &,
+	.nav__item_recipes:hover & {
+		background-image: url($path + '/images/ico_recipes_active.png' + $ver);
+	}
+
+	.nav__item_books & {
+		background-image: url($path + '/images/ico_books.png' + $ver);
+	}
+	.nav__item_books.nav__item_active &,
+	.nav__item_books:hover & {
+		background-image: url($path + '/images/ico_books_active.png' + $ver);
+	}
+
+	.nav__item_forum & {
+		background-image: url($path + '/images/ico_forum.png' + $ver);
+	}
+	.nav__item_forum.nav__item_active &,
+	.nav__item_forum:hover & {
+		background-image: url($path + '/images/ico_forum_active.png' + $ver);
+	}
+
+	.nav__item_member & {
+		background-image: url($path + '/images/ico_member.png' + $ver);
+	}
+	.nav__item_member.nav__item_active &,
+	.nav__item_member:hover & {
+		background-image: url($path + '/images/ico_member_active.png' + $ver);
+	}
+
+	.nav__item_menu & {
+		background-image: url($path + '/images/ico_menu.png' + $ver);
+	}
+	.nav__item_menu.nav__item_active &,
+	.nav__item_menu:hover & {
+		background-image: url($path + '/images/ico_menu_active.png' + $ver);
+	}
+
+	.nav__item_contact & {
+		background-image: url($path + '/images/ico_contact.png' + $ver);
+	}
+	.nav__item_contact.nav__item_active &,
+	.nav__item_contact:hover & {
+		background-image: url($path + '/images/ico_contact_active.png' + $ver);
+	}
 }
 
 .nav__ico {
