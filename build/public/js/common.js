@@ -41,9 +41,19 @@ $(function() {
 	});
 
 
-	//$(window).on('load resize', function(){
-	//
-	//});
+	$(window).on('load resize', function(){
+		console.log('height .poster: ' + $('.poster').height());
+		console.log('height .poster__video: ' + $('.poster__video').height());
+		var videoHeightCenter = ($('.poster__video').height() - $('.poster').height()) / -2;
+		console.log('videoHeightCenter: ' + $('.poster__video').height() + ' - ' + $('.poster').height() + ' / 2 = ' + videoHeightCenter);
+		var videoWidthCenter = ($('.poster__video').width() - $('.poster').width()) / -2;
+		if(videoHeightCenter < 0) {
+			$('.poster__video').css('top', videoHeightCenter) / 2;
+		}
+		if(videoWidthCenter < 0) {
+			$('.poster__video').css('left', videoWidthCenter / 2);
+		}
+	});
 
 });
 

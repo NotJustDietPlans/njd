@@ -116,14 +116,6 @@ hr {
 	}
 }
 
-.wrapper {
-	position: relative;
-	max-width: $g_layout_max;
-	min-width: $g_layout_min - 40;
-	margin: 0 auto;
-	padding: 0 20px;
-}
-
 .hidden {
 	display: none;
 }
@@ -144,4 +136,20 @@ hr {
 	max-width: $g_narrow;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.wrapper {
+	position: relative;
+	max-width: $g_layout_max;
+	min-width: $g_layout_min - 40;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.wrapper_narrow {
+	position: relative;
+	max-width: $g_narrow;
+	min-width: $g_layout_min - 40;
+	margin: 0 auto;
+	padding: 0 20px;
 }

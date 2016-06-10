@@ -1,5 +1,6 @@
 .section {
 	flex: 1;
+	padding: $g_header + $g_nav + 40px 0 40px;
 }
 
 .section__wrapper {

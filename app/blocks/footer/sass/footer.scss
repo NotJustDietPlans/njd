@@ -5,11 +5,52 @@
 }
 
 .footer__inner {
-	@extend .wrapper;
+	@extend .wrapper_narrow;
 }
 
+.footer__pages {
+	background: #464646;
+}
 
+.footer__menu {
+	margin: 0;
+	padding: 48px 0;
+	list-style: none;
+	font-size: 13px;
+	text-align: center;
+}
 
+.footer__item {
+	display: inline-block;
+	padding: 10px 2%;
+	vertical-align: middle;
+}
+
+.footer__link {
+	color: $c_light;
+	text-decoration: none;
+}
+
+.footer__content {
+	padding: 28px 0;
+	font-size: 17px;
+	font-weight: 100;
+	text-align: center;
+}
+
+.footer__copyright {
+	float: left;
+}
+
+.footer__design {
+	float: right;
+
+	a {
+		color: #06887e;
+		font-weight: bold;
+		text-decoration: none;
+	}
+}
 
 
 
