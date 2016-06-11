@@ -1,7 +1,7 @@
 // SECTIONS NAVIGATION
 $(function() {
 
-	$('.header__burger').on('click', function() {
+	$('.nav__trigger, .nav__blocker, .nav__close').on('click', function() {
 		$('body').toggleClass('nav-open');
 	});
 
@@ -9,10 +9,8 @@ $(function() {
 		var windscroll = $(window).scrollTop();
 		if (windscroll > 0) {
 			$('.header').addClass('header_fixed');
-			$('.nav').addClass('nav_fixed');
 		} else {
 			$('.header').removeClass('header_fixed');
-			$('.nav').removeClass('nav_fixed');
 		}
 	}).scroll();
 

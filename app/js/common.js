@@ -1,7 +1,7 @@
 // SECTIONS NAVIGATION
 $(function() {
 
-	$('.header__burger').on('click', function() {
+	$('.nav__trigger, .nav__blocker, .nav__close').on('click', function() {
 		$('body').toggleClass('nav-open');
 	});
 
