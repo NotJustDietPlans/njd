@@ -274,6 +274,66 @@ textarea
     -webkit-appearance: none;
 }
 
+@font-face
+{
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-style: normal; 
+
+    src: url('../fonts/Montserrat-Light.eot');
+    src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Light.woff2') format('woff2'), url('../fonts/Montserrat-Light.woff') format('woff'), url('../fonts/Montserrat-Light.ttf') format('truetype'), url('../fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
+}
+
+@font-face
+{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-style: normal; 
+
+    src: url('../fonts/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Regular.woff2') format('woff2'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+}
+
+@font-face
+{
+    font-family: 'Montserrat Semi';
+    font-weight: 400;
+    font-style: normal; 
+
+    src: url('../fonts/Montserrat-SemiBold.eot');
+    src: url('../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-SemiBold.woff2') format('woff2'), url('../fonts/Montserrat-SemiBold.woff') format('woff'), url('../fonts/Montserrat-SemiBold.ttf') format('truetype'), url('../fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+}
+
+@font-face
+{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal; 
+
+    src: url('../fonts/Montserrat-Bold.eot');
+    src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Bold.woff2') format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold.ttf') format('truetype'), url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+}
+
+@font-face
+{
+    font-family: 'Montserrat Extra';
+    font-weight: 700;
+    font-style: normal; 
+
+    src: url('../fonts/Montserrat-ExtraBold.eot');
+    src: url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'), url('../fonts/Montserrat-ExtraBold.woff') format('woff'), url('../fonts/Montserrat-ExtraBold.ttf') format('truetype'), url('../fonts/Montserrat-ExtraBold.svg#Montserrat-ExtraBold') format('svg');
+}
+
+@font-face
+{
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-style: normal; 
+
+    src: url('../fonts/Montserrat-Black.eot');
+    src: url('../fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Black.woff2') format('woff2'), url('../fonts/Montserrat-Black.woff') format('woff'), url('../fonts/Montserrat-Black.ttf') format('truetype'), url('../fonts/Montserrat-Black.svg#Montserrat-Black') format('svg');
+}
+
 html
 {
     height: 100%;
@@ -1127,7 +1187,7 @@ label.error
     height: 65px;
 
     color: #fff;
-    background: #32422e url('../images/header_bg.jpg?v=1465568225164') repeat 50% 50%;
+    background: #32422e url('../images/header_bg.jpg?v=1465659203396') repeat 50% 50%;
 }
 
 .header__wrapper
@@ -1299,7 +1359,7 @@ label.error
     content: '';
     vertical-align: top; 
 
-    background: url('../images/ico_back.png?v=1465568225164') no-repeat 0 0;
+    background: url('../images/ico_back.png?v=1465659203396') no-repeat 0 0;
 }
 
 .nav
@@ -1368,57 +1428,57 @@ label.error
 }
 .nav__item_recipes .nav__symbol
 {
-    background-image: url('../images/ico_recipes.png?v=1465568225164');
+    background-image: url('../images/ico_recipes.png?v=1465659203396');
 }
 .nav__item_recipes.nav__item_active .nav__symbol,
 .nav__item_recipes:hover .nav__symbol
 {
-    background-image: url('../images/ico_recipes_active.png?v=1465568225164');
+    background-image: url('../images/ico_recipes_active.png?v=1465659203396');
 }
 .nav__item_books .nav__symbol
 {
-    background-image: url('../images/ico_books.png?v=1465568225164');
+    background-image: url('../images/ico_books.png?v=1465659203396');
 }
 .nav__item_books.nav__item_active .nav__symbol,
 .nav__item_books:hover .nav__symbol
 {
-    background-image: url('../images/ico_books_active.png?v=1465568225164');
+    background-image: url('../images/ico_books_active.png?v=1465659203396');
 }
 .nav__item_forum .nav__symbol
 {
-    background-image: url('../images/ico_forum.png?v=1465568225164');
+    background-image: url('../images/ico_forum.png?v=1465659203396');
 }
 .nav__item_forum.nav__item_active .nav__symbol,
 .nav__item_forum:hover .nav__symbol
 {
-    background-image: url('../images/ico_forum_active.png?v=1465568225164');
+    background-image: url('../images/ico_forum_active.png?v=1465659203396');
 }
 .nav__item_member .nav__symbol
 {
-    background-image: url('../images/ico_member.png?v=1465568225164');
+    background-image: url('../images/ico_member.png?v=1465659203396');
 }
 .nav__item_member.nav__item_active .nav__symbol,
 .nav__item_member:hover .nav__symbol
 {
-    background-image: url('../images/ico_member_active.png?v=1465568225164');
+    background-image: url('../images/ico_member_active.png?v=1465659203396');
 }
 .nav__item_menu .nav__symbol
 {
-    background-image: url('../images/ico_menu.png?v=1465568225164');
+    background-image: url('../images/ico_menu.png?v=1465659203396');
 }
 .nav__item_menu.nav__item_active .nav__symbol,
 .nav__item_menu:hover .nav__symbol
 {
-    background-image: url('../images/ico_menu_active.png?v=1465568225164');
+    background-image: url('../images/ico_menu_active.png?v=1465659203396');
 }
 .nav__item_contact .nav__symbol
 {
-    background-image: url('../images/ico_contact.png?v=1465568225164');
+    background-image: url('../images/ico_contact.png?v=1465659203396');
 }
 .nav__item_contact.nav__item_active .nav__symbol,
 .nav__item_contact:hover .nav__symbol
 {
-    background-image: url('../images/ico_contact_active.png?v=1465568225164');
+    background-image: url('../images/ico_contact_active.png?v=1465659203396');
 }
 
 .nav__ico
@@ -1816,7 +1876,7 @@ label.error
     height: 38px;
     margin: 50px 0;
 
-    background: url('../images/ico_apple.png?v=1465568225164') no-repeat 50% 50%;
+    background: url('../images/ico_apple.png?v=1465659203396') no-repeat 50% 50%;
     background-size: 30px 38px;
 }
 
@@ -1865,7 +1925,7 @@ label.error
 
     content: '';
 
-    background: url('../images/border.png?v=1465568225164') repeat-y 0 0;
+    background: url('../images/border.png?v=1465659203396') repeat-y 0 0;
 }
 .recipe__ingredients h2
 {
@@ -2099,7 +2159,7 @@ label.error
 
     content: '';
 
-    background: url('../images/ico_cross.png?v=1465568225164') no-repeat 0 0;
+    background: url('../images/ico_cross.png?v=1465659203396') no-repeat 0 0;
 }
 
 .mosaic__menu

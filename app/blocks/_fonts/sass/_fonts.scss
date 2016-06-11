@@ -1,48 +1,71 @@
 @font-face {
-	font-family: 'Futura-Medium';
-	src: url($path_fonts + 'Futura-Medium.eot');
-	src: url($path_fonts + 'Futura-Medium.woff2') format('woff2'),
-	url($path_fonts + 'Futura-Medium.woff') format('woff'),
-	url($path_fonts + 'Futura-Medium.ttf') format('truetype'),
-	url($path_fonts + 'Futura-Medium.svg#Futura-Medium') format('svg'),
-	url($path_fonts + 'Futura-Medium.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
+	font-family: 'Montserrat';
+	src: url($path_fonts + 'Montserrat-Light.eot');
+	src: url($path_fonts + 'Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+	url($path_fonts + 'Montserrat-Light.woff2') format('woff2'),
+	url($path_fonts + 'Montserrat-Light.woff') format('woff'),
+	url($path_fonts + 'Montserrat-Light.ttf') format('truetype'),
+	url($path_fonts + 'Montserrat-Light.svg#Montserrat-Light') format('svg');
+	font-weight: 100;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Futura-MediumItalic';
-	src: url($path_fonts + 'Futura-MediumItalic.eot');
-	src: url($path_fonts + 'Futura-MediumItalic.woff2') format('woff2'),
-	url($path_fonts + 'Futura-MediumItalic.woff') format('woff'),
-	url($path_fonts + 'Futura-MediumItalic.ttf') format('truetype'),
-	url($path_fonts + 'Futura-MediumItalic.svg#Futura-MediumItalic') format('svg'),
-	url($path_fonts + 'Futura-MediumItalic.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
+	font-family: 'Montserrat';
+	src: url($path_fonts + 'Montserrat-Regular.eot');
+	src: url($path_fonts + 'Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+	url($path_fonts + 'Montserrat-Regular.woff2') format('woff2'),
+	url($path_fonts + 'Montserrat-Regular.woff') format('woff'),
+	url($path_fonts + 'Montserrat-Regular.ttf') format('truetype'),
+	url($path_fonts + 'Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Futura-CondensedMedium';
-	src: url($path_fonts + 'Futura-CondensedMedium.eot');
-	src: url($path_fonts + 'Futura-CondensedMedium.woff2') format('woff2'),
-	url($path_fonts + 'Futura-CondensedMedium.woff') format('woff'),
-	url($path_fonts + 'Futura-CondensedMedium.ttf') format('truetype'),
-	url($path_fonts + 'Futura-CondensedMedium.svg#Futura-CondensedMedium') format('svg'),
-	url($path_fonts + 'Futura-CondensedMedium.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
+	font-family: 'Montserrat Semi';
+	src: url($path_fonts + 'Montserrat-SemiBold.eot');
+	src: url($path_fonts + 'Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+	url($path_fonts + 'Montserrat-SemiBold.woff2') format('woff2'),
+	url($path_fonts + 'Montserrat-SemiBold.woff') format('woff'),
+	url($path_fonts + 'Montserrat-SemiBold.ttf') format('truetype'),
+	url($path_fonts + 'Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Futura-CondensedExtraBold';
-	src: url($path_fonts + 'Futura-CondensedExtraBold.eot');
-	src: url($path_fonts + 'Futura-CondensedExtraBold.woff2') format('woff2'),
-	url($path_fonts + 'Futura-CondensedExtraBold.woff') format('woff'),
-	url($path_fonts + 'Futura-CondensedExtraBold.ttf') format('truetype'),
-	url($path_fonts + 'Futura-CondensedExtraBold.svg#Futura-CondensedExtraBold') format('svg'),
-	url($path_fonts + 'Futura-CondensedExtraBold.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
+	font-family: 'Montserrat';
+	src: url($path_fonts + 'Montserrat-Bold.eot');
+	src: url($path_fonts + 'Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+	url($path_fonts + 'Montserrat-Bold.woff2') format('woff2'),
+	url($path_fonts + 'Montserrat-Bold.woff') format('woff'),
+	url($path_fonts + 'Montserrat-Bold.ttf') format('truetype'),
+	url($path_fonts + 'Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+	font-weight: 600;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Montserrat Extra';
+	src: url($path_fonts + 'Montserrat-ExtraBold.eot');
+	src: url($path_fonts + 'Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+	url($path_fonts + 'Montserrat-ExtraBold.woff2') format('woff2'),
+	url($path_fonts + 'Montserrat-ExtraBold.woff') format('woff'),
+	url($path_fonts + 'Montserrat-ExtraBold.ttf') format('truetype'),
+	url($path_fonts + 'Montserrat-ExtraBold.svg#Montserrat-ExtraBold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url($path_fonts + 'Montserrat-Black.eot');
+	src: url($path_fonts + 'Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+	url($path_fonts + 'Montserrat-Black.woff2') format('woff2'),
+	url($path_fonts + 'Montserrat-Black.woff') format('woff'),
+	url($path_fonts + 'Montserrat-Black.ttf') format('truetype'),
+	url($path_fonts + 'Montserrat-Black.svg#Montserrat-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
