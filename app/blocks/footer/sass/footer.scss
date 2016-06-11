@@ -18,12 +18,29 @@
 	list-style: none;
 	font-size: 13px;
 	text-align: center;
+
+	@include res(smart) {
+		padding: 10px 0;
+	}
 }
 
 .footer__item {
 	display: inline-block;
 	padding: 10px 2%;
+	box-sizing: border-box;
 	vertical-align: middle;
+
+	@include res(pad) {
+		width: 23%;
+		padding-left: 10px;
+		padding-right: 0;
+		text-align: left;
+	}
+
+	@include res(smart) {
+		width: 49%;
+		padding-left: 20px;
+	}
 }
 
 .footer__link {
@@ -36,10 +53,19 @@
 	font-size: 17px;
 	font-weight: 100;
 	text-align: center;
+
+	@include res(smart) {
+		font-size: 12px;
+		text-align: left;
+	}
 }
 
 .footer__copyright {
 	float: left;
+
+	@include res(smart) {
+		float: none;
+	}
 }
 
 .footer__design {
@@ -47,8 +73,13 @@
 
 	a {
 		color: #06887e;
-		font-weight: bold;
+		font-weight: 600;
 		text-decoration: none;
+	}
+
+	@include res(smart) {
+		width: 100px;
+		text-align: center;
 	}
 }
 

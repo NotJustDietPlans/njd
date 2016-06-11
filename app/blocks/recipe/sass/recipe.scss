@@ -45,7 +45,7 @@
 	margin: 0;
 	color: $c_bold;
 	font-size: 48px;
-	font-weight: bold;
+	font-weight: 900;
 }
 
 .recipe__separator {
@@ -63,8 +63,10 @@
 .recipe__assignment {
 	margin: 50px 0 0;
 	color: #4f963a;
+	font-weight: 100;
+
 	b {
-		font-weight: bold;
+		font-weight: 600;
 	}
 }
 
@@ -91,7 +93,7 @@
 		margin: 0 0 60px;
 		color: $c_accent;
 		font-size: 40px;
-		font-weight: bold;
+		font-weight: 600;
 	}
 
 	ul {

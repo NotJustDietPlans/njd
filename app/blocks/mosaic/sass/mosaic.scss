@@ -10,7 +10,7 @@
 	h2 {
 		margin: 0 0 30px;
 		font-size: 30px;
-		font-weight: bold;
+		font-weight: 600;
 		color: #88bf3e;
 		text-align: left;
 	}
@@ -50,19 +50,6 @@
 	float: left;
 	margin: 0 0 40px 2%;
 	width: 23.5%;
-}
-
-
-.mosaic__cooking {
-	background: #F00;
-}
-
-.mosaic__not {
-	background: #FC0;
-}
-
-.mosaic__served {
-	background: #F0C;
 }
 
 
@@ -112,6 +99,10 @@
 		padding: 10px;
 	}
 
+	th {
+		font-weight: 600;
+	}
+
 	td {
 		text-align: right;
 	}
@@ -126,7 +117,7 @@
 		color: #88bf3e;
 		line-height: 1;
 		font-size: 72px;
-		font-weight: bold;
+		font-weight: 900;
 	}
 }
 
@@ -160,7 +151,7 @@
 
 	li {
 		margin: 20px 0 0;
-		font-weight: bold;
+		font-weight: 600;
 	}
 }
 

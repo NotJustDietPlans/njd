@@ -51,14 +51,16 @@
 	margin: 0;
 	color: #4c524b;
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .recipes__assignment {
 	margin: 0;
 	color: #4f963a;
+	font-weight: 100;
+
 	 b {
-		 font-weight: bold;
+		 font-weight: 600;
 	 }
 }
 
@@ -74,6 +76,8 @@
 	margin: 0 0 10px;
 	color: #ffaf3c;
 	font-size: $fs_caption;
+	font-family: Serif;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 

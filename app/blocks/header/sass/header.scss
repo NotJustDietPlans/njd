@@ -7,6 +7,12 @@
 	height: $g_header;
 	color: $c_light;
 	background: $c_dark url($path + '/images/header_bg.jpg' + $ver) repeat 50% 50%;
+	box-shadow: 0 $g_nav 20px rgba(#000, 0);
+	transition: $s linear;
+
+	&_fixed {
+		box-shadow: 0 $g_nav 20px rgba(#000, .5);
+	}
 }
 
 .header__wrapper {

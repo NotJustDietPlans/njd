@@ -343,7 +343,7 @@ body
 {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.45;
 
     width: 100%;
@@ -1186,8 +1186,16 @@ label.error
 
     height: 65px;
 
+    -webkit-transition: .5s linear;
+            transition: .5s linear; 
+
     color: #fff;
     background: #32422e url('../images/header_bg.jpg?v=1465659203396') repeat 50% 50%;
+    box-shadow: 0 62px 20px transparent;
+}
+.header_fixed
+{
+    box-shadow: 0 62px 20px rgba(0, 0, 0, .5);
 }
 
 .header__wrapper
@@ -1331,7 +1339,7 @@ label.error
 .section__back
 {
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 17px;
 
     margin: -20px 0 20px;
@@ -1492,11 +1500,13 @@ label.error
 .nav__text
 {
     font-size: 12px;
+    font-weight: 600;
     line-height: 58px;
 
     display: inline-block;
 
     vertical-align: middle; 
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
@@ -1618,14 +1628,41 @@ label.error
 
     text-align: center;
 }
+@media screen and (max-width: 600px)
+{
+    .footer__menu
+    {
+        padding: 10px 0;
+    }
+}
 
 .footer__item
 {
     display: inline-block;
 
+    box-sizing: border-box;
     padding: 10px 2%;
 
     vertical-align: middle;
+}
+@media screen and (max-width: 999px)
+{
+    .footer__item
+    {
+        width: 23%;
+        padding-right: 0;
+        padding-left: 10px;
+
+        text-align: left;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .footer__item
+    {
+        width: 49%;
+        padding-left: 20px;
+    }
 }
 
 .footer__link
@@ -1644,10 +1681,26 @@ label.error
 
     text-align: center;
 }
+@media screen and (max-width: 600px)
+{
+    .footer__content
+    {
+        font-size: 12px;
+
+        text-align: left;
+    }
+}
 
 .footer__copyright
 {
     float: left;
+}
+@media screen and (max-width: 600px)
+{
+    .footer__copyright
+    {
+        float: none;
+    }
 }
 
 .footer__design
@@ -1656,11 +1709,20 @@ label.error
 }
 .footer__design a
 {
-    font-weight: bold;
+    font-weight: 600;
 
     text-decoration: none; 
 
     color: #06887e;
+}
+@media screen and (max-width: 600px)
+{
+    .footer__design
+    {
+        width: 100px;
+
+        text-align: center;
+    }
 }
 
 .recipes
@@ -1737,7 +1799,7 @@ label.error
 .recipes__name
 {
     font-size: 16px;
-    font-weight: bold; 
+    font-weight: 700; 
 
     margin: 0;
 
@@ -1746,13 +1808,15 @@ label.error
 
 .recipes__assignment
 {
+    font-weight: 100; 
+
     margin: 0;
 
     color: #4f963a;
 }
 .recipes__assignment b
 {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .recipes__footer
@@ -1767,7 +1831,9 @@ label.error
 
 .recipes__label
 {
+    font-family: Serif;
     font-size: 12px;
+    font-weight: 600;
 
     margin: 0 0 10px;
 
@@ -1864,7 +1930,7 @@ label.error
 .recipe__title
 {
     font-size: 48px;
-    font-weight: bold; 
+    font-weight: 900; 
 
     margin: 0;
 
@@ -1888,13 +1954,15 @@ label.error
 
 .recipe__assignment
 {
+    font-weight: 100; 
+
     margin: 50px 0 0;
 
     color: #4f963a;
 }
 .recipe__assignment b
 {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .recipe__ingredients
@@ -1930,7 +1998,7 @@ label.error
 .recipe__ingredients h2
 {
     font-size: 40px;
-    font-weight: bold; 
+    font-weight: 600; 
 
     margin: 0 0 60px;
 
@@ -1976,7 +2044,7 @@ label.error
 .mosaic__directions h2
 {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 600;
 
     margin: 0 0 30px;
 
@@ -2027,21 +2095,6 @@ label.error
 
     width: 23.5%; 
     margin: 0 0 40px 2%;
-}
-
-.mosaic__cooking
-{
-    background: #f00;
-}
-
-.mosaic__not
-{
-    background: #fc0;
-}
-
-.mosaic__served
-{
-    background: #f0c;
 }
 
 .mosaic__box
@@ -2110,6 +2163,10 @@ label.error
 {
     padding: 10px;
 }
+.mosaic__serving-table th
+{
+    font-weight: 600;
+}
 .mosaic__serving-table td
 {
     text-align: right;
@@ -2122,7 +2179,7 @@ label.error
 .mosaic__time b
 {
     font-size: 72px;
-    font-weight: bold; 
+    font-weight: 900; 
     line-height: 1;
 
     display: block;
@@ -2171,7 +2228,7 @@ label.error
 }
 .mosaic__menu li
 {
-    font-weight: bold; 
+    font-weight: 600; 
 
     margin: 20px 0 0;
 }
@@ -2184,7 +2241,7 @@ label.error
 .books__title
 {
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 600;
 
     margin: 70px 0;
 
