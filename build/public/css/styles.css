@@ -894,7 +894,7 @@ hr
     content: '';
     pointer-events: none; 
 
-    background: url('../images/ico_select.png?v=1465745988870') no-repeat 50% 50%;
+    background: url('../images/ico_select.png?v=1465754004411') no-repeat 50% 50%;
 }
 .form__element_input-add:after
 {
@@ -1423,7 +1423,7 @@ hr
             transition: .5s linear; 
 
     color: #fff;
-    background: #32422e url('../images/header_bg.jpg?v=1465745988870') repeat 50% 50%;
+    background: #32422e url('../images/header_bg.jpg?v=1465754004411') repeat 50% 50%;
     box-shadow: 0 62px 20px transparent;
 }
 .header_fixed
@@ -1626,7 +1626,7 @@ hr
     content: '';
     vertical-align: top; 
 
-    background: url('../images/ico_back.png?v=1465745988870') no-repeat 0 0;
+    background: url('../images/ico_back.png?v=1465754004411') no-repeat 0 0;
 }
 
 .nav
@@ -1756,57 +1756,57 @@ hr
 }
 .nav__item_recipes .nav__symbol
 {
-    background-image: url('../images/ico_recipes.png?v=1465745988870');
+    background-image: url('../images/ico_recipes.png?v=1465754004411');
 }
 .nav__item_recipes.nav__item_active .nav__symbol,
 .nav__item_recipes:hover .nav__symbol
 {
-    background-image: url('../images/ico_recipes_active.png?v=1465745988870');
+    background-image: url('../images/ico_recipes_active.png?v=1465754004411');
 }
 .nav__item_books .nav__symbol
 {
-    background-image: url('../images/ico_books.png?v=1465745988870');
+    background-image: url('../images/ico_books.png?v=1465754004411');
 }
 .nav__item_books.nav__item_active .nav__symbol,
 .nav__item_books:hover .nav__symbol
 {
-    background-image: url('../images/ico_books_active.png?v=1465745988870');
+    background-image: url('../images/ico_books_active.png?v=1465754004411');
 }
 .nav__item_forum .nav__symbol
 {
-    background-image: url('../images/ico_forum.png?v=1465745988870');
+    background-image: url('../images/ico_forum.png?v=1465754004411');
 }
 .nav__item_forum.nav__item_active .nav__symbol,
 .nav__item_forum:hover .nav__symbol
 {
-    background-image: url('../images/ico_forum_active.png?v=1465745988870');
+    background-image: url('../images/ico_forum_active.png?v=1465754004411');
 }
 .nav__item_family .nav__symbol
 {
-    background-image: url('../images/ico_member.png?v=1465745988870');
+    background-image: url('../images/ico_member.png?v=1465754004411');
 }
 .nav__item_family.nav__item_active .nav__symbol,
 .nav__item_family:hover .nav__symbol
 {
-    background-image: url('../images/ico_member_active.png?v=1465745988870');
+    background-image: url('../images/ico_member_active.png?v=1465754004411');
 }
 .nav__item_menu .nav__symbol
 {
-    background-image: url('../images/ico_menu.png?v=1465745988870');
+    background-image: url('../images/ico_menu.png?v=1465754004411');
 }
 .nav__item_menu.nav__item_active .nav__symbol,
 .nav__item_menu:hover .nav__symbol
 {
-    background-image: url('../images/ico_menu_active.png?v=1465745988870');
+    background-image: url('../images/ico_menu_active.png?v=1465754004411');
 }
 .nav__item_contact .nav__symbol
 {
-    background-image: url('../images/ico_contact.png?v=1465745988870');
+    background-image: url('../images/ico_contact.png?v=1465754004411');
 }
 .nav__item_contact.nav__item_active .nav__symbol,
 .nav__item_contact:hover .nav__symbol
 {
-    background-image: url('../images/ico_contact_active.png?v=1465745988870');
+    background-image: url('../images/ico_contact_active.png?v=1465754004411');
 }
 
 .nav__ico
@@ -2430,7 +2430,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_direct_green.png?v=1465745988870') no-repeat 0 50%;
+    background: url('../images/ico_direct_green.png?v=1465754004411') no-repeat 0 50%;
     background-size: auto 100%;
 }
 @media screen and (max-width: 999px)
@@ -2844,7 +2844,7 @@ hr
     height: 38px;
     margin: 50px 0;
 
-    background: url('../images/ico_apple.png?v=1465745988870') no-repeat 50% 50%;
+    background: url('../images/ico_apple.png?v=1465754004411') no-repeat 50% 50%;
     background-size: 30px 38px;
 }
 
@@ -2903,7 +2903,7 @@ hr
 
     content: '';
 
-    background: url('../images/border.png?v=1465745988870') repeat-y 0 0;
+    background: url('../images/border.png?v=1465754004411') repeat-y 0 0;
 }
 @media screen and (max-width: 999px)
 {
@@ -3020,29 +3020,84 @@ hr
     }
 }
 
+.mosaic__contact
+{
+    font-size: 14px;
+    line-height: 2; 
+
+    margin: 0 0 40px;
+}
+.mosaic__contact ol
+{
+    margin: 0;
+    padding: 0;
+
+    counter-reset: myCounter;
+    text-align: left;
+}
+.mosaic__contact li
+{
+    margin: 30px 0;
+
+    list-style: none;
+}
+.mosaic__contact li:last-child
+{
+    margin-bottom: 0;
+}
+.mosaic__contact li:before
+{
+    font-weight: 400; 
+    line-height: 1;
+
+    display: inline-block;
+
+    margin: 0 20px 0 0;
+
+    content: counter(myCounter) ')';
+    counter-increment: myCounter;
+
+    color: #4f9439;
+}
+.mosaic__contact a
+{
+    font-weight: 600; 
+
+    color: #4f9439;
+}
+@media screen and (min-width: 1280px)
+{
+    .mosaic__contact
+    {
+        float: left;
+
+        width: 69%;
+        margin: 0;
+    }
+}
+
+.mosaic__submit,
+.mosaic__view,
+.mosaic__address,
+.mosaic__call,
 .mosaic__serving,
 .mosaic__cooking,
 .mosaic__not,
 .mosaic__served
 {
+    position: relative;
+
     float: left;
 
     width: 49%; 
     margin: 0 0 40px 0;
 }
-@media screen and (min-width: 1280px)
-{
-    .mosaic__serving,
-    .mosaic__cooking,
-    .mosaic__not,
-    .mosaic__served
-    {
-        width: 23.5%;
-        margin: 0 0 40px 2%;
-    }
-}
 @media screen and (max-width: 767px)
 {
+    .mosaic__submit,
+    .mosaic__view,
+    .mosaic__address,
+    .mosaic__call,
     .mosaic__serving,
     .mosaic__cooking,
     .mosaic__not,
@@ -3055,10 +3110,48 @@ hr
     }
 }
 
+@media screen and (min-width: 1280px)
+{
+    .mosaic__serving,
+    .mosaic__cooking,
+    .mosaic__not,
+    .mosaic__served
+    {
+        width: 23.5%;
+        margin: 0 0 40px 2%;
+    }
+}
+
 .mosaic__cooking,
-.mosaic__served
+.mosaic__served,
+.mosaic__view,
+.mosaic__call
 {
     margin-left: 2%;
+}
+
+@media screen and (min-width: 1280px)
+{
+    .mosaic__submit,
+    .mosaic__view
+    {
+        width: 29%;
+        margin: 0 0 40px 2%;
+    }
+}
+
+.mosaic__address p
+{
+    padding-right: 20px;
+
+    vertical-align: top;
+}
+@media screen and (min-width: 1280px)
+{
+    .mosaic__address p
+    {
+        display: inline-block;
+    }
 }
 
 .mosaic__box
@@ -3102,12 +3195,64 @@ hr
         padding: 20px 20px;
     }
 }
+.mosaic__contact .mosaic__box
+{
+    box-sizing: border-box;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px; 
+
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -ms-grid-row-align: flex-start;
+    align-items: flex-start;
+}
+@media screen and (min-width: 1280px)
+{
+    .mosaic__contact .mosaic__box
+    {
+        height: 780px;
+    }
+}
 
 .mosaic__content
 {
     width: 100%;
 
     text-align: center;
+}
+.mosaic__contact .mosaic__content
+{
+    text-align: left;
+}
+.mosaic__call .mosaic__content,
+.mosaic__address .mosaic__content
+{
+    font-size: 20px;
+    font-weight: 100;
+
+    padding-left: 160px;
+
+    text-align: left;
+}
+@media screen and (min-width: 1100px)
+{
+    .mosaic__call .mosaic__content,
+    .mosaic__address .mosaic__content
+    {
+        padding-left: 250px;
+    }
+}
+@media screen and (max-width: 999px)
+{
+    .mosaic__call .mosaic__content,
+    .mosaic__address .mosaic__content
+    {
+        font-size: 16px;
+    }
 }
 
 .mosaic__ico
@@ -3116,6 +3261,31 @@ hr
     height: 105px;
 
     vertical-align: bottom;
+}
+.mosaic__submit .mosaic__ico,
+.mosaic__view .mosaic__ico,
+.mosaic__address .mosaic__ico,
+.mosaic__call .mosaic__ico
+{
+    width: 140px;
+    height: 140px;
+}
+.mosaic__call .mosaic__ico,
+.mosaic__address .mosaic__ico
+{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+
+    margin: -70px 0 0;
+}
+@media screen and (min-width: 1100px)
+{
+    .mosaic__call .mosaic__ico,
+    .mosaic__address .mosaic__ico
+    {
+        left: 50px;
+    }
 }
 
 .mosaic__name
@@ -3128,6 +3298,18 @@ hr
     text-transform: uppercase; 
 
     color: #88bf3e;
+}
+.mosaic__submit .mosaic__name,
+.mosaic__view .mosaic__name,
+.mosaic__address .mosaic__name,
+.mosaic__call .mosaic__name
+{
+    font-size: 28px;
+}
+.mosaic__submit .mosaic__name,
+.mosaic__view .mosaic__name
+{
+    color: #4c524b;
 }
 
 .mosaic__serving-table
@@ -3195,7 +3377,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_cross.png?v=1465745988870') no-repeat 0 0;
+    background: url('../images/ico_cross.png?v=1465754004411') no-repeat 0 0;
 }
 
 .mosaic__menu

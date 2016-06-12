@@ -48,18 +48,61 @@
 	}
 }
 
+.mosaic__contact {
+	margin: 0 0 40px;
+	font-size: 14px;
+	line-height: 2;
+
+	ol {
+		margin: 0;
+		padding: 0;
+		counter-reset: myCounter;
+		text-align: left;
+	}
+
+	li {
+		margin: 30px 0;
+		list-style: none;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:before {
+			counter-increment: myCounter;
+			content:counter(myCounter) ')';
+			display: inline-block;
+			margin: 0 20px 0 0;
+			color: $c_primary;
+			line-height: 1;
+			font-weight: 400;
+		}
+	}
+
+	a {
+		color: $c_primary;
+		font-weight: 600;
+	}
+
+	@include res(full) {
+		float: left;
+		width: 69%;
+		margin: 0;
+	}
+}
+
+.mosaic__submit,
+.mosaic__view,
+.mosaic__address,
+.mosaic__call,
 .mosaic__serving,
 .mosaic__cooking,
 .mosaic__not,
 .mosaic__served {
 	float: left;
+	position: relative;
 	margin: 0 0 40px 0;
 	width: 49%;
-
-	@include res(full) {
-		width: 23.5%;
-		margin: 0 0 40px 2%;
-	}
 
 	@include res(fablet) {
 		float: none;
@@ -68,12 +111,41 @@
 	}
 }
 
+.mosaic__serving,
 .mosaic__cooking,
+.mosaic__not,
 .mosaic__served {
+	@include res(full) {
+		width: 23.5%;
+		margin: 0 0 40px 2%;
+	}
+}
+
+.mosaic__cooking,
+.mosaic__served,
+.mosaic__view,
+.mosaic__call {
 	margin-left: 2%;
 }
 
+.mosaic__submit,
+.mosaic__view {
+	@include res(full) {
+		width: 29%;
+		margin: 0 0 40px 2%;
+	}
+}
 
+.mosaic__address {
+	p {
+		padding-right: 20px;
+		vertical-align: top;
+
+		@include res(full) {
+			display: inline-block;
+		}
+	}
+}
 
 
 .mosaic__box {
@@ -99,17 +171,70 @@
 			padding: 20px 20px;
 		}
 	}
+
+	.mosaic__contact & {
+		justify-content: flex-start;
+		align-items: flex-start;
+		box-sizing: border-box;
+		height: auto;
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+		@include res(full) {
+			height: 780px;
+		}
+	}
 }
 
 .mosaic__content {
 	width: 100%;
 	text-align: center;
+
+	.mosaic__contact & {
+		text-align: left;
+	}
+
+	.mosaic__call &,
+	.mosaic__address & {
+		padding-left: 160px;
+		font-size: 20px;
+		font-weight: 100;
+		text-align: left;
+
+		@media screen and (min-width: 1100px) {
+			padding-left: 250px;
+		}
+
+		@include res(pad) {
+			font-size: 16px;
+		}
+	}
 }
 
 .mosaic__ico {
 	width: 105px;
 	height: 105px;
 	vertical-align: bottom;
+
+	.mosaic__submit &,
+	.mosaic__view &,
+	.mosaic__address &,
+	.mosaic__call & {
+		width: 140px;
+		height: 140px;
+	}
+
+	.mosaic__call &,
+	.mosaic__address & {
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		margin: -70px 0 0;
+
+		@media screen and (min-width: 1100px) {
+			left: 50px;
+		}
+	}
 }
 
 .mosaic__name {
@@ -118,6 +243,18 @@
 	font-size: 20px;
 	font-weight: bold;
 	text-transform: uppercase;
+
+	.mosaic__submit &,
+	.mosaic__view &,
+	.mosaic__address &,
+	.mosaic__call & {
+		font-size: 28px;
+	}
+
+	.mosaic__submit &,
+	.mosaic__view & {
+		color: #4c524b;
+	}
 }
 
 .mosaic__serving-table {
