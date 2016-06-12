@@ -408,22 +408,6 @@ h3,
     font-weight: bold;
 }
 
-h4
-{
-    font-size: 15px;
-    font-weight: 600; 
-
-    color: #4f9439;
-}
-
-h5
-{
-    font-size: 14px;
-    font-weight: 600; 
-
-    color: #4f9439;
-}
-
 p:first-child
 {
     margin-top: 0;
@@ -894,7 +878,7 @@ hr
     content: '';
     pointer-events: none; 
 
-    background: url('../images/ico_select.png?v=1465756906609') no-repeat 50% 50%;
+    background: url('../images/ico_select.png?v=1465761589167') no-repeat 50% 50%;
 }
 .form__element_input-add:after
 {
@@ -1423,7 +1407,7 @@ hr
             transition: .5s linear; 
 
     color: #fff;
-    background: #32422e url('../images/header_bg.jpg?v=1465756906609') repeat 50% 50%;
+    background: #32422e url('../images/header_bg.jpg?v=1465761589167') repeat 50% 50%;
     box-shadow: 0 62px 20px transparent;
 }
 .header_fixed
@@ -1626,7 +1610,7 @@ hr
     content: '';
     vertical-align: top; 
 
-    background: url('../images/ico_back.png?v=1465756906609') no-repeat 0 0;
+    background: url('../images/ico_back.png?v=1465761589167') no-repeat 0 0;
 }
 
 .nav
@@ -1758,57 +1742,57 @@ hr
 }
 .nav__item_recipes .nav__symbol
 {
-    background-image: url('../images/ico_recipes.png?v=1465756906609');
+    background-image: url('../images/ico_recipes.png?v=1465761589167');
 }
 .nav__item_recipes.nav__item_active .nav__symbol,
 .nav__item_recipes:hover .nav__symbol
 {
-    background-image: url('../images/ico_recipes_active.png?v=1465756906609');
+    background-image: url('../images/ico_recipes_active.png?v=1465761589167');
 }
 .nav__item_books .nav__symbol
 {
-    background-image: url('../images/ico_books.png?v=1465756906609');
+    background-image: url('../images/ico_books.png?v=1465761589167');
 }
 .nav__item_books.nav__item_active .nav__symbol,
 .nav__item_books:hover .nav__symbol
 {
-    background-image: url('../images/ico_books_active.png?v=1465756906609');
+    background-image: url('../images/ico_books_active.png?v=1465761589167');
 }
 .nav__item_forum .nav__symbol
 {
-    background-image: url('../images/ico_forum.png?v=1465756906609');
+    background-image: url('../images/ico_forum.png?v=1465761589167');
 }
 .nav__item_forum.nav__item_active .nav__symbol,
 .nav__item_forum:hover .nav__symbol
 {
-    background-image: url('../images/ico_forum_active.png?v=1465756906609');
+    background-image: url('../images/ico_forum_active.png?v=1465761589167');
 }
 .nav__item_family .nav__symbol
 {
-    background-image: url('../images/ico_member.png?v=1465756906609');
+    background-image: url('../images/ico_member.png?v=1465761589167');
 }
 .nav__item_family.nav__item_active .nav__symbol,
 .nav__item_family:hover .nav__symbol
 {
-    background-image: url('../images/ico_member_active.png?v=1465756906609');
+    background-image: url('../images/ico_member_active.png?v=1465761589167');
 }
 .nav__item_menu .nav__symbol
 {
-    background-image: url('../images/ico_menu.png?v=1465756906609');
+    background-image: url('../images/ico_menu.png?v=1465761589167');
 }
 .nav__item_menu.nav__item_active .nav__symbol,
 .nav__item_menu:hover .nav__symbol
 {
-    background-image: url('../images/ico_menu_active.png?v=1465756906609');
+    background-image: url('../images/ico_menu_active.png?v=1465761589167');
 }
 .nav__item_contact .nav__symbol
 {
-    background-image: url('../images/ico_contact.png?v=1465756906609');
+    background-image: url('../images/ico_contact.png?v=1465761589167');
 }
 .nav__item_contact.nav__item_active .nav__symbol,
 .nav__item_contact:hover .nav__symbol
 {
-    background-image: url('../images/ico_contact_active.png?v=1465756906609');
+    background-image: url('../images/ico_contact_active.png?v=1465761589167');
 }
 
 .nav__ico
@@ -2432,7 +2416,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_direct_green.png?v=1465756906609') no-repeat 0 50%;
+    background: url('../images/ico_direct_green.png?v=1465761589167') no-repeat 0 50%;
     background-size: auto 100%;
 }
 @media screen and (max-width: 999px)
@@ -2846,7 +2830,7 @@ hr
     height: 38px;
     margin: 50px 0;
 
-    background: url('../images/ico_apple.png?v=1465756906609') no-repeat 50% 50%;
+    background: url('../images/ico_apple.png?v=1465761589167') no-repeat 50% 50%;
     background-size: 30px 38px;
 }
 
@@ -2905,7 +2889,7 @@ hr
 
     content: '';
 
-    background: url('../images/border.png?v=1465756906609') repeat-y 0 0;
+    background: url('../images/border.png?v=1465761589167') repeat-y 0 0;
 }
 @media screen and (max-width: 999px)
 {
@@ -3056,7 +3040,7 @@ hr
 
     margin: 0 20px 0 0;
 
-    content: counter(myCounter) ')';
+    content: counter(myCounter);
     counter-increment: myCounter;
 
     color: #4f9439;
@@ -3379,7 +3363,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_cross.png?v=1465756906609') no-repeat 0 0;
+    background: url('../images/ico_cross.png?v=1465761589167') no-repeat 0 0;
 }
 
 .mosaic__menu
@@ -3628,9 +3612,157 @@ hr
 {
     position: relative;
 }
+.post h1,
+.post h2,
+.post h3,
+.post hr
+{
+    margin: 40px 0;
+}
+.post h1:first-child,
+.post h2:first-child,
+.post h3:first-child,
+.post hr:first-child
+{
+    margin-top: 0;
+}
+.post h1:last-child,
+.post h2:last-child,
+.post h3:last-child,
+.post hr:last-child
+{
+    margin-bottom: 0;
+}
+.post h2,
+.post h3
+{
+    font-size: 35px;
+    font-weight: 600; 
+
+    color: #4f9439;
+}
+@media screen and (max-width: 600px)
+{
+    .post h2,
+    .post h3
+    {
+        font-size: 25px;
+    }
+}
+.post h3
+{
+    font-size: 25px;
+}
+@media screen and (max-width: 600px)
+{
+    .post h3
+    {
+        font-size: 20px;
+    }
+}
+.post h4,
+.post p,
+.post ul,
+.post ol
+{
+    margin: 20px 0;
+}
+.post h4:first-child,
+.post p:first-child,
+.post ul:first-child,
+.post ol:first-child
+{
+    margin-top: 0;
+}
+.post h4:last-child,
+.post p:last-child,
+.post ul:last-child,
+.post ol:last-child
+{
+    margin-bottom: 0;
+}
+.post h4
+{
+    font-weight: 600; 
+    line-height: 2;
+}
+.post ul
+{
+    padding: 0;
+
+    list-style: none;
+}
+.post ul li
+{
+    margin: 5px 0;
+    padding: 0 0 0 50px;
+}
+.post ul li:before
+{
+    float: left;
+
+    width: 3px;
+    height: 3px;
+    margin: 9px 0 0 -12px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: #4f9439;
+}
+.post ol
+{
+    padding: 0;
+
+    list-style: none;
+
+    counter-reset: myCounter;
+}
+.post ol li
+{
+    margin: 5px 0;
+    padding: 0 0 0 50px;
+}
+.post ol li:before
+{
+    float: left;
+
+    width: 30px;
+    margin: 0 0 0 -40px;
+
+    content: counter(myCounter);
+    counter-increment: myCounter;
+    text-align: right; 
+
+    color: #4f9439;
+}
 .post img
 {
     max-width: 100%;
+}
+.post hr
+{
+    border: 0;
+    border-top: 2px solid #e5e5e5;
+}
+
+.post__header
+{
+    margin: 0 0 40px;
+}
+.post__header h1
+{
+    font-size: 32px;
+    font-weight: 600; 
+
+    color: #a8d071;
+}
+@media screen and (max-width: 600px)
+{
+    .post__header h1
+    {
+        font-size: 28px;
+    }
 }
 
 .post__box
@@ -3656,6 +3788,15 @@ hr
 
     padding: 40px 65px;
 }
+.post__text_double
+{
+    -webkit-columns: 2 400px;
+       -moz-columns: 2 400px;
+            columns: 2 400px;
+    -webkit-column-gap: 65px;
+       -moz-column-gap: 65px;
+            column-gap: 65px;
+}
 .post__text h1
 {
     font-size: 32px;
@@ -3675,6 +3816,11 @@ hr
         font-size: 20px;
     }
 }
+.post__text hr
+{
+    margin-right: -65px; 
+    margin-left: -65px;
+}
 @media screen and (max-width: 999px)
 {
     .post__text
@@ -3689,6 +3835,11 @@ hr
         display: block;
 
         padding: 20px 20px;
+    }
+    .post__text hr
+    {
+        margin-right: -20px; 
+        margin-left: -20px;
     }
 }
 
@@ -3710,4 +3861,40 @@ hr
 
         text-align: center;
     }
+}
+
+.post__faq-link
+{
+    display: inline-block;
+
+    width: 95%;
+    margin: 0 0 0 20px;
+
+    vertical-align: top; 
+    text-decoration: none;
+
+    color: #a8d071;
+}
+@media screen and (max-width: 999px)
+{
+    .post__faq-link
+    {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .post__faq-link
+    {
+        display: inline;
+
+        width: auto;
+    }
+}
+
+.post__faq-achor
+{
+    text-decoration: none; 
+
+    color: #4f9439;
 }

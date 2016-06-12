@@ -29,6 +29,13 @@ $(function() {
 		return false;
 	});
 
+	$('.post__faq-link').click(function(){
+		$('html, body').animate({
+			scrollTop: $( $.attr(this, 'href') ).offset().top - 140
+		}, 500);
+		return false;
+	});
+
 
 //	$('.js-popup').on('click', function(e) {
 //		e.preventDefault();

@@ -70,7 +70,7 @@
 
 		&:before {
 			counter-increment: myCounter;
-			content:counter(myCounter) ')';
+			content:counter(myCounter);
 			display: inline-block;
 			margin: 0 20px 0 0;
 			color: $c_primary;
