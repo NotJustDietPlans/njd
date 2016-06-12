@@ -95,12 +95,21 @@
 		padding-left: 40px;
 		padding-right: 40px;
 	}
+
+	@include res(pad) {
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
 }
 
 .panel__header-simbol {
 	display: inline-block;
-	margin-right: 25px;
+	margin-right: 10px;
 	vertical-align: middle;
+
+	@media screen and (min-width: 1100px) {
+		margin-right: 25px;
+	}
 }
 
 .panel__header-ico {
@@ -110,9 +119,13 @@
 
 .panel__name {
 	display: inline-block;
-	font-size: 25px;
+	font-size: 18px;
 	font-weight: 400;
 	vertical-align: middle;
+
+	@media screen and (min-width: 1100px) {
+		font-size: 25px;
+	}
 }
 
 .panel__up {
