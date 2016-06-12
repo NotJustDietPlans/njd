@@ -3050,6 +3050,15 @@ hr
 
     color: #a8d071;
 }
+@media screen and (max-width: 999px)
+{
+    .books__title
+    {
+        font-size: 30px; 
+
+        margin: 30px 0;
+    }
+}
 
 .books__list
 {
@@ -3077,6 +3086,13 @@ hr
 {
     margin-bottom: 0;
 }
+@media screen and (max-width: 999px)
+{
+    .books__item
+    {
+        display: block;
+    }
+}
 
 .books__view
 {
@@ -3087,6 +3103,16 @@ hr
 
     text-align: right;
     vertical-align: middle;
+}
+@media screen and (max-width: 999px)
+{
+    .books__view
+    {
+        display: inline-block;
+
+        width: auto;
+        padding: 0;
+    }
 }
 
 .books__photo
@@ -3112,6 +3138,15 @@ hr
 
     color: #4f9439;
 }
+@media screen and (max-width: 999px)
+{
+    .books__name
+    {
+        display: inline-block;
+
+        width: auto;
+    }
+}
 
 .books__page
 {
@@ -3128,6 +3163,17 @@ hr
 
     color: #4c524b;
 }
+@media screen and (max-width: 999px)
+{
+    .books__about
+    {
+        display: block;
+
+        padding: 0 20px 10px;
+
+        text-align: center;
+    }
+}
 
 .books__actions
 {
@@ -3137,6 +3183,18 @@ hr
     padding: 0 4%;
 
     vertical-align: middle;
+}
+@media screen and (max-width: 999px)
+{
+    .books__actions
+    {
+        display: block;
+
+        width: auto;
+        padding: 10px 20px;
+
+        text-align: center;
+    }
 }
 
 .books__action

@@ -8,6 +8,11 @@
 	font-size: 50px;
 	font-weight: 600;
 	text-align: center;
+
+	@include res(pad) {
+		margin: 30px 0;
+		font-size: 30px;
+	}
 }
 
 .books__list {
@@ -34,6 +39,10 @@
 			margin-bottom: 0;
 		}
 	}
+
+	@include res(pad) {
+		display: block;
+	}
 }
 
 .books__view {
@@ -42,6 +51,12 @@
 	padding: 8px 0 8px 2%;
 	text-align: right;
 	vertical-align: middle;
+
+	@include res(pad) {
+		display: inline-block;
+		width: auto;
+		padding: 0;
+	}
 }
 
 .books__photo {
@@ -59,6 +74,11 @@
 	font-weight: 100;
 	white-space: nowrap;
 	vertical-align: middle;
+
+	@include res(pad) {
+		display: inline-block;
+		width: auto;
+	}
 }
 
 .books__page {
@@ -70,6 +90,12 @@
 	font-size: 18px;
 	color: $c_bold;
 	vertical-align: middle;
+
+	@include res(pad) {
+		display: block;
+		padding: 0 20px 10px;
+		text-align: center;
+	}
 }
 
 .books__actions {
@@ -77,6 +103,13 @@
 	width: 100px;
 	padding: 0 4%;
 	vertical-align: middle;
+
+	@include res(pad) {
+		display: block;
+		width: auto;
+		padding: 10px 20px;
+		text-align: center;
+	}
 }
 
 .books__action {
