@@ -9,6 +9,11 @@
 	@media screen and (min-width: 1100px){
 		width: 400px;
 		min-width: 400px;
+
+		&_member {
+			width: 500px;
+			min-width: 500px;
+		}
 	}
 
 	@include res(pad) {
@@ -50,10 +55,19 @@
 .panel__box {
 	overflow: auto;
 	position: relative;
-	padding: 36px 40px;
+	padding: 36px 0;
 	box-sizing: border-box;
 	max-height: 100%;
 
+	.form {
+		padding-left: 20px;
+		padding-right: 20px;
+
+		@media screen and (min-width: 1100px) {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
 
 	@include res(pad) {
 		z-index: 220;
@@ -71,6 +85,35 @@
 	}
 }
 
+.panel__header {
+	margin: 0 0 36px;
+	padding: 0 20px 36px;
+	border-bottom: 1px solid #ececec;
+	color: #179F24;
+
+	@media screen and (min-width: 1100px) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+.panel__header-simbol {
+	display: inline-block;
+	margin-right: 25px;
+	vertical-align: middle;
+}
+
+.panel__header-ico {
+	height: 32px;
+	vertical-align: middle;
+}
+
+.panel__name {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 400;
+	vertical-align: middle;
+}
 
 .panel__up {
 	position: absolute;

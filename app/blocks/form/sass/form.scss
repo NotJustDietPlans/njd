@@ -63,6 +63,10 @@
 		}
 	}
 
+	& + & {
+		margin-top: 20px;
+	}
+
 	&_disabled {
 		&:after {
 			opacity: .3;
@@ -83,6 +87,10 @@
 	pointer-events: none;
 }
 
+.form__star {
+	color: #757575;
+}
+
 .form__input,
 .form__select,
 .form__textarea {
@@ -94,9 +102,9 @@
 	border-radius: 3px;
 	box-sizing: border-box;
 	background: #FFF;
-	color: $c_secondary;
+	color: #939393;
 	font-size: 16px;
-	font-weight: 100;
+	font-weight: 400;
 	outline: none;
 	transition: $s linear;
 
@@ -332,3 +340,8 @@
 	width: 10px;
 }
 
+@include placeholder {
+	color: #c2c2c2;
+	font-style: italic;
+	font-weight: 100;
+}

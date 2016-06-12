@@ -696,7 +696,7 @@ hr
 .form__uploader
 {
     font-size: 17px;
-    font-weight: 100;
+    font-weight: 600;
     line-height: 50px;
 
     display: inline-block;
@@ -894,7 +894,7 @@ hr
     content: '';
     pointer-events: none; 
 
-    background: url('../images/ico_select.png?v=1465734375008') no-repeat 50% 50%;
+    background: url('../images/ico_select.png?v=1465745988870') no-repeat 50% 50%;
 }
 .form__element_input-add:after
 {
@@ -913,6 +913,10 @@ hr
     pointer-events: none; 
 
     color: #c0c0c0;
+}
+.form__element + .form__element
+{
+    margin-top: 20px;
 }
 .form__element_disabled:after
 {
@@ -937,12 +941,17 @@ hr
     color: #88bf3e;
 }
 
+.form__star
+{
+    color: #757575;
+}
+
 .form__input,
 .form__select,
 .form__textarea
 {
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 400;
 
     box-sizing: border-box;
     width: 100%;
@@ -953,7 +962,7 @@ hr
     -webkit-transition: .5s linear;
             transition: .5s linear; 
 
-    color: #9a9a9a;
+    color: #939393;
     border: 2px solid #c0c0c0;
     border-radius: 3px;
     outline: none;
@@ -1244,6 +1253,38 @@ hr
     width: 10px;
 }
 
+.form__input::-webkit-input-placeholder
+{
+    font-weight: 100; 
+    font-style: italic;
+
+    color: #c2c2c2;
+}
+
+.form__input:-moz-placeholder
+{
+    font-weight: 100; 
+    font-style: italic;
+
+    color: #c2c2c2;
+}
+
+.form__input::-moz-placeholder
+{
+    font-weight: 100; 
+    font-style: italic;
+
+    color: #c2c2c2;
+}
+
+.form__input:-ms-input-placeholder
+{
+    font-weight: 100; 
+    font-style: italic;
+
+    color: #c2c2c2;
+}
+
 .table
 {
     margin: 20px 0 0;
@@ -1262,6 +1303,10 @@ hr
     background: #fff;
     box-shadow: 0 5px 13px rgba(0, 0, 0, .2);
 }
+.table_family .table__row
+{
+    box-shadow: none;
+}
 
 .table_th,
 .table_td
@@ -1274,10 +1319,31 @@ hr
 
     vertical-align: middle;
 }
-.table_th:nth-child(1),
-.table_td:nth-child(1)
+.table_th_size,
+.table_td_size
 {
     width: 18%;
+}
+.table_th_age,
+.table_th_edit,
+.table_th_cancel,
+.table_td_age,
+.table_td_edit,
+.table_td_cancel
+{
+    width: 100px;
+
+    text-align: center;
+}
+.table_th_email,
+.table_td_email
+{
+    width: auto;
+}
+.table_th_menu,
+.table_td_menu
+{
+    width: 200px;
 }
 
 .table_th
@@ -1285,6 +1351,14 @@ hr
     text-transform: uppercase; 
 
     color: #939393;
+}
+.table_family .table_th
+{
+    text-transform: none;
+}
+.table_th_name
+{
+    border-left: 5px solid transparent;
 }
 
 .table_td
@@ -1294,6 +1368,27 @@ hr
 .table_td b
 {
     color: #88bf3e;
+}
+.table_td_name
+{
+    border-left: 5px solid #4f9439;
+}
+.table_td_menu
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+.table_td_menu a
+{
+    text-decoration: none; 
+
+    color: #4f9439;
+}
+
+.table__ico
+{
+    width: 34px;
+    height: 34px;
 }
 
 .layout
@@ -1328,7 +1423,7 @@ hr
             transition: .5s linear; 
 
     color: #fff;
-    background: #32422e url('../images/header_bg.jpg?v=1465734375008') repeat 50% 50%;
+    background: #32422e url('../images/header_bg.jpg?v=1465745988870') repeat 50% 50%;
     box-shadow: 0 62px 20px transparent;
 }
 .header_fixed
@@ -1480,9 +1575,9 @@ hr
     padding-top: 40px;
     padding-bottom: 40px;
 
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 auto;
-        flex: 0 1 auto;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
 }
 @media screen and (max-width: 600px)
 {
@@ -1531,7 +1626,7 @@ hr
     content: '';
     vertical-align: top; 
 
-    background: url('../images/ico_back.png?v=1465734375008') no-repeat 0 0;
+    background: url('../images/ico_back.png?v=1465745988870') no-repeat 0 0;
 }
 
 .nav
@@ -1661,57 +1756,57 @@ hr
 }
 .nav__item_recipes .nav__symbol
 {
-    background-image: url('../images/ico_recipes.png?v=1465734375008');
+    background-image: url('../images/ico_recipes.png?v=1465745988870');
 }
 .nav__item_recipes.nav__item_active .nav__symbol,
 .nav__item_recipes:hover .nav__symbol
 {
-    background-image: url('../images/ico_recipes_active.png?v=1465734375008');
+    background-image: url('../images/ico_recipes_active.png?v=1465745988870');
 }
 .nav__item_books .nav__symbol
 {
-    background-image: url('../images/ico_books.png?v=1465734375008');
+    background-image: url('../images/ico_books.png?v=1465745988870');
 }
 .nav__item_books.nav__item_active .nav__symbol,
 .nav__item_books:hover .nav__symbol
 {
-    background-image: url('../images/ico_books_active.png?v=1465734375008');
+    background-image: url('../images/ico_books_active.png?v=1465745988870');
 }
 .nav__item_forum .nav__symbol
 {
-    background-image: url('../images/ico_forum.png?v=1465734375008');
+    background-image: url('../images/ico_forum.png?v=1465745988870');
 }
 .nav__item_forum.nav__item_active .nav__symbol,
 .nav__item_forum:hover .nav__symbol
 {
-    background-image: url('../images/ico_forum_active.png?v=1465734375008');
+    background-image: url('../images/ico_forum_active.png?v=1465745988870');
 }
-.nav__item_member .nav__symbol
+.nav__item_family .nav__symbol
 {
-    background-image: url('../images/ico_member.png?v=1465734375008');
+    background-image: url('../images/ico_member.png?v=1465745988870');
 }
-.nav__item_member.nav__item_active .nav__symbol,
-.nav__item_member:hover .nav__symbol
+.nav__item_family.nav__item_active .nav__symbol,
+.nav__item_family:hover .nav__symbol
 {
-    background-image: url('../images/ico_member_active.png?v=1465734375008');
+    background-image: url('../images/ico_member_active.png?v=1465745988870');
 }
 .nav__item_menu .nav__symbol
 {
-    background-image: url('../images/ico_menu.png?v=1465734375008');
+    background-image: url('../images/ico_menu.png?v=1465745988870');
 }
 .nav__item_menu.nav__item_active .nav__symbol,
 .nav__item_menu:hover .nav__symbol
 {
-    background-image: url('../images/ico_menu_active.png?v=1465734375008');
+    background-image: url('../images/ico_menu_active.png?v=1465745988870');
 }
 .nav__item_contact .nav__symbol
 {
-    background-image: url('../images/ico_contact.png?v=1465734375008');
+    background-image: url('../images/ico_contact.png?v=1465745988870');
 }
 .nav__item_contact.nav__item_active .nav__symbol,
 .nav__item_contact:hover .nav__symbol
 {
-    background-image: url('../images/ico_contact_active.png?v=1465734375008');
+    background-image: url('../images/ico_contact_active.png?v=1465745988870');
 }
 
 .nav__ico
@@ -2083,6 +2178,11 @@ hr
         width: 400px;
         min-width: 400px;
     }
+    .panel_member
+    {
+        width: 500px;
+        min-width: 500px;
+    }
 }
 @media screen and (max-width: 999px)
 {
@@ -2141,7 +2241,20 @@ hr
 
     box-sizing: border-box;
     max-height: 100%; 
-    padding: 36px 40px;
+    padding: 36px 0;
+}
+.panel__box .form
+{
+    padding-right: 20px; 
+    padding-left: 20px;
+}
+@media screen and (min-width: 1100px)
+{
+    .panel__box .form
+    {
+        padding-right: 40px; 
+        padding-left: 40px;
+    }
 }
 @media screen and (max-width: 999px)
 {
@@ -2164,6 +2277,49 @@ hr
         padding-top: 147px;
         padding-bottom: 20px;
     }
+}
+
+.panel__header
+{
+    margin: 0 0 36px;
+    padding: 0 20px 36px;
+
+    color: #179f24; 
+    border-bottom: 1px solid #ececec;
+}
+@media screen and (min-width: 1100px)
+{
+    .panel__header
+    {
+        padding-right: 40px; 
+        padding-left: 40px;
+    }
+}
+
+.panel__header-simbol
+{
+    display: inline-block;
+
+    margin-right: 25px;
+
+    vertical-align: middle;
+}
+
+.panel__header-ico
+{
+    height: 32px;
+
+    vertical-align: middle;
+}
+
+.panel__name
+{
+    font-size: 25px;
+    font-weight: 400;
+
+    display: inline-block;
+
+    vertical-align: middle;
 }
 
 .panel__up
@@ -2252,7 +2408,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_direct_green.png?v=1465734375008') no-repeat 0 50%;
+    background: url('../images/ico_direct_green.png?v=1465745988870') no-repeat 0 50%;
     background-size: auto 100%;
 }
 @media screen and (max-width: 999px)
@@ -2666,7 +2822,7 @@ hr
     height: 38px;
     margin: 50px 0;
 
-    background: url('../images/ico_apple.png?v=1465734375008') no-repeat 50% 50%;
+    background: url('../images/ico_apple.png?v=1465745988870') no-repeat 50% 50%;
     background-size: 30px 38px;
 }
 
@@ -2725,7 +2881,7 @@ hr
 
     content: '';
 
-    background: url('../images/border.png?v=1465734375008') repeat-y 0 0;
+    background: url('../images/border.png?v=1465745988870') repeat-y 0 0;
 }
 @media screen and (max-width: 999px)
 {
@@ -3017,7 +3173,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_cross.png?v=1465734375008') no-repeat 0 0;
+    background: url('../images/ico_cross.png?v=1465745988870') no-repeat 0 0;
 }
 
 .mosaic__menu

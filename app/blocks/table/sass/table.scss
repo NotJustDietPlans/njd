@@ -11,6 +11,10 @@
 		background: $c_light;
 		box-shadow: 0 5px 13px rgba(#000, .2);
 	}
+
+	.table_family & {
+		box-shadow: none;
+	}
 }
 
 
@@ -22,14 +26,37 @@
 	box-sizing: border-box;
 	vertical-align: middle;
 
-	&:nth-child(1) {
+	&_size {
 		width: 18%;
+	}
+
+	&_age,
+	&_edit,
+	&_cancel {
+		width: 100px;
+		text-align: center;
+	}
+
+	&_email {
+		width: auto;
+	}
+
+	&_menu {
+		width: 200px;
 	}
 }
 
 .table_th {
 	color: #939393;
 	text-transform: uppercase;
+
+	.table_family & {
+		text-transform: none;
+	}
+
+	&_name {
+		border-left: 5px solid transparent;
+	}
 }
 
 .table_td {
@@ -38,4 +65,32 @@
 	b {
 		color: #88bf3e;
 	}
+
+	&_name {
+		border-left: 5px solid $c_primary;
+	}
+
+	&_menu {
+		font-size: 20px;
+		font-weight: 600;
+
+		a {
+			color: $c_primary;
+			text-decoration: none;
+		}
+	}
 }
+
+.table__ico {
+	width: 34px;
+	height: 34px;
+}
+
+
+
+
+
+
+
+
+

@@ -113,11 +113,11 @@
 		background-image: url($path + '/images/ico_forum_active.png' + $ver);
 	}
 
-	.nav__item_member & {
+	.nav__item_family & {
 		background-image: url($path + '/images/ico_member.png' + $ver);
 	}
-	.nav__item_member.nav__item_active &,
-	.nav__item_member:hover & {
+	.nav__item_family.nav__item_active &,
+	.nav__item_family:hover & {
 		background-image: url($path + '/images/ico_member_active.png' + $ver);
 	}
 
