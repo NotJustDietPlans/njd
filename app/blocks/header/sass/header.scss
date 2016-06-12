@@ -13,6 +13,10 @@
 
 	&_fixed {
 		box-shadow: 0 $g_nav 20px rgba(#000, .5);
+
+		.panel-open & {
+			box-shadow: none;
+		}
 	}
 }
 

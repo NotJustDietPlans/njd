@@ -20,6 +20,30 @@
 	@media screen and (min-width: 1700px){
 		width: 20%;
 	}
+
+	@include res(fablet) {
+		width: 100%;
+	}
+}
+
+.panel + .section__wrapper .recipes__item {
+	width: 50%;
+
+	@media screen and (min-width: 1430px){
+		width: 33.33%;
+	}
+
+	@media screen and (min-width: 1760px){
+		width: 25%;
+	}
+
+	@media screen and (min-width: 2100px){
+		width: 20%;
+	}
+
+	@include res(fablet) {
+		width: 100%;
+	}
 }
 
 .recipes__box {
@@ -30,6 +54,10 @@
 	background: $c_light;
 	box-shadow: 0 5px 13px rgba(#000, .2);
 	text-decoration: none;
+
+	@media screen and (max-width: 340px){
+		width: auto;
+	}
 }
 
 .recipes__cover {

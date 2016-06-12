@@ -16,7 +16,8 @@ body {
 	color: $c_text;
 }
 
-.nav-open {
+.nav-open,
+.panel-open {
 	overflow: hidden;
 }
 
@@ -133,18 +134,20 @@ hr {
 	margin-right: auto;
 }
 
-.wrapper {
+.wrapper,
+.wrapper_narrow {
 	position: relative;
 	max-width: $g_layout_max;
 	min-width: $g_layout_min - 40;
 	margin: 0 auto;
 	padding: 0 20px;
+
+	@include res(phone) {
+		min-width: $g_layout_min - 20;
+		padding: 0 10px;
+	}
 }
 
 .wrapper_narrow {
-	position: relative;
 	max-width: $g_narrow;
-	min-width: $g_layout_min - 40;
-	margin: 0 auto;
-	padding: 0 20px;
 }

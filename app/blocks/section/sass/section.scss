@@ -1,10 +1,23 @@
 .section {
 	flex: 1;
-	padding: $g_header + $g_nav + 40px 0 40px;
+	display: flex;
+	padding: $g_header + $g_nav 0 0;
 }
 
 .section__wrapper {
 	@extend .wrapper;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	flex: 0 1 auto;
+	//
+	//.panel + & {
+	//	max-width: $g_narrow;
+	//}
+
+	@include res(smart) {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 }
 
 .section__title {

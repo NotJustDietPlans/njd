@@ -1,15 +1,16 @@
 .button {
 	display: inline-block;
 	min-width: 100px;
-	height: 40px;
+	height: 50px;
 	padding: 0 10px;
 	border: 0;
+	border-radius: 50px;
 	box-sizing: border-box;
-	background: $c_accent;
+	background: $c_primary;
 	color: $c_light;
 	font-weight: 100;
-	font-size: 26px;
-	line-height: 40px;
+	font-size: 17px;
+	line-height: 50px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -21,26 +22,22 @@
 
 	&:hover {
 		background: $c_accent_hover;
-		color: $c_light;
 		text-decoration: none;
-		will-change: background;
 	}
 
 	&_accent {
 		background: $c_accent;
-		background: linear-gradient(to bottom, #E33200 0%,#F77E00 100%);
 
 		&:hover {
 			background: $c_accent_hover;
-			background: linear-gradient(to bottom, #E33200 0%,#E33200 100%);
 		}
 	}
 
 	&_light {
-		background: $c_alt;
+		background: #d9d9d9;
 
 		&:hover {
-			background: $c_alt_hover;
+			background: #d9d9d9 + #111;
 		}
 	}
 
