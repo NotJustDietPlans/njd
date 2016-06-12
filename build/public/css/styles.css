@@ -510,7 +510,8 @@ hr
 .wrapper,
 .section__wrapper,
 .wrapper_narrow,
-.footer__inner
+.footer__inner,
+.paginator
 {
     position: relative;
 
@@ -524,7 +525,8 @@ hr
     .wrapper,
     .section__wrapper,
     .wrapper_narrow,
-    .footer__inner
+    .footer__inner,
+    .paginator
     {
         min-width: 300px;
         padding: 0 10px;
@@ -532,7 +534,8 @@ hr
 }
 
 .wrapper_narrow,
-.footer__inner
+.footer__inner,
+.paginator
 {
     max-width: 1520px;
 }
@@ -2198,6 +2201,177 @@ hr
     text-transform: uppercase; 
 
     color: #aeaeae;
+}
+
+.paginator
+{
+    overflow: hidden;
+
+    margin: 50px 0 0;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.paginator__first,
+.paginator__last,
+.paginator__prev,
+.paginator__next
+{
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    vertical-align: top;
+}
+.paginator__first .paginator__link,
+.paginator__last .paginator__link,
+.paginator__prev .paginator__link,
+.paginator__next .paginator__link
+{
+    font-size: 10px;
+
+    width: 60px;
+    padding: 0 10px;
+
+    text-align: right; 
+    text-transform: uppercase;
+
+    color: #4f4f4f;
+}
+.paginator__first .paginator__link:before,
+.paginator__last .paginator__link:before,
+.paginator__prev .paginator__link:before,
+.paginator__next .paginator__link:before
+{
+    float: left;
+
+    width: 5px;
+    height: 9px;
+    margin: 11px 0 0;
+
+    content: '';
+
+    background: url('../images/ico_direct_green.png?v=1465734375008') no-repeat 0 50%;
+    background-size: auto 100%;
+}
+@media screen and (max-width: 999px)
+{
+    .paginator__first,
+    .paginator__last,
+    .paginator__prev,
+    .paginator__next
+    {
+        padding-right: 5px; 
+        padding-left: 5px;
+    }
+    .paginator__first .paginator__link,
+    .paginator__last .paginator__link,
+    .paginator__prev .paginator__link,
+    .paginator__next .paginator__link
+    {
+        width: 30px;
+        padding: 0;
+
+        text-align: center !important;
+    }
+    .paginator__first .paginator__link:before,
+    .paginator__last .paginator__link:before,
+    .paginator__prev .paginator__link:before,
+    .paginator__next .paginator__link:before
+    {
+        display: inline-block; 
+        float: none !important;
+    }
+}
+
+.paginator__first .paginator__link:before,
+.paginator__last .paginator__link:before
+{
+    width: 10px;
+}
+
+.paginator__last .paginator__link,
+.paginator__next .paginator__link
+{
+    text-align: left;
+}
+.paginator__last .paginator__link:before,
+.paginator__next .paginator__link:before
+{
+    float: right;
+
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+@media screen and (max-width: 999px)
+{
+    .paginator__text
+    {
+        display: none;
+    }
+}
+
+.paginator__list
+{
+    display: inline-block;
+    overflow: hidden;
+
+    margin: 0 auto;
+    padding: 5px;
+
+    list-style: none;
+
+    text-align: center;
+    vertical-align: top;
+}
+
+.paginator__item
+{
+    display: inline-block;
+
+    margin: 0 12px;
+}
+@media screen and (max-width: 999px)
+{
+    .paginator__item
+    {
+        margin-right: 5px; 
+        margin-left: 5px;
+    }
+}
+
+.paginator__link
+{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+
+    display: block;
+
+    min-width: 20px;
+    height: 30px;
+    margin: 10px 0 0;
+    padding: 0 5px;
+
+    text-decoration: none; 
+
+    color: #d4d4d4;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+}
+.paginator__link:hover
+{
+    text-decoration: none; 
+
+    color: #4c524b;
+}
+.paginator__item_active .paginator__link
+{
+    color: #a8d071;
 }
 
 .recipes

@@ -1,72 +1,127 @@
 .paginator {
+	@extend .wrapper_narrow;
 	overflow: hidden;
 	margin: 50px 0 0;
 	text-align: center;
 	text-transform: uppercase;
-
-	.posts_blog & {
-		padding-right: 20px;
-	}
 }
 
+.paginator__first,
+.paginator__last,
 .paginator__prev,
 .paginator__next {
-	float: left;
-	width: 166px;
+	display: inline-block;
+	padding: 5px 10px;
+	vertical-align: top;
+
+	.paginator__link {
+		width: 60px;
+		padding: 0 10px;
+		color: #4f4f4f;
+		font-size: 10px;
+		text-transform: uppercase;
+		text-align: right;
+
+		&:before {
+			content: '';
+			float: left;
+			width: 5px;
+			height: 9px;
+			margin: 11px 0 0;
+			background: url($path + '/images/ico_direct_green.png' + $ver) no-repeat 0 50%;
+			background-size: auto 100%;
+		}
+	}
 
 	@include res(pad) {
-		width: $g_v;
+		padding-left: 5px;
+		padding-right: 5px;
+
+		.paginator__link {
+			width: 30px;
+			padding: 0;
+			text-align: center !important;
+
+			&:before {
+				float: none !important;
+				display: inline-block;
+			}
+		}
 	}
 }
 
+.paginator__first,
+.paginator__last {
+	.paginator__link {
+		&:before {
+			width: 10px;
+		}
+	}
+}
+
+.paginator__last,
 .paginator__next {
-	float: right;
+	.paginator__link {
+		text-align: left;
+
+		&:before {
+			float: right;
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.paginator__text {
+	@include res(pad) {
+		display: none;
+	}
 }
 
 .paginator__list {
+	display: inline-block;
 	overflow: hidden;
 	margin: 0 auto;
-	padding: 0;
+	padding: 5px;
 	list-style: none;
 	text-align: center;
+	vertical-align: top;
+	//
+	//@include res(fablet) {
+	//	display: block;
+	//}
 }
 
 .paginator__item {
 	display: inline-block;
-	margin: 0 10px;
+	margin: 0 12px;
 
 	@include res(pad) {
-		margin: 0 5px;
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 }
 
 .paginator__link {
 	display: block;
-	height: 48px;
-	min-width: 28px;
+	height: 30px;
+	min-width: 20px;
 	margin: 10px 0 0;
-	padding: 0 10px;
-	border: 1px solid $c_border;
+	padding: 0 5px;
 	border-radius: $br;
-	color: $c_text;
-	line-height: 48px;
-	font-size: $fs_big;
+	background: $c_light;
+	box-shadow: 0 3px 5px rgba(#000, .2);
+	color: #d4d4d4;
+	line-height: 30px;
+	font-size: 18px;
 	font-weight: 600;
+	text-decoration: none;
 
 	&:hover {
 		color: $c_bold;
 		text-decoration: none;
 	}
-	.paginator__item_active &,
-	.paginator__prev &,
-	.paginator__next & {
-		border-color: $c_primary;
-		background: $c_primary;
-		color: $c_light;
 
-		&:hover {
-			color: $c_light;
-			background: $c_primary_hover;
-		}
+	.paginator__item_active & {
+		color: $c_accent;
 	}
 }
