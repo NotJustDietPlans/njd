@@ -1,66 +1,61 @@
 .post {
-	overflow: hidden;
-	text-align: justify;
+	position: relative;
+
+	img {
+		max-width: 100%;
+	}
 }
 
-.post__title {
-	@extend .title_h3;
-	margin: 0 0 10px;
-	font-weight: bold;
-	text-transform: none;
-	text-align: left;
+.post__box {
+	display: table;
+	width: 100%;
+	background: $c_light;
+	box-shadow: 0 5px 13px rgba(#000, .2);
 
-	.post__header & {
-		@extend .title_h1;
-		margin: 0 0 40px;
-		font-size: 96px;
+	@include res(pad) {
+		display: block;
+	}
+}
+
+.post__text {
+	display: table-cell;
+	padding: 40px 65px;
+
+	h1 {
+		margin: 0 0 30px;
+		color: $c_primary;
+		font-size: 32px;
+		font-weight: 600;
+		text-align: left;
+		text-transform: none;
+
+		@include res(smart) {
+			font-size: 20px;
+		}
+	}
+
+	@include res(pad) {
+		display: block;
+	}
+
+	@include res(smart) {
+		display: block;
+		padding: 20px 20px;
+	}
+}
+
+.post__sidebar {
+	display: table-cell;
+	width: 300px;
+	padding: 40px 65px 40px 0;
+
+	@include res(pad) {
+		display: block;
+		width: auto;
+		padding: 0 20px 20px;
 		text-align: center;
 	}
 }
-
-.post__header {
-	@extend .title_h1;
-	margin: 0;
-}
-
-.post__header {
-	margin-bottom: $g_v/2;
-}
-
-.post__footer {
-	margin-top: $g_v;
-
-	@include res(pad) {
-		margin-top: 20px;
-	}
-}
-
-
-.post__offer,
-.post__values {
-	margin-top: $g_v;
-
-	&:first-child,
-	&:nth-child(2) {
-		margin-top: 20px;
-	}
-
-	@include res(pad) {
-		margin-top: 20px;
-	}
-}
-
-.post__job {
-	@include res(smart) {
-		margin: 0 0 40px;
-		padding-left: 0 !important;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-}
-
 
 
 

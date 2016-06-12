@@ -894,7 +894,7 @@ hr
     content: '';
     pointer-events: none; 
 
-    background: url('../images/ico_select.png?v=1465755999501') no-repeat 50% 50%;
+    background: url('../images/ico_select.png?v=1465756906609') no-repeat 50% 50%;
 }
 .form__element_input-add:after
 {
@@ -1423,7 +1423,7 @@ hr
             transition: .5s linear; 
 
     color: #fff;
-    background: #32422e url('../images/header_bg.jpg?v=1465755999501') repeat 50% 50%;
+    background: #32422e url('../images/header_bg.jpg?v=1465756906609') repeat 50% 50%;
     box-shadow: 0 62px 20px transparent;
 }
 .header_fixed
@@ -1626,7 +1626,7 @@ hr
     content: '';
     vertical-align: top; 
 
-    background: url('../images/ico_back.png?v=1465755999501') no-repeat 0 0;
+    background: url('../images/ico_back.png?v=1465756906609') no-repeat 0 0;
 }
 
 .nav
@@ -1758,57 +1758,57 @@ hr
 }
 .nav__item_recipes .nav__symbol
 {
-    background-image: url('../images/ico_recipes.png?v=1465755999501');
+    background-image: url('../images/ico_recipes.png?v=1465756906609');
 }
 .nav__item_recipes.nav__item_active .nav__symbol,
 .nav__item_recipes:hover .nav__symbol
 {
-    background-image: url('../images/ico_recipes_active.png?v=1465755999501');
+    background-image: url('../images/ico_recipes_active.png?v=1465756906609');
 }
 .nav__item_books .nav__symbol
 {
-    background-image: url('../images/ico_books.png?v=1465755999501');
+    background-image: url('../images/ico_books.png?v=1465756906609');
 }
 .nav__item_books.nav__item_active .nav__symbol,
 .nav__item_books:hover .nav__symbol
 {
-    background-image: url('../images/ico_books_active.png?v=1465755999501');
+    background-image: url('../images/ico_books_active.png?v=1465756906609');
 }
 .nav__item_forum .nav__symbol
 {
-    background-image: url('../images/ico_forum.png?v=1465755999501');
+    background-image: url('../images/ico_forum.png?v=1465756906609');
 }
 .nav__item_forum.nav__item_active .nav__symbol,
 .nav__item_forum:hover .nav__symbol
 {
-    background-image: url('../images/ico_forum_active.png?v=1465755999501');
+    background-image: url('../images/ico_forum_active.png?v=1465756906609');
 }
 .nav__item_family .nav__symbol
 {
-    background-image: url('../images/ico_member.png?v=1465755999501');
+    background-image: url('../images/ico_member.png?v=1465756906609');
 }
 .nav__item_family.nav__item_active .nav__symbol,
 .nav__item_family:hover .nav__symbol
 {
-    background-image: url('../images/ico_member_active.png?v=1465755999501');
+    background-image: url('../images/ico_member_active.png?v=1465756906609');
 }
 .nav__item_menu .nav__symbol
 {
-    background-image: url('../images/ico_menu.png?v=1465755999501');
+    background-image: url('../images/ico_menu.png?v=1465756906609');
 }
 .nav__item_menu.nav__item_active .nav__symbol,
 .nav__item_menu:hover .nav__symbol
 {
-    background-image: url('../images/ico_menu_active.png?v=1465755999501');
+    background-image: url('../images/ico_menu_active.png?v=1465756906609');
 }
 .nav__item_contact .nav__symbol
 {
-    background-image: url('../images/ico_contact.png?v=1465755999501');
+    background-image: url('../images/ico_contact.png?v=1465756906609');
 }
 .nav__item_contact.nav__item_active .nav__symbol,
 .nav__item_contact:hover .nav__symbol
 {
-    background-image: url('../images/ico_contact_active.png?v=1465755999501');
+    background-image: url('../images/ico_contact_active.png?v=1465756906609');
 }
 
 .nav__ico
@@ -2432,7 +2432,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_direct_green.png?v=1465755999501') no-repeat 0 50%;
+    background: url('../images/ico_direct_green.png?v=1465756906609') no-repeat 0 50%;
     background-size: auto 100%;
 }
 @media screen and (max-width: 999px)
@@ -2846,7 +2846,7 @@ hr
     height: 38px;
     margin: 50px 0;
 
-    background: url('../images/ico_apple.png?v=1465755999501') no-repeat 50% 50%;
+    background: url('../images/ico_apple.png?v=1465756906609') no-repeat 50% 50%;
     background-size: 30px 38px;
 }
 
@@ -2905,7 +2905,7 @@ hr
 
     content: '';
 
-    background: url('../images/border.png?v=1465755999501') repeat-y 0 0;
+    background: url('../images/border.png?v=1465756906609') repeat-y 0 0;
 }
 @media screen and (max-width: 999px)
 {
@@ -3379,7 +3379,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_cross.png?v=1465755999501') no-repeat 0 0;
+    background: url('../images/ico_cross.png?v=1465756906609') no-repeat 0 0;
 }
 
 .mosaic__menu
@@ -3622,4 +3622,92 @@ hr
 .articles__link:hover
 {
     text-decoration: underline;
+}
+
+.post
+{
+    position: relative;
+}
+.post img
+{
+    max-width: 100%;
+}
+
+.post__box
+{
+    display: table;
+
+    width: 100%;
+
+    background: #fff;
+    box-shadow: 0 5px 13px rgba(0, 0, 0, .2);
+}
+@media screen and (max-width: 999px)
+{
+    .post__box
+    {
+        display: block;
+    }
+}
+
+.post__text
+{
+    display: table-cell;
+
+    padding: 40px 65px;
+}
+.post__text h1
+{
+    font-size: 32px;
+    font-weight: 600;
+
+    margin: 0 0 30px;
+
+    text-align: left;
+    text-transform: none; 
+
+    color: #4f9439;
+}
+@media screen and (max-width: 600px)
+{
+    .post__text h1
+    {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 999px)
+{
+    .post__text
+    {
+        display: block;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .post__text
+    {
+        display: block;
+
+        padding: 20px 20px;
+    }
+}
+
+.post__sidebar
+{
+    display: table-cell;
+
+    width: 300px;
+    padding: 40px 65px 40px 0;
+}
+@media screen and (max-width: 999px)
+{
+    .post__sidebar
+    {
+        display: block;
+
+        width: auto;
+        padding: 0 20px 20px;
+
+        text-align: center;
+    }
 }

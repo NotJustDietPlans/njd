@@ -1,0 +1,17 @@
+{% extends '../blocks/layout/html/layout.html' %}
+
+{% block meta-title %}NotJustDietPlans - Article{% endblock %}
+{% block meta-description %}NotJustDietPlans{% endblock %}
+{% block meta-keywords %}NotJustDietPlans Keywords{% endblock %}
+{% block meta-url %}index.html{% endblock %}
+{% block meta-image %}./public/uploads/soc_index.jpg{% endblock %}
+
+{% set ver = '?v=' + Date.now() %}
+
+{% set path = './public' %}
+
+{% set layout_class = '_article' %}
+
+{% block content %}
+	{% include "../blocks/section/html/section_article.html" %}
+{% endblock %}
