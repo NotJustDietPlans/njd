@@ -6,6 +6,10 @@
 	display: flex;
 	background: $c_light;
 	box-shadow: 0 10px 20px rgba(#000, .08);
+
+	@include res(pad) {
+		display: block;
+	}
 }
 
 .recipe__cover {
@@ -16,6 +20,10 @@
 	margin: 0;
 	border: 30px solid transparent;
 	box-sizing: border-box;
+
+	@include res(pad) {
+		width: auto;
+	}
 }
 
 .recipe__photo {
@@ -31,6 +39,10 @@
 	padding: 30px;
 	box-sizing: border-box;
 	text-align: center;
+
+	@include res(pad) {
+		width: auto;
+	}
 }
 
 .recipe__company {
@@ -46,6 +58,10 @@
 	color: $c_bold;
 	font-size: 48px;
 	font-weight: 900;
+
+	@include res(fablet) {
+		font-size: 32px;
+	}
 }
 
 .recipe__separator {
@@ -79,6 +95,11 @@
 	columns: 2 280px;
 	column-gap: 180px;
 
+	@include res(fablet) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
 	&:before {
 		content: '';
 		position: absolute;
@@ -87,6 +108,10 @@
 		left: 50%;
 		width: 1px;
 		background: url($path + '/images/border.png' + $ver) repeat-y 0 0;
+
+		@include res(pad) {
+			display: none;
+		}
 	}
 
 	h2 {
@@ -94,6 +119,11 @@
 		color: $c_accent;
 		font-size: 40px;
 		font-weight: 600;
+
+		@include res(pad) {
+			margin-bottom: 30px;
+			font-size: 30px;
+		}
 	}
 
 	ul {

@@ -4,8 +4,7 @@
 }
 
 .mosaic__directions {
-	float: left;
-	width: 49%;
+	margin: 0 0 30px;
 
 	h2 {
 		margin: 0 0 30px;
@@ -41,6 +40,12 @@
 			font-weight: bold;
 		}
 	}
+
+	@include res(full) {
+		float: left;
+		width: 49%;
+		margin: 0;
+	}
 }
 
 .mosaic__serving,
@@ -48,8 +53,24 @@
 .mosaic__not,
 .mosaic__served {
 	float: left;
-	margin: 0 0 40px 2%;
-	width: 23.5%;
+	margin: 0 0 40px 0;
+	width: 49%;
+
+	@include res(full) {
+		width: 23.5%;
+		margin: 0 0 40px 2%;
+	}
+
+	@include res(fablet) {
+		float: none;
+		width: auto;
+		margin: 0 0 20px 0 !important;
+	}
+}
+
+.mosaic__cooking,
+.mosaic__served {
+	margin-left: 2%;
 }
 
 
@@ -65,9 +86,18 @@
 	box-shadow: 0 5px 13px rgba(#000, .2);
 
 	.mosaic__directions & {
-		height: 780px;
-		padding: 0 100px;
+		height: auto;
+		padding: 30px 80px;
 		text-align: left;
+
+		@include res(full) {
+			height: 780px;
+			padding: 0 100px;
+		}
+
+		@include res(fablet) {
+			padding: 20px 20px;
+		}
 	}
 }
 

@@ -2587,6 +2587,13 @@ hr
     background: #fff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
 }
+@media screen and (max-width: 999px)
+{
+    .recipe__post
+    {
+        display: block;
+    }
+}
 
 .recipe__cover
 {
@@ -2595,6 +2602,13 @@ hr
     margin: 0;
 
     border: 30px solid transparent;
+}
+@media screen and (max-width: 999px)
+{
+    .recipe__cover
+    {
+        width: auto;
+    }
 }
 
 .recipe__photo
@@ -2611,6 +2625,13 @@ hr
     padding: 30px;
 
     text-align: center;
+}
+@media screen and (max-width: 999px)
+{
+    .recipe__content
+    {
+        width: auto;
+    }
 }
 
 .recipe__company
@@ -2631,6 +2652,13 @@ hr
     margin: 0;
 
     color: #4c524b;
+}
+@media screen and (max-width: 767px)
+{
+    .recipe__title
+    {
+        font-size: 32px;
+    }
 }
 
 .recipe__separator
@@ -2678,6 +2706,14 @@ hr
        -moz-column-gap: 180px;
             column-gap: 180px;
 }
+@media screen and (max-width: 767px)
+{
+    .recipe__ingredients
+    {
+        padding-right: 20px; 
+        padding-left: 20px;
+    }
+}
 .recipe__ingredients:before
 {
     position: absolute;
@@ -2691,6 +2727,13 @@ hr
 
     background: url('../images/border.png?v=1465734375008') repeat-y 0 0;
 }
+@media screen and (max-width: 999px)
+{
+    .recipe__ingredients:before
+    {
+        display: none;
+    }
+}
 .recipe__ingredients h2
 {
     font-size: 40px;
@@ -2699,6 +2742,15 @@ hr
     margin: 0 0 60px;
 
     color: #a8d071;
+}
+@media screen and (max-width: 999px)
+{
+    .recipe__ingredients h2
+    {
+        font-size: 30px; 
+
+        margin-bottom: 30px;
+    }
 }
 .recipe__ingredients ul
 {
@@ -2733,9 +2785,7 @@ hr
 
 .mosaic__directions
 {
-    float: left;
-
-    width: 49%;
+    margin: 0 0 30px;
 }
 .mosaic__directions h2
 {
@@ -2781,6 +2831,16 @@ hr
 
     color: #88bf3e;
 }
+@media screen and (min-width: 1280px)
+{
+    .mosaic__directions
+    {
+        float: left;
+
+        width: 49%;
+        margin: 0;
+    }
+}
 
 .mosaic__serving,
 .mosaic__cooking,
@@ -2789,8 +2849,38 @@ hr
 {
     float: left;
 
-    width: 23.5%; 
-    margin: 0 0 40px 2%;
+    width: 49%; 
+    margin: 0 0 40px 0;
+}
+@media screen and (min-width: 1280px)
+{
+    .mosaic__serving,
+    .mosaic__cooking,
+    .mosaic__not,
+    .mosaic__served
+    {
+        width: 23.5%;
+        margin: 0 0 40px 2%;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    .mosaic__serving,
+    .mosaic__cooking,
+    .mosaic__not,
+    .mosaic__served
+    {
+        float: none;
+
+        width: auto;
+        margin: 0 0 20px 0 !important;
+    }
+}
+
+.mosaic__cooking,
+.mosaic__served
+{
+    margin-left: 2%;
 }
 
 .mosaic__box
@@ -2814,10 +2904,25 @@ hr
 }
 .mosaic__directions .mosaic__box
 {
-    height: 780px;
-    padding: 0 100px;
+    height: auto;
+    padding: 30px 80px;
 
     text-align: left;
+}
+@media screen and (min-width: 1280px)
+{
+    .mosaic__directions .mosaic__box
+    {
+        height: 780px;
+        padding: 0 100px;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    .mosaic__directions .mosaic__box
+    {
+        padding: 20px 20px;
+    }
 }
 
 .mosaic__content
