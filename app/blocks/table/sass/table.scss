@@ -1,5 +1,9 @@
 .table {
 	margin: 20px 0 0;
+
+	&_sitemap {
+		border-top: 1px solid #d9d9d9;
+	}
 }
 
 .table__row {
@@ -10,9 +14,14 @@
 		margin: 15px 0 0;
 		background: $c_light;
 		box-shadow: 0 5px 13px rgba(#000, .2);
+
+		.table_sitemap & {
+			margin: 10px 0 0;
+		}
 	}
 
-	.table_family & {
+	.table_family &,
+	.table_sitemap & {
 		box-shadow: none;
 	}
 }
@@ -37,12 +46,19 @@
 		text-align: center;
 	}
 
-	&_email {
+	&_email,
+	&_location {
 		width: auto;
 	}
 
 	&_menu {
 		width: 200px;
+	}
+
+	&_modification {
+		width: 25%;
+		min-width: 200px;
+		white-space: nowrap;
 	}
 }
 
@@ -51,6 +67,12 @@
 	text-transform: uppercase;
 
 	.table_family & {
+		text-transform: none;
+	}
+
+	.table_sitemap & {
+		padding-top: 20px;
+		padding-bottom: 10px;
 		text-transform: none;
 	}
 
@@ -70,6 +92,15 @@
 		border-left: 5px solid $c_primary;
 	}
 
+	&_location {
+		font-weight: 600;
+
+		a {
+			color: $c_primary;
+			text-decoration: none;
+		}
+	}
+
 	&_menu {
 		font-size: 20px;
 		font-weight: 600;
@@ -78,6 +109,12 @@
 			color: $c_primary;
 			text-decoration: none;
 		}
+	}
+
+	.table_sitemap & {
+		height: auto;
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 }
 
