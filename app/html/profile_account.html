@@ -1,0 +1,19 @@
+{% extends '../blocks/layout/html/layout.html' %}
+
+{% block meta-title %}NotJustDietPlans - My account{% endblock %}
+{% block meta-description %}NotJustDietPlans{% endblock %}
+{% block meta-keywords %}NotJustDietPlans Keywords{% endblock %}
+{% block meta-url %}index.html{% endblock %}
+{% block meta-image %}./public/uploads/soc_index.jpg{% endblock %}
+
+{% set ver = '?v=' + Date.now() %}
+
+{% set path = './public' %}
+
+{% set layout_class = '_profile' %}
+
+{% set menu_account = ' menu__item_active' %}
+
+{% block content %}
+	{% include "../blocks/section/html/section_account.html" %}
+{% endblock %}

@@ -59,6 +59,10 @@
 	box-sizing: border-box;
 	max-height: 100%;
 
+	.panel_menu & {
+		padding-top: 0;
+	}
+
 	.form {
 		padding-left: 20px;
 		padding-right: 20px;
