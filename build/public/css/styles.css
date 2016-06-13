@@ -878,7 +878,7 @@ hr
     content: '';
     pointer-events: none; 
 
-    background: url('../images/ico_select.png?v=1465812436130') no-repeat 50% 50%;
+    background: url('../images/ico_select.png?v=1465813564176') no-repeat 50% 50%;
 }
 .form__element_input-add:after
 {
@@ -1449,7 +1449,7 @@ hr
             transition: .5s linear; 
 
     color: #fff;
-    background: #32422e url('../images/header_bg.jpg?v=1465812436130') repeat 50% 50%;
+    background: #32422e url('../images/header_bg.jpg?v=1465813564176') repeat 50% 50%;
     box-shadow: 0 62px 20px transparent;
 }
 .header_fixed
@@ -1652,7 +1652,7 @@ hr
     content: '';
     vertical-align: top; 
 
-    background: url('../images/ico_back.png?v=1465812436130') no-repeat 0 0;
+    background: url('../images/ico_back.png?v=1465813564176') no-repeat 0 0;
 }
 
 .nav
@@ -1784,57 +1784,57 @@ hr
 }
 .nav__item_recipes .nav__symbol
 {
-    background-image: url('../images/ico_recipes.png?v=1465812436130');
+    background-image: url('../images/ico_recipes.png?v=1465813564176');
 }
 .nav__item_recipes.nav__item_active .nav__symbol,
 .nav__item_recipes:hover .nav__symbol
 {
-    background-image: url('../images/ico_recipes_active.png?v=1465812436130');
+    background-image: url('../images/ico_recipes_active.png?v=1465813564176');
 }
 .nav__item_books .nav__symbol
 {
-    background-image: url('../images/ico_books.png?v=1465812436130');
+    background-image: url('../images/ico_books.png?v=1465813564176');
 }
 .nav__item_books.nav__item_active .nav__symbol,
 .nav__item_books:hover .nav__symbol
 {
-    background-image: url('../images/ico_books_active.png?v=1465812436130');
+    background-image: url('../images/ico_books_active.png?v=1465813564176');
 }
 .nav__item_forum .nav__symbol
 {
-    background-image: url('../images/ico_forum.png?v=1465812436130');
+    background-image: url('../images/ico_forum.png?v=1465813564176');
 }
 .nav__item_forum.nav__item_active .nav__symbol,
 .nav__item_forum:hover .nav__symbol
 {
-    background-image: url('../images/ico_forum_active.png?v=1465812436130');
+    background-image: url('../images/ico_forum_active.png?v=1465813564176');
 }
 .nav__item_family .nav__symbol
 {
-    background-image: url('../images/ico_member.png?v=1465812436130');
+    background-image: url('../images/ico_member.png?v=1465813564176');
 }
 .nav__item_family.nav__item_active .nav__symbol,
 .nav__item_family:hover .nav__symbol
 {
-    background-image: url('../images/ico_member_active.png?v=1465812436130');
+    background-image: url('../images/ico_member_active.png?v=1465813564176');
 }
 .nav__item_menu .nav__symbol
 {
-    background-image: url('../images/ico_menu.png?v=1465812436130');
+    background-image: url('../images/ico_menu.png?v=1465813564176');
 }
 .nav__item_menu.nav__item_active .nav__symbol,
 .nav__item_menu:hover .nav__symbol
 {
-    background-image: url('../images/ico_menu_active.png?v=1465812436130');
+    background-image: url('../images/ico_menu_active.png?v=1465813564176');
 }
 .nav__item_contact .nav__symbol
 {
-    background-image: url('../images/ico_contact.png?v=1465812436130');
+    background-image: url('../images/ico_contact.png?v=1465813564176');
 }
 .nav__item_contact.nav__item_active .nav__symbol,
 .nav__item_contact:hover .nav__symbol
 {
-    background-image: url('../images/ico_contact_active.png?v=1465812436130');
+    background-image: url('../images/ico_contact_active.png?v=1465813564176');
 }
 
 .nav__ico
@@ -2462,7 +2462,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_direct_green.png?v=1465812436130') no-repeat 0 50%;
+    background: url('../images/ico_direct_green.png?v=1465813564176') no-repeat 0 50%;
     background-size: auto 100%;
 }
 @media screen and (max-width: 999px)
@@ -2626,7 +2626,7 @@ hr
 {
     border-right: 10px solid #4f9439;
     border-left: 10px solid #4f9439;
-    background: url('../images/menu_bg.png?v=1465812436130') repeat;
+    background: url('../images/menu_bg.png?v=1465813564176') repeat;
 }
 
 .menu__name
@@ -2943,7 +2943,7 @@ hr
     height: 38px;
     margin: 50px 0;
 
-    background: url('../images/ico_apple.png?v=1465812436130') no-repeat 50% 50%;
+    background: url('../images/ico_apple.png?v=1465813564176') no-repeat 50% 50%;
     background-size: 30px 38px;
 }
 
@@ -3002,7 +3002,7 @@ hr
 
     content: '';
 
-    background: url('../images/border.png?v=1465812436130') repeat-y 0 0;
+    background: url('../images/border.png?v=1465813564176') repeat-y 0 0;
 }
 @media screen and (max-width: 999px)
 {
@@ -3476,7 +3476,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_cross.png?v=1465812436130') no-repeat 0 0;
+    background: url('../images/ico_cross.png?v=1465813564176') no-repeat 0 0;
 }
 
 .mosaic__menu

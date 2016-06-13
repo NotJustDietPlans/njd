@@ -1,0 +1,21 @@
+{% extends '../blocks/layout/html/layout.html' %}
+
+{% block meta-title %}NotJustDietPlans - Step 1{% endblock %}
+{% block meta-description %}NotJustDietPlans{% endblock %}
+{% block meta-keywords %}NotJustDietPlans Keywords{% endblock %}
+{% block meta-url %}index.html{% endblock %}
+{% block meta-image %}./public/uploads/soc_index.jpg{% endblock %}
+
+{% set ver = '?v=' + Date.now() %}
+
+{% set path = './public' %}
+
+{% set layout_class = '_planner' %}
+
+{% set nav_menu = ' nav__item_active' %}
+
+{% set menu_planner_1 = ' menu__item_active' %}
+
+{% block content %}
+	{% include "../blocks/section/html/section_planner_1.html" %}
+{% endblock %}
