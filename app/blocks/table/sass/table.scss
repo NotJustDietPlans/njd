@@ -21,6 +21,7 @@
 	}
 
 	.table_family &,
+	.table_purchases &,
 	.table_sitemap & {
 		box-shadow: none;
 	}
@@ -41,17 +42,32 @@
 
 	&_age,
 	&_edit,
-	&_cancel {
+	&_cancel,
+	&_status,
+	&_weight {
 		width: 100px;
 		text-align: center;
 	}
 
+	&_price,
+	&_id {
+		width: 150px;
+	}
+
+	&_menu-plan,
+	&_ingredients {
+		width: 190px;
+	}
+
 	&_email,
-	&_location {
+	&_location,
+	&_plan,
+	&_date {
 		width: auto;
 	}
 
-	&_menu {
+	&_menu,
+	&_action {
 		width: 200px;
 	}
 
@@ -60,13 +76,19 @@
 		min-width: 200px;
 		white-space: nowrap;
 	}
+
+	&_status {
+		text-align: center;
+	}
 }
 
 .table_th {
 	color: #939393;
 	text-transform: uppercase;
+	vertical-align: bottom;
 
-	.table_family & {
+	.table_family &,
+	.table_purchases & {
 		text-transform: none;
 	}
 
@@ -88,7 +110,8 @@
 		color: #88bf3e;
 	}
 
-	&_name {
+	&_name,
+	&_plan {
 		border-left: 5px solid $c_primary;
 	}
 
@@ -109,6 +132,16 @@
 			color: $c_primary;
 			text-decoration: none;
 		}
+	}
+
+	&_status,
+	&_price {
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	&_status {
+		color: $c_primary;
 	}
 
 	.table_sitemap & {

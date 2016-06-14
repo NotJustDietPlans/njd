@@ -86,6 +86,13 @@
 			padding-top: $g_header + $g_nav + 20;
 			padding-bottom: 20px;
 		}
+
+		.panel_menu & {
+			.panel-open & {
+				padding-top: $g_header + $g_nav;
+				padding-bottom: 0;
+			}
+		}
 	}
 }
 

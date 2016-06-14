@@ -1,0 +1,76 @@
+.person {
+	overflow: hidden;
+	margin: 0 0 50px;
+
+	@include res(fablet) {
+		margin: 0 0 20px;
+	}
+}
+
+.person__view {
+	float: left;
+	margin: 10px 0 0 60px;
+
+	@include res(fablet) {
+		float: none;
+		margin: 0 0 20px;
+	}
+}
+
+.person__avatar {
+	display: inline-block;
+	overflow: hidden;
+	width: 115px;
+	height: 115px;
+	border: 2px solid #8bc543;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+.person__photo {
+	width: 100%;
+	height: 100%;
+}
+
+.person__edit {
+	display: inline-block;
+	margin: 0 0 0 30px;
+	vertical-align: middle;
+}
+
+.person__edit-ico {
+	width: 24px;
+	vertical-align: bottom;
+}
+
+.person__manual {
+	float: right;
+	width: 180px;
+	margin: 0 60px 0 0;
+	padding: 0 0 0 160px;
+
+	@include res(fablet) {
+		float: none;
+	}
+}
+
+.person__book {
+	float: left;
+	width: 129px;
+	margin: 0 0 0 -160px;
+}
+
+.person__text {
+	padding: 10px 0 0;
+	font-weight: 100;
+}
+
+.person__actions {
+	margin-top: 20px;
+	text-align: center;
+}
+
+
+
+
+

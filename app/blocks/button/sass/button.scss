@@ -2,7 +2,7 @@
 	display: inline-block;
 	min-width: 100px;
 	height: 50px;
-	padding: 0 10px;
+	padding: 0 20px;
 	border: 0;
 	border-radius: 50px;
 	box-sizing: border-box;
@@ -14,14 +14,14 @@
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	white-space: nowrap;
 	vertical-align: top;
 	outline: none;
 	user-select: none;
 	transition: $s/3 linear;
 
 	&:hover {
-		background: $c_accent_hover;
+		background: $c_primary_hover;
 		text-decoration: none;
 	}
 
@@ -41,9 +41,16 @@
 		}
 	}
 
+	&_mini {
+		height: 42px;
+		line-height: 40px;
+		font-size: 12px;
+	}
+
 	&_big {
-		height: 44px;
-		line-height: 42px;
+		height: 60px;
+		padding: 0 45px;
+		line-height: 58px;
 	}
 
 	&_large {
