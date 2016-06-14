@@ -1,6 +1,7 @@
 .person {
 	overflow: hidden;
-	margin: 0 0 50px;
+	max-width: 1400px;
+	margin: 0 auto 50px;
 
 	@include res(fablet) {
 		margin: 0 0 20px;

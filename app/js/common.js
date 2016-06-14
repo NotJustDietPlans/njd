@@ -36,6 +36,20 @@ $(function() {
 		return false;
 	});
 
+	// accordion
+	$('.accordion__head').click(function(){
+		console.log('123');
+		var accordionItem = $(this).parent();
+		if(accordionItem.hasClass("accordion__item_active")) {
+			accordionItem.find('.accordion__body').slideUp(300);
+		} else {
+			accordionItem.find('.accordion__body').slideDown(300);
+			accordionItem.siblings().find('.accordion__body').slideUp(300);
+		}
+		accordionItem.toggleClass('accordion__item_active').siblings().removeClass('accordion__item_active');
+	});
+
+
 
 //	$('.js-popup').on('click', function(e) {
 //		e.preventDefault();

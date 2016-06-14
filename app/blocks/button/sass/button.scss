@@ -41,6 +41,14 @@
 		}
 	}
 
+	&_prev {
+		background: #c0c0c0;
+
+		&:hover {
+			background: #c0c0c0 + #111;
+		}
+	}
+
 	&_mini {
 		height: 42px;
 		line-height: 40px;

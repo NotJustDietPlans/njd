@@ -1,0 +1,273 @@
+<!-- section start -->
+<section class="section">
+	{% include "../../panel/html/panel_planner.html" %}
+
+	<div class="section__wrapper">
+
+		<form class="form">
+
+			<header class="form__header">
+				<h3><b>Step 2 / 10 :</b> Let's find your Metabolism Type</h3>
+			</header>
+
+			<div class="form__box">
+				<div class="accordion">
+					<div class="accordion__list">
+						<div class="accordion__item accordion__item_active">
+							<div class="accordion__head">
+								<img class="accordion__ico" src="{{path}}/images/ico_step_face.png{{ ver }}" alt="">
+								<h2 class="accordion__title">Sleep</h2>
+							</div>
+							<div class="accordion__body">
+								<div class="form__part">
+									<div class="form__num">1.</div>
+									<div class="form__main">
+										<div class="form__row">
+											<div class="form__row">
+												<div class="form__label">I sleep better when I have _______________ for dinner <span class="form__star">*</span></div>
+												<div class="form__list">
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">a carbohydrate-rich meal (starch, rice, potatoes, pasta)</span>
+													</label>
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">a high protein meal (e.g. meat)</span>
+													</label>
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox" checked>
+														<span class="form__checkbox-label">a combination of both carbs and proteins</span>
+													</label>
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">Type of meal doesn't affect my sleep either way</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form__part">
+									<div class="form__num">2.</div>
+									<div class="form__main">
+										<div class="form__row">
+											<div class="form__row">
+												<div class="form__label">I have noticed that I sleep better those nights when I avoid sweets and have some proteins and carbohydrates for dinner. <span class="form__star">*</span></div>
+												<div class="form__list">
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">False - I don’t sleep too well when I do this</span>
+													</label>
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">True</span>
+													</label>
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">Type of food doesn’t affect my sleep either way</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form__part">
+									<div class="form__num">3.</div>
+									<div class="form__main">
+										<div class="form__row">
+											<div class="form__row">
+												<div class="form__label">I wake up in the middle of the night from hunger and need to eat. <span class="form__star">*</span></div>
+												<div class="form__list">
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">Never</span>
+													</label>
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">Often</span>
+													</label>
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox" checked>
+														<span class="form__checkbox-label">Occasionally</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form__part">
+									<div class="form__num">4.</div>
+									<div class="form__main">
+										<div class="form__row">
+											<div class="form__row">
+												<div class="form__label">When I don’t eat much proteins (meat) and have more vegetables and some carbohydrates, I sleep better. <span class="form__star">*</span></div>
+												<div class="form__list">
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">True</span>
+													</label>
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">False - I don’t sleep too well when I do this</span>
+													</label>
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox" checked>
+														<span class="form__checkbox-label">Type of food doesn’t affect my sleep either way</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form__part">
+									<div class="form__num">5.</div>
+									<div class="form__main">
+										<div class="form__row">
+											<div class="form__row">
+												<div class="form__label">I sleep better when I have a small quantity of a sweet and fatty dessert like ice-cream. <span class="form__star">*</span></div>
+												<div class="form__list">
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">True</span>
+													</label>
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">False</span>
+													</label>
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox" checked>
+														<span class="form__checkbox-label">Sweets don’t affect my sleep</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="accordion__item">
+							<div class="accordion__head">
+								<img class="accordion__ico" src="{{path}}/images/ico_step_energy.png{{ ver }}" alt="">
+								<h2 class="accordion__title">Energy</h2>
+							</div>
+							<div class="accordion__body" style="display: none;">
+
+								<div class="form__part">
+									<div class="form__num">1.</div>
+									<div class="form__main">
+										<div class="form__row">
+											<div class="form__row">
+												<div class="form__label">Example <span class="form__star">*</span></div>
+												<div class="form__list">
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">Yes</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="accordion__item">
+							<div class="accordion__head">
+								<img class="accordion__ico" src="{{path}}/images/ico_step_appetite.png{{ ver }}" alt="">
+								<h2 class="accordion__title">Appetite</h2>
+							</div>
+							<div class="accordion__body" style="display: none;">
+
+								<div class="form__part">
+									<div class="form__num">1.</div>
+									<div class="form__main">
+										<div class="form__row">
+											<div class="form__row">
+												<div class="form__label">Example <span class="form__star">*</span></div>
+												<div class="form__list">
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">Yes</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="accordion__item">
+							<div class="accordion__head">
+								<img class="accordion__ico" src="{{path}}/images/ico_step_mood.png{{ ver }}" alt="">
+								<h2 class="accordion__title">Mood</h2>
+							</div>
+							<div class="accordion__body" style="display: none;">
+
+								<div class="form__part">
+									<div class="form__num">1.</div>
+									<div class="form__main">
+										<div class="form__row">
+											<div class="form__row">
+												<div class="form__label">Example <span class="form__star">*</span></div>
+												<div class="form__list">
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">Yes</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="accordion__item">
+							<div class="accordion__head">
+								<img class="accordion__ico" src="{{path}}/images/ico_step_health.png{{ ver }}" alt="">
+								<h2 class="accordion__title">Stamina and state of health</h2>
+							</div>
+							<div class="accordion__body" style="display: none;">
+
+								<div class="form__part">
+									<div class="form__num">1.</div>
+									<div class="form__main">
+										<div class="form__row">
+											<div class="form__row">
+												<div class="form__label">Example <span class="form__star">*</span></div>
+												<div class="form__list">
+													<label class="form__checkbox">
+														<input class="form__checkbox-box" type="checkbox">
+														<span class="form__checkbox-label">Yes</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="form__row form__row_submit">
+				<a class="button button_big button_prev" href="planner_1.html">Prev. step</a>
+				<button class="button button_big" type="submit">Next step</button>
+			</div>
+		</form>
+
+	</div>
+</section>
+<!-- section finish -->

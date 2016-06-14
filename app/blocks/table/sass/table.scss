@@ -18,6 +18,12 @@
 		.table_sitemap & {
 			margin: 10px 0 0;
 		}
+
+		&_allowance {
+			margin-top: 50px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
 	}
 
 	.table_family &,
@@ -59,6 +65,11 @@
 		width: 190px;
 	}
 
+	&_groups {
+		width: 35%;
+	}
+
+	&_change,
 	&_email,
 	&_location,
 	&_plan,
@@ -79,6 +90,14 @@
 
 	&_status {
 		text-align: center;
+	}
+
+	&_day {
+		width: auto;
+	}
+
+	&_eating {
+		width: 16.5%;
 	}
 }
 
@@ -105,6 +124,7 @@
 
 .table_td {
 	height: 110px;
+	font-weight: 100;
 
 	b {
 		color: #88bf3e;
@@ -122,6 +142,13 @@
 			color: $c_primary;
 			text-decoration: none;
 		}
+	}
+
+	&_groups {
+		width: 30%;
+		color: $c_primary;
+		font-size: 22px;
+		font-weight: 600;
 	}
 
 	&_menu {
@@ -149,11 +176,52 @@
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
+
+	&_symbol {
+		width: 8%;
+		text-align: center;
+	}
+
+	&_day {
+		padding-right: 0;
+		color: $c_primary;
+		font-size: 16px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	
+	&_eating {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 14px;
+
+		a {
+			color: $c_accent;
+			text-decoration: none;
+		}
+	}
+
+	&_allowance {
+		width: auto;
+		color: $c_primary;
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	&_allowance-text {
+		width: 66%;
+	}
 }
 
 .table__ico {
 	width: 34px;
 	height: 34px;
+}
+
+.table__symbol {
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
 }
 
 

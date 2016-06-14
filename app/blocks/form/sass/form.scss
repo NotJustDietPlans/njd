@@ -9,6 +9,7 @@
 	margin: 40px 0;
 
 	h1, h2 {
+		margin: 0;
 		color: $c_accent;
 		font-size: 30px;
 		font-weight: 600;
@@ -17,6 +18,19 @@
 
 	h2 {
 		text-align: center;
+	}
+
+	h3 {
+		margin: 0;
+		color: #494949;
+		font-size: 25px;
+		font-weight: 300;
+		text-align: center;
+
+		b {
+			color: #88bf3e;
+			font-weight: 300;
+		}
 	}
 
 	@include res(pad) {
@@ -99,6 +113,14 @@
 .form__main {
 	padding: 40px 40px;
 	vertical-align: top;
+
+	&_complex {
+		@include res(hd) {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+	}
 }
 
 .form__row {
@@ -109,13 +131,41 @@
 		margin-bottom: 0;
 	}
 
+	&:first-child {
+		.form__main_complex & {
+			@include res(hd) {
+				width: 700px;
+				margin-right: 60px;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&_besides {
+		.form__main_complex & {
+			@include res(hd) {
+				margin-top: 50px;
+			}
+		}
+	}
+
 	&_submit {
+		.table + &,
 		.form__box + & {
-			margin-top: 50px;
+			max-width: 1400px;
+			margin: 50px auto 0;
 			text-align: right;
+
+			.button_prev {
+				float: left;
+			}
 
 			@include res(pad) {
 				text-align: center;
+
+				.button_prev {
+					float: none;
+				}
 			}
 		}
 
@@ -155,6 +205,10 @@
 	&_input,
 	&_select {
 		max-width: 700px;
+	}
+
+	&_wide {
+		max-width: 100%;
 	}
 
 	&_select {
@@ -211,6 +265,14 @@
 	}
 }
 
+.form__element_big {
+	&.form__element_select {
+		&:after {
+			bottom: 20px;
+		}
+	}
+}
+
 .form__label,
 .form__property {
 	display: block;
@@ -219,8 +281,8 @@
 	font-size: 20px;
 	font-weight: 300;
 	text-align: left;
-	white-space: nowrap;
-	text-overflow: ellipsis;
+	//white-space: nowrap;
+	//text-overflow: ellipsis;
 	cursor: text;
 	pointer-events: none;
 
@@ -233,6 +295,11 @@
 	@include res(fablet) {
 		display: none;
 	}
+}
+
+.form__remark {
+	color: #606060;
+	font-weight: 100;
 }
 
 .form__property {
@@ -255,6 +322,7 @@
 
 .form__star {
 	color: #f00;
+	font-weight: 100;
 
 	.panel & {
 		color: #757575;
@@ -303,6 +371,10 @@
 
 .form__select {
 	appearance: none;
+
+	.form__element_big & {
+		height: 70px;
+	}
 }
 
 .form__textarea {
@@ -329,6 +401,24 @@
 	.form__set & {
 		width: 50%;
 	}
+
+	.form__line & {
+		display: inline-block;
+		margin-right: 60px;
+		vertical-align: top;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.form__list & {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .form__radio-box,
@@ -342,23 +432,22 @@
 	display: inline-block;
 	width: auto;
 	height: auto;
-	padding: 5px 0 5px 30px;
+	padding: 5px 0 5px 60px;
 	border: 0;
 	border-radius: 0;
 	background: none;
 	box-shadow: none;
-	color: #9a9a9a;
-	font-size: $fs_caption;
+	color: #707070;
+	font-size: 18px;
 	line-height: 1.7;
-	color: $fs_subheading;
 	transition: none;
 
 	&:before {
 		content: '';
 		float: left;
-		width: 12px;
-		height: 12px;
-		margin: 2px 0 0 -30px;
+		width: 26px;
+		height: 26px;
+		margin: 0 0 0 -60px;
 		border: 2px solid #c0c0c0;
 		border-radius: 50%;
 		cursor: pointer;
@@ -369,6 +458,18 @@
 		border-color: #999;
 		opacity: .4;
 		cursor: not-allowed;
+	}
+
+	.panel & {
+		padding-left: 30px;
+		color: #9a9a9a;
+		font-size: $fs_caption;
+
+		&:before {
+			margin: 2px 0 0 -30px;
+			width: 12px;
+			height: 12px;
+		}
 	}
 }
 
@@ -386,13 +487,18 @@
 }
 
 .form__checkbox-box:checked + .form__checkbox-label:before {
-	content: '✔';
+	content: '';
 	border-color: #88bf3e;
-	background: #88bf3e;
+	background: #88bf3e url($path + '/images/ico_check.png' + $ver) no-repeat 50% 50%;
+	background-size: 13px 10px;
 	color: #FFF;
 	font-size: 10px;
 	line-height: 12px;
 	text-align: center;
+
+	.panel & {
+		background-size: 8px 5px;
+	}
 }
 
 .form__text {

@@ -1,10 +1,126 @@
 <!-- section start -->
-<section class="section section_family">
+<section class="section">
 	{% include "../../panel/html/panel_planner.html" %}
 
 	<div class="section__wrapper">
 
-		soon...
+		<form class="form">
+
+			<header class="form__header">
+				<h3><b>Step 1 / 10 :</b> Let's determine your calorie needs</h3>
+			</header>
+
+			<div class="form__box">
+				<div class="form__part">
+					<div class="form__num">1.</div>
+					<div class="form__main">
+						<div class="form__row">
+							<label class="form__element form__element_input">
+								<span class="form__label">Age <span class="form__remark">(rounded to the nearest whole number)</span> <span class="form__star">*</span></span>
+								<input class="form__input">
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__part">
+					<div class="form__num">2.</div>
+					<div class="form__main">
+						<div class="form__row">
+							<div class="form__row">
+								<div class="form__label">Gender <span class="form__star">*</span></div>
+								<div class="form__line">
+									<label class="form__radio">
+										<input class="form__radio-box" type="radio" name="radioGender">
+										<span class="form__radio-label">Male</span>
+									</label>
+									<label class="form__radio">
+										<input class="form__radio-box" type="radio" name="radioGender">
+										<span class="form__radio-label">Female</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__part">
+					<div class="form__num">3.</div>
+					<div class="form__main form__main_complex">
+						<div class="form__row">
+							<label class="form__element form__element_input">
+								<span class="form__label">Height <span class="form__remark">(only whole numbers please)</span> <span class="form__star">*</span></span>
+								<input class="form__input">
+							</label>
+						</div>
+						<div class="form__row form__row_besides">
+							<div class="form__line">
+								<label class="form__checkbox">
+									<input class="form__checkbox-box" type="checkbox" checked>
+									<span class="form__checkbox-label">cms</span>
+								</label>
+								<label class="form__checkbox">
+									<input class="form__checkbox-box" type="checkbox">
+									<span class="form__checkbox-label">Feet & Inches</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__part">
+					<div class="form__num">4.</div>
+					<div class="form__main form__main_complex">
+						<div class="form__row">
+							<label class="form__element form__element_input">
+								<span class="form__label">Weight<span class="form__remark">(only whole numbers please)</span> <span class="form__star">*</span></span>
+								<input class="form__input">
+							</label>
+						</div>
+						<div class="form__row form__row_besides">
+							<div class="form__line">
+								<label class="form__checkbox">
+									<input class="form__checkbox-box" type="checkbox" checked>
+									<span class="form__checkbox-label">kgs</span>
+								</label>
+								<label class="form__checkbox">
+									<input class="form__checkbox-box" type="checkbox">
+									<span class="form__checkbox-label">Pounds</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__part">
+					<div class="form__num">5.</div>
+					<div class="form__main">
+						<div class="form__row">
+							<label class="form__element form__element_select form__element_wide">
+								<span class="form__label">Activity Level <span class="form__star">*</span></span>
+								<select class="form__select">
+									<option value="1">Activity Level 6 - Twice Everyday (walking, elliptical, weight training)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							</label>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="form__row form__row_submit">
+				<button class="button button_big" type="submit">Next step</button>
+			</div>
+		</form>
 
 	</div>
 </section>
