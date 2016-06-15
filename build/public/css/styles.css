@@ -1130,7 +1130,7 @@ hr
     content: '';
     pointer-events: none; 
 
-    background: url('../images/ico_select.png?v=1465942901316') no-repeat 50% 50%;
+    background: url('../images/ico_select.png?v=1466011715363') no-repeat 50% 50%;
 }
 .form__element_input-add:after
 {
@@ -1329,6 +1329,11 @@ hr
     height: 70px;
 }
 
+.form__select::-ms-expand
+{
+    display: none;
+}
+
 .form__textarea
 {
     height: 100px;
@@ -1479,7 +1484,7 @@ hr
 
     color: #fff;
     border-color: #88bf3e;
-    background: #88bf3e url('../images/ico_check.png?v=1465942901316') no-repeat 50% 50%;
+    background: #88bf3e url('../images/ico_check.png?v=1466011715363') no-repeat 50% 50%;
     background-size: 13px 10px;
 }
 .panel .form__checkbox-box:checked + .form__checkbox-label:before
@@ -1980,7 +1985,7 @@ hr
             transition: .5s linear; 
 
     color: #fff;
-    background: #32422e url('../images/header_bg.jpg?v=1465942901316') repeat 50% 50%;
+    background: #32422e url('../images/header_bg.jpg?v=1466011715363') repeat 50% 50%;
     box-shadow: 0 62px 20px transparent;
 }
 .header_fixed
@@ -2123,8 +2128,8 @@ hr
     padding: 127px 0 0; 
 
     -webkit-box-flex: 1;
-    -ms-flex: 1;
-        flex: 1;
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
 }
 
 .section__wrapper
@@ -2183,7 +2188,7 @@ hr
     content: '';
     vertical-align: top; 
 
-    background: url('../images/ico_back.png?v=1465942901316') no-repeat 0 0;
+    background: url('../images/ico_back.png?v=1466011715363') no-repeat 0 0;
 }
 
 .nav
@@ -2317,57 +2322,57 @@ hr
 }
 .nav__item_recipes .nav__symbol
 {
-    background-image: url('../images/ico_recipes.png?v=1465942901316');
+    background-image: url('../images/ico_recipes.png?v=1466011715363');
 }
 .nav__item_recipes.nav__item_active .nav__symbol,
 .nav__item_recipes:hover .nav__symbol
 {
-    background-image: url('../images/ico_recipes_active.png?v=1465942901316');
+    background-image: url('../images/ico_recipes_active.png?v=1466011715363');
 }
 .nav__item_books .nav__symbol
 {
-    background-image: url('../images/ico_books.png?v=1465942901316');
+    background-image: url('../images/ico_books.png?v=1466011715363');
 }
 .nav__item_books.nav__item_active .nav__symbol,
 .nav__item_books:hover .nav__symbol
 {
-    background-image: url('../images/ico_books_active.png?v=1465942901316');
+    background-image: url('../images/ico_books_active.png?v=1466011715363');
 }
 .nav__item_forum .nav__symbol
 {
-    background-image: url('../images/ico_forum.png?v=1465942901316');
+    background-image: url('../images/ico_forum.png?v=1466011715363');
 }
 .nav__item_forum.nav__item_active .nav__symbol,
 .nav__item_forum:hover .nav__symbol
 {
-    background-image: url('../images/ico_forum_active.png?v=1465942901316');
+    background-image: url('../images/ico_forum_active.png?v=1466011715363');
 }
 .nav__item_family .nav__symbol
 {
-    background-image: url('../images/ico_member.png?v=1465942901316');
+    background-image: url('../images/ico_member.png?v=1466011715363');
 }
 .nav__item_family.nav__item_active .nav__symbol,
 .nav__item_family:hover .nav__symbol
 {
-    background-image: url('../images/ico_member_active.png?v=1465942901316');
+    background-image: url('../images/ico_member_active.png?v=1466011715363');
 }
 .nav__item_menu .nav__symbol
 {
-    background-image: url('../images/ico_menu.png?v=1465942901316');
+    background-image: url('../images/ico_menu.png?v=1466011715363');
 }
 .nav__item_menu.nav__item_active .nav__symbol,
 .nav__item_menu:hover .nav__symbol
 {
-    background-image: url('../images/ico_menu_active.png?v=1465942901316');
+    background-image: url('../images/ico_menu_active.png?v=1466011715363');
 }
 .nav__item_contact .nav__symbol
 {
-    background-image: url('../images/ico_contact.png?v=1465942901316');
+    background-image: url('../images/ico_contact.png?v=1466011715363');
 }
 .nav__item_contact.nav__item_active .nav__symbol,
 .nav__item_contact:hover .nav__symbol
 {
-    background-image: url('../images/ico_contact_active.png?v=1465942901316');
+    background-image: url('../images/ico_contact_active.png?v=1466011715363');
 }
 
 .nav__ico
@@ -3000,7 +3005,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_direct_green.png?v=1465942901316') no-repeat 0 50%;
+    background: url('../images/ico_direct_green.png?v=1466011715363') no-repeat 0 50%;
     background-size: auto 100%;
 }
 @media screen and (max-width: 999px)
@@ -3164,7 +3169,7 @@ hr
 {
     border-right: 10px solid #4f9439;
     border-left: 10px solid #4f9439;
-    background: url('../images/menu_bg.png?v=1465942901316') repeat;
+    background: url('../images/menu_bg.png?v=1466011715363') repeat;
 }
 
 .menu__name
@@ -3481,7 +3486,7 @@ hr
     height: 38px;
     margin: 50px 0;
 
-    background: url('../images/ico_apple.png?v=1465942901316') no-repeat 50% 50%;
+    background: url('../images/ico_apple.png?v=1466011715363') no-repeat 50% 50%;
     background-size: 30px 38px;
 }
 
@@ -3540,7 +3545,7 @@ hr
 
     content: '';
 
-    background: url('../images/border.png?v=1465942901316') repeat-y 0 0;
+    background: url('../images/border.png?v=1466011715363') repeat-y 0 0;
 }
 @media screen and (max-width: 999px)
 {
@@ -4014,7 +4019,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_cross.png?v=1465942901316') no-repeat 0 0;
+    background: url('../images/ico_cross.png?v=1466011715363') no-repeat 0 0;
 }
 
 .mosaic__menu
@@ -4067,13 +4072,24 @@ hr
 
 .books__item
 {
-    display: table;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 
     width: 100%;
     margin: 40px 0;
 
     background: #fff;
-    box-shadow: 0 5px 13px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 13px rgba(0, 0, 0, .2); 
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 .books__list:first-child .books__item:first-child
 {
@@ -4093,8 +4109,6 @@ hr
 
 .books__view
 {
-    display: table-cell;
-
     width: 192px;
     padding: 8px 0 8px 2%;
 
@@ -4125,9 +4139,6 @@ hr
     font-size: 30px;
     font-weight: 100;
 
-    display: table-cell;
-
-    width: 100px;
     padding: 0 5%;
 
     vertical-align: middle; 
@@ -4154,11 +4165,13 @@ hr
 {
     font-size: 18px;
 
-    display: table-cell;
-
     vertical-align: middle; 
 
     color: #4c524b;
+
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
 }
 @media screen and (max-width: 999px)
 {
@@ -4174,9 +4187,6 @@ hr
 
 .books__actions
 {
-    display: table-cell;
-
-    width: 100px;
     padding: 0 4%;
 
     vertical-align: middle;
@@ -4702,12 +4712,12 @@ hr
             transition:         transform .25s ease-out;
             transition:         transform .25s ease-out, -webkit-transform .25s ease-out; 
 
-    background: url('../images/ico_down.png?v=1465942901316') no-repeat 50% 50%;
+    background: url('../images/ico_down.png?v=1466011715363') no-repeat 50% 50%;
     background-size: cover;
 }
 .accordion__item_active .accordion__head
 {
-    background: url('../images/menu_bg.png?v=1465942901316') repeat;
+    background: url('../images/menu_bg.png?v=1466011715363') repeat;
 }
 .accordion__item_active .accordion__head:after
 {

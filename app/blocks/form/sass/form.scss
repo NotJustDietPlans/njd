@@ -376,6 +376,9 @@
 		height: 70px;
 	}
 }
+.form__select::-ms-expand {
+	display: none;
+}
 
 .form__textarea {
 	height: 100px;
