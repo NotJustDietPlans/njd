@@ -108,6 +108,11 @@
 	font-size: 30px;
 	font-weight: 600;
 	vertical-align: top;
+
+	@include res(smart) {
+		width: 10px;
+		padding-left: 20px;
+	}
 }
 
 .form__main {
@@ -120,6 +125,10 @@
 			flex-wrap: wrap;
 			align-items: center;
 		}
+	}
+
+	@include res(smart) {
+		padding: 40px 20px;
 	}
 }
 
@@ -161,10 +170,15 @@
 			}
 
 			@include res(pad) {
+				margin-top: 0;
 				text-align: center;
 
 				.button_prev {
 					float: none;
+				}
+
+				.button {
+					margin: 5px;
 				}
 			}
 		}

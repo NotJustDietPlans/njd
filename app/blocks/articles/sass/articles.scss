@@ -14,6 +14,11 @@
 	border-left: 10px solid $c_primary;
 	background: $c_light;
 	box-shadow: 0 5px 13px rgba(#000, .2);
+
+	@include res(smart) {
+		padding: 20px;
+		border-left: 5px solid $c_primary;
+	}
 }
 
 .articles__name {

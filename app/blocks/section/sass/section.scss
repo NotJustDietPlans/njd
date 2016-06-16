@@ -38,6 +38,10 @@
 	font-weight: 600;
 	text-transform: uppercase;
 	text-align: center;
+
+	@include res(smart) {
+		margin-top: 0;
+	}
 }
 
 .section__backlink {
