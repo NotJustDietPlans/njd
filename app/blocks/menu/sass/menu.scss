@@ -29,6 +29,9 @@
 		border-right: 10px solid $c_primary;
 		background: url($path + '/images/menu_bg.png' + $ver) repeat;
 	}
+	@include res(pad) {
+		height: 60px;
+	}
 }
 
 .menu__name {

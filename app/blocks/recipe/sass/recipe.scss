@@ -23,6 +23,7 @@
 
 	@include res(pad) {
 		width: auto;
+		border-bottom: 0;
 	}
 }
 
@@ -46,29 +47,57 @@
 }
 
 .recipe__company {
-	margin: 30px 0;
+	margin: 20px 0;
+
+	@include res(full) {
+		margin: 30px 0;
+	}
+
+	@include res(pad) {
+		margin: 10px 0;
+	}
 }
 
 .recipe__header {
-	margin: 40px 0;
+	margin: 20px 0;
+
+	@include res(full) {
+		margin: 40px 0;
+	}
+
+	@include res(pad) {
+		margin: 10px 0;
+	}
 }
 
 .recipe__title {
 	margin: 0;
 	color: $c_bold;
-	font-size: 48px;
+	font-size: 40px;
 	font-weight: 900;
 
 	@include res(fablet) {
 		font-size: 32px;
 	}
+
+	@include res(full) {
+		font-size: 48px;
+	}
 }
 
 .recipe__separator {
-	margin: 50px 0;
+	margin: 20px 0;
 	height: 38px;
 	background: url($path + '/images/ico_apple.png' + $ver) no-repeat 50% 50%;
 	background-size: 30px 38px;
+
+	@include res(full) {
+		margin: 50px 0;
+	}
+
+	@include res(pad) {
+		margin: 10px 0;
+	}
 }
 
 .recipe__text {
@@ -77,12 +106,20 @@
 }
 
 .recipe__assignment {
-	margin: 50px 0 0;
+	margin: 30px 0 0;
 	color: #4f963a;
 	font-weight: 100;
 
 	b {
 		font-weight: 600;
+	}
+
+	@include res(full) {
+		margin: 50px 0 0;
+	}
+
+	@include res(pad) {
+		margin: 20px 0;
 	}
 }
 

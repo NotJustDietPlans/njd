@@ -27,33 +27,58 @@
 }
 
 .panel + .section__wrapper .recipes__item {
-	width: 50%;
+	width: 33.33%;
 
-	@media screen and (min-width: 1430px){
-		width: 33.33%;
-	}
-
-	@media screen and (min-width: 1760px){
+	@media screen and (min-width: 1220px){
 		width: 25%;
 	}
 
-	@media screen and (min-width: 2100px){
+	@media screen and (min-width: 1450px){
 		width: 20%;
 	}
 
+	@include res(hd) {
+		width: 25%;
+	}
+
+	@media screen and (min-width: 1900px){
+		width: 20%;
+	}
+
+	@include res(pad) {
+		width: 25%;
+	}
+
+	@media screen and (max-width: 940px){
+		width: 33.33%;
+	}
+
 	@include res(fablet) {
+		width: 50%;
+	}
+
+	@include res(smart) {
 		width: 100%;
 	}
 }
 
 .recipes__box {
 	display: block;
-	width: 316px;
-	height: 390px;
+	width: 210px;
+	height: 330px;
 	margin: 7px auto;
 	background: $c_light;
 	box-shadow: 0 5px 13px rgba(#000, .2);
 	text-decoration: none;
+
+	@include res(hd) {
+		width: 300px;
+		height: 390px;
+	}
+
+	@include res(smart) {
+		width: 340px;
+	}
 
 	@media screen and (max-width: 340px){
 		width: auto;
@@ -61,39 +86,63 @@
 }
 
 .recipes__cover {
-	height: 226px;
+	height: 160px;
 	background-color: #EEE;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	@include res(hd) {
+		height: 226px;
+	}
 }
 
 
 .recipes__content {
 	overflow: hidden;
-	height: 70px;
-	padding: 20px 36px 0;
+	height: 78px;
+	padding: 20px 16px 0;
+
+	@include res(hd) {
+		height: 70px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
 
 .recipes__name {
 	margin: 0;
 	color: #4c524b;
-	font-size: 16px;
-	font-weight: 700;
+	font-size: 14px;
+	font-weight: 600;
+
+	@include res(hd) {
+		font-size: 16px;
+	}
 }
 
 .recipes__assignment {
 	margin: 0;
 	color: #4f963a;
 	font-weight: 100;
+	font-size: 13px;
 
 	 b {
 		 font-weight: 600;
 	 }
+
+	@include res(hd) {
+		font-size: 16px;
+	}
 }
 
 .recipes__footer {
-	padding: 10px 36px 0;
+	padding: 10px 16px 0;
+
+	@include res(hd) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
 
 .recipes__logo {

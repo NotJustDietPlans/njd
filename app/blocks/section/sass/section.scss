@@ -6,8 +6,8 @@
 
 .section__wrapper {
 	@extend .wrapper;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	flex: 1 1 auto;
 	//
 	//.panel + & {
@@ -17,6 +17,11 @@
 	@include res(smart) {
 		padding-top: 20px;
 		padding-bottom: 20px;
+	}
+
+	@include res(hd) {
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 }
 
