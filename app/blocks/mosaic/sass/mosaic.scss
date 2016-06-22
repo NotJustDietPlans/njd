@@ -147,6 +147,10 @@
 
 		@include res(full) {
 			display: inline-block;
+
+			.lt-ie10 & {
+				display: block;
+			}
 		}
 	}
 }
@@ -192,6 +196,7 @@
 
 .mosaic__content {
 	width: 100%;
+	box-sizing: border-box;
 	text-align: center;
 
 	.mosaic__contact & {

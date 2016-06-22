@@ -2,6 +2,30 @@
 	flex: 1 1 auto;
 	display: flex;
 	padding: $g_header + $g_nav 0 0;
+
+	.page_home & {
+		.lt-ie10 & {
+			min-height: 1350px;
+		}
+	}
+
+	.page_family & {
+		.lt-ie10 & {
+			min-height: 1300px;
+		}
+	}
+
+	.page_planner & {
+		.lt-ie10 & {
+			min-height: 1100px;
+		}
+	}
+
+	.page_profile & {
+		.lt-ie10 & {
+			min-height: 600px;
+		}
+	}
 }
 
 .section__wrapper {
@@ -13,6 +37,16 @@
 	//.panel + & {
 	//	max-width: $g_narrow;
 	//}
+
+	.panel + & {
+		.lt-ie10 & {
+			padding-left: 320px;
+		}
+	}
+
+	@include res(pad) {
+		padding-left: 10px !important;
+	}
 
 	@include res(smart) {
 		padding-top: 20px;

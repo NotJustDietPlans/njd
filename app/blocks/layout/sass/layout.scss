@@ -1,6 +1,7 @@
 .layout {
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 	width: 100%;
 	min-height: 100vh;
 	min-width: $g_layout_min;

@@ -61,6 +61,8 @@ $(function() {
 			'<div class="table_td table_td_cancel"><a class="table__action" href="#"><img class="table__ico" src="./public/images/ico_cancel_green.png" alt=""></a></div>' +
 			'</div>');
 
+		$('body').removeClass('panel-open');
+
 		var familyCount = $('.table__body .table__row').size();
 
 		if(familyCount >= 5){

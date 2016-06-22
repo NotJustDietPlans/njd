@@ -7,6 +7,10 @@
 	background: $c_light;
 	box-shadow: 0 10px 20px rgba(#000, .08);
 
+	.lt-ie10 & {
+		overflow: hidden;
+	}
+
 	@include res(pad) {
 		display: block;
 	}
@@ -21,9 +25,19 @@
 	border: 30px solid transparent;
 	box-sizing: border-box;
 
+	.lt-ie10 & {
+		float: left;
+		width: 48%;
+	}
+
 	@include res(pad) {
 		width: auto;
 		border-bottom: 0;
+
+		.lt-ie10 & {
+			float: none;
+			width: 100%;
+		}
 	}
 }
 
@@ -41,8 +55,18 @@
 	box-sizing: border-box;
 	text-align: center;
 
+	.lt-ie10 & {
+		float: right;
+		width: 48%;
+	}
+
 	@include res(pad) {
 		width: auto;
+
+		.lt-ie10 & {
+			float: none;
+			width: 100%;
+		}
 	}
 }
 
@@ -90,6 +114,7 @@
 	height: 38px;
 	background: url($path + '/images/ico_apple.png' + $ver) no-repeat 50% 50%;
 	background-size: 30px 38px;
+
 
 	@include res(full) {
 		margin: 50px 0;
@@ -145,6 +170,10 @@
 		left: 50%;
 		width: 1px;
 		background: url($path + '/images/border.png' + $ver) repeat-y 0 0;
+
+		.lt-ie10 & {
+			background: none;
+		}
 
 		@include res(pad) {
 			display: none;

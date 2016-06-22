@@ -6,6 +6,10 @@
 	padding-bottom: 100px;
 	background: $c_light;
 
+	.lt-ie10 & {
+		position: absolute;
+	}
+
 	@include res(pad) {
 		position: fixed;
 		z-index: 200;

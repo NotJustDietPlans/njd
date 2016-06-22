@@ -346,6 +346,8 @@ body
     font-weight: 300;
     line-height: 1.45;
 
+    overflow-x: hidden;
+
     width: 100%;
     min-height: 100%;
     margin: 0;
@@ -1042,6 +1044,10 @@ hr
         margin-top: 50px;
     }
 }
+.form__row_submit
+{
+    overflow: hidden;
+}
 .table + .form__row_submit,
 .form__box + .form__row_submit
 {
@@ -1142,17 +1148,16 @@ hr
 .form__element_select:after
 {
     position: absolute;
-    right: 20px;
-    bottom: 15px;
+    right: 2px;
+    bottom: 2px;
 
-    width: 14px;
-    height: 22px;
-    margin: -11px 0 0 0;
+    width: 46px;
+    height: 46px;
 
     content: '';
     pointer-events: none; 
 
-    background: url('../images/ico_select.png?v=1466581307173') no-repeat 50% 50%;
+    background: #fff url('../images/ico_select.png?v=1466581307173') no-repeat 50% 50%;
 }
 .form__element_input-add:after
 {
@@ -1378,6 +1383,16 @@ hr
   .form__checkbox
 {
     width: 50%;
+}
+.lt-ie10 .form__set .form__radio,
+.lt-ie10 .form__set
+    .form__checkbox
+{
+    display: inline-block;
+
+    width: 48%;
+
+    vertical-align: top;
 }
 .form__line .form__radio,
 .form__line
@@ -1980,6 +1995,7 @@ hr
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    overflow: hidden;
         flex-direction: column;
 
     width: 100%;
@@ -2153,6 +2169,22 @@ hr
     -ms-flex: 1 1 auto;
         flex: 1 1 auto;
 }
+.lt-ie10 .page_home .section
+{
+    min-height: 1350px;
+}
+.lt-ie10 .page_family .section
+{
+    min-height: 1300px;
+}
+.lt-ie10 .page_planner .section
+{
+    min-height: 1100px;
+}
+.lt-ie10 .page_profile .section
+{
+    min-height: 600px;
+}
 
 .section__wrapper
 {
@@ -2162,6 +2194,17 @@ hr
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
         flex: 1 1 auto;
+}
+.lt-ie10 .panel + .section__wrapper
+{
+    padding-left: 320px;
+}
+@media screen and (max-width: 999px)
+{
+    .section__wrapper
+    {
+        padding-left: 10px !important;
+    }
 }
 @media screen and (max-width: 600px)
 {
@@ -2289,7 +2332,7 @@ hr
     display: inline-block;
 
     height: 62px; 
-    margin: 0 2%;
+    margin: 0 1.6%;
 }
 @media screen and (max-width: 999px)
 {
@@ -2770,6 +2813,10 @@ hr
 
     background: #fff;
 }
+.lt-ie10 .panel
+{
+    position: absolute;
+}
 @media screen and (max-width: 999px)
 {
     .panel
@@ -3222,11 +3269,26 @@ hr
 {
     width: 33.33%;
 }
+.lt-ie10 .recipes__item
+{
+    display: inline-block;
+
+    width: 32%;
+    margin-right: 1%;
+    margin-left: 1%;
+
+    text-align: center;
+    vertical-align: top;
+}
 @media screen and (min-width: 1370px)
 {
     .recipes__item
     {
         width: 25%;
+    }
+    .lt-ie10 .recipes__item
+    {
+        width: 20%;
     }
 }
 @media screen and (min-width: 1700px)
@@ -3235,10 +3297,18 @@ hr
     {
         width: 20%;
     }
+    .lt-ie10 .recipes__item
+    {
+        width: 17%;
+    }
 }
 @media screen and (max-width: 767px)
 {
     .recipes__item
+    {
+        width: 100%;
+    }
+    .lt-ie10 .recipes__item
     {
         width: 100%;
     }
@@ -3248,11 +3318,19 @@ hr
 {
     width: 33.33%;
 }
+.lt-ie10 .panel + .section__wrapper .recipes__item
+{
+    width: 30%;
+}
 @media screen and (min-width: 1220px)
 {
     .panel + .section__wrapper .recipes__item
     {
         width: 25%;
+    }
+    .lt-ie10 .panel + .section__wrapper .recipes__item
+    {
+        width: 22%;
     }
 }
 @media screen and (min-width: 1450px)
@@ -3282,12 +3360,20 @@ hr
     {
         width: 25%;
     }
+    .lt-ie10 .panel + .section__wrapper .recipes__item
+    {
+        width: 22%;
+    }
 }
 @media screen and (max-width: 940px)
 {
     .panel + .section__wrapper .recipes__item
     {
         width: 33.33%;
+    }
+    .lt-ie10 .panel + .section__wrapper .recipes__item
+    {
+        width: 30%;
     }
 }
 @media screen and (max-width: 767px)
@@ -3296,12 +3382,24 @@ hr
     {
         width: 50%;
     }
+    .lt-ie10 .panel + .section__wrapper .recipes__item
+    {
+        width: 46%;
+    }
 }
 @media screen and (max-width: 600px)
 {
     .panel + .section__wrapper .recipes__item
     {
         width: 100%;
+    }
+    .lt-ie10 .panel + .section__wrapper .recipes__item
+    {
+        display: block;
+
+        width: 100%;
+        margin-right: auto; 
+        margin-left: auto;
     }
 }
 
@@ -3493,6 +3591,10 @@ hr
     background: #fff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
 }
+.lt-ie10 .recipe__post
+{
+    overflow: hidden;
+}
 @media screen and (max-width: 999px)
 {
     .recipe__post
@@ -3509,6 +3611,12 @@ hr
 
     border: 30px solid transparent;
 }
+.lt-ie10 .recipe__cover
+{
+    float: left;
+
+    width: 48%;
+}
 @media screen and (max-width: 999px)
 {
     .recipe__cover
@@ -3516,6 +3624,12 @@ hr
         width: auto;
 
         border-bottom: 0;
+    }
+    .lt-ie10 .recipe__cover
+    {
+        float: none;
+
+        width: 100%;
     }
 }
 
@@ -3534,11 +3648,23 @@ hr
 
     text-align: center;
 }
+.lt-ie10 .recipe__content
+{
+    float: right;
+
+    width: 48%;
+}
 @media screen and (max-width: 999px)
 {
     .recipe__content
     {
         width: auto;
+    }
+    .lt-ie10 .recipe__content
+    {
+        float: none;
+
+        width: 100%;
     }
 }
 
@@ -3697,6 +3823,10 @@ hr
     content: '';
 
     background: url('../images/border.png?v=1466581307173') repeat-y 0 0;
+}
+.lt-ie10 .recipe__ingredients:before
+{
+    background: none;
 }
 @media screen and (max-width: 999px)
 {
@@ -3952,6 +4082,10 @@ hr
     {
         display: inline-block;
     }
+    .lt-ie10 .mosaic__address p
+    {
+        display: block;
+    }
 }
 
 .mosaic__box
@@ -4020,6 +4154,7 @@ hr
 
 .mosaic__content
 {
+    box-sizing: border-box;
     width: 100%;
 
     text-align: center;
@@ -4296,6 +4431,10 @@ hr
     text-align: right;
     vertical-align: middle;
 }
+.lt-ie10 .books__view
+{
+    display: inline-block;
+}
 @media screen and (max-width: 999px)
 {
     .books__view
@@ -4309,7 +4448,7 @@ hr
 
 .books__photo
 {
-    display: inline-block; 
+    display: inline-block;
 
     width: 150px;
     height: 160px;
@@ -4326,6 +4465,10 @@ hr
     white-space: nowrap;
 
     color: #4f9439;
+}
+.lt-ie10 .books__name
+{
+    display: inline-block;
 }
 @media screen and (max-width: 999px)
 {
@@ -4354,6 +4497,12 @@ hr
     -ms-flex: 1 1 auto;
         flex: 1 1 auto;
 }
+.lt-ie10 .books__about
+{
+    display: block;
+
+    padding: 0 20px 20px;
+}
 @media screen and (max-width: 999px)
 {
     .books__about
@@ -4372,6 +4521,12 @@ hr
 
     vertical-align: middle;
 }
+.lt-ie10 .books__actions
+{
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
 @media screen and (max-width: 999px)
 {
     .books__actions
@@ -4382,6 +4537,14 @@ hr
         padding: 10px 20px;
 
         text-align: center;
+    }
+    .lt-ie10 .books__actions
+    {
+        position: relative;
+        top: auto;
+        right: auto; 
+
+        display: block;
     }
 }
 
