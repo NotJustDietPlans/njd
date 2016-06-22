@@ -49,12 +49,12 @@ $(function() {
 		accordionItem.toggleClass('accordion__item_active').siblings().removeClass('accordion__item_active');
 	});
 
+	// members
 	$('.form_member').on('click', '.button', function(e){
 		e.preventDefault();
 
 		$('.table__body').append('<div class="table__row">' +
 			'<div class="table_td table_td_name">TestName</div>' +
-			'<div class="table_td table_td_email">TestName@gmail.com</div>' +
 			'<div class="table_td table_td_age">-</div>' +
 			'<div class="table_td table_td_menu"><a href="#">Menu Planner</a></div>' +
 			'<div class="table_td table_td_edit"><a class="table__action" href="#"><img class="table__ico" src="./public/images/ico_edit_green.png" alt=""></a></div>' +
@@ -79,6 +79,12 @@ $(function() {
 			$('.panel_member').show();
 		}
 	});
+
+	//steps
+	$('.button_url').on('click', function(e){
+		e.preventDefault();
+	});
+
 
 
 //	$('.js-popup').on('click', function(e) {

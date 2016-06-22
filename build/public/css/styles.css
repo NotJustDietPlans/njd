@@ -1152,7 +1152,7 @@ hr
     content: '';
     pointer-events: none; 
 
-    background: url('../images/ico_select.png?v=1466489983424') no-repeat 50% 50%;
+    background: url('../images/ico_select.png?v=1466581307173') no-repeat 50% 50%;
 }
 .form__element_input-add:after
 {
@@ -1506,7 +1506,7 @@ hr
 
     color: #fff;
     border-color: #88bf3e;
-    background: #88bf3e url('../images/ico_check.png?v=1466489983424') no-repeat 50% 50%;
+    background: #88bf3e url('../images/ico_check.png?v=1466581307173') no-repeat 50% 50%;
     background-size: 13px 10px;
 }
 .panel .form__checkbox-box:checked + .form__checkbox-label:before
@@ -1789,12 +1789,12 @@ hr
     width: 35%;
 }
 .table_th_change,
-.table_th_email,
+.table_th_name,
 .table_th_location,
 .table_th_plan,
 .table_th_date,
 .table_td_change,
-.table_td_email,
+.table_td_name,
 .table_td_location,
 .table_td_plan,
 .table_td_date
@@ -2007,7 +2007,7 @@ hr
             transition: .5s linear; 
 
     color: #fff;
-    background: #32422e url('../images/header_bg.jpg?v=1466489983424') repeat 50% 50%;
+    background: #32422e url('../images/header_bg.jpg?v=1466581307173') repeat 50% 50%;
     box-shadow: 0 62px 20px transparent;
 }
 .header_fixed
@@ -2225,7 +2225,7 @@ hr
     content: '';
     vertical-align: top; 
 
-    background: url('../images/ico_back.png?v=1466489983424') no-repeat 0 0;
+    background: url('../images/ico_back.png?v=1466581307173') no-repeat 0 0;
 }
 
 .nav
@@ -2359,57 +2359,57 @@ hr
 }
 .nav__item_recipes .nav__symbol
 {
-    background-image: url('../images/ico_recipes.png?v=1466489983424');
+    background-image: url('../images/ico_recipes.png?v=1466581307173');
 }
 .nav__item_recipes.nav__item_active .nav__symbol,
 .nav__item_recipes:hover .nav__symbol
 {
-    background-image: url('../images/ico_recipes_active.png?v=1466489983424');
+    background-image: url('../images/ico_recipes_active.png?v=1466581307173');
 }
 .nav__item_books .nav__symbol
 {
-    background-image: url('../images/ico_books.png?v=1466489983424');
+    background-image: url('../images/ico_books.png?v=1466581307173');
 }
 .nav__item_books.nav__item_active .nav__symbol,
 .nav__item_books:hover .nav__symbol
 {
-    background-image: url('../images/ico_books_active.png?v=1466489983424');
+    background-image: url('../images/ico_books_active.png?v=1466581307173');
 }
 .nav__item_forum .nav__symbol
 {
-    background-image: url('../images/ico_forum.png?v=1466489983424');
+    background-image: url('../images/ico_forum.png?v=1466581307173');
 }
 .nav__item_forum.nav__item_active .nav__symbol,
 .nav__item_forum:hover .nav__symbol
 {
-    background-image: url('../images/ico_forum_active.png?v=1466489983424');
+    background-image: url('../images/ico_forum_active.png?v=1466581307173');
 }
 .nav__item_family .nav__symbol
 {
-    background-image: url('../images/ico_member.png?v=1466489983424');
+    background-image: url('../images/ico_member.png?v=1466581307173');
 }
 .nav__item_family.nav__item_active .nav__symbol,
 .nav__item_family:hover .nav__symbol
 {
-    background-image: url('../images/ico_member_active.png?v=1466489983424');
+    background-image: url('../images/ico_member_active.png?v=1466581307173');
 }
 .nav__item_menu .nav__symbol
 {
-    background-image: url('../images/ico_menu.png?v=1466489983424');
+    background-image: url('../images/ico_menu.png?v=1466581307173');
 }
 .nav__item_menu.nav__item_active .nav__symbol,
 .nav__item_menu:hover .nav__symbol
 {
-    background-image: url('../images/ico_menu_active.png?v=1466489983424');
+    background-image: url('../images/ico_menu_active.png?v=1466581307173');
 }
 .nav__item_contact .nav__symbol
 {
-    background-image: url('../images/ico_contact.png?v=1466489983424');
+    background-image: url('../images/ico_contact.png?v=1466581307173');
 }
 .nav__item_contact.nav__item_active .nav__symbol,
 .nav__item_contact:hover .nav__symbol
 {
-    background-image: url('../images/ico_contact_active.png?v=1466489983424');
+    background-image: url('../images/ico_contact_active.png?v=1466581307173');
 }
 
 .nav__ico
@@ -2659,7 +2659,7 @@ hr
 {
     font-size: 13px;
 
-    margin: 0;
+    margin: 0 -5px;
     padding: 48px 0;
 
     list-style: none;
@@ -2687,10 +2687,6 @@ hr
 {
     .footer__item
     {
-        width: 23%;
-        padding-right: 0;
-        padding-left: 10px;
-
         text-align: left;
     }
 }
@@ -3006,7 +3002,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_direct_green.png?v=1466489983424') no-repeat 0 50%;
+    background: url('../images/ico_direct_green.png?v=1466581307173') no-repeat 0 50%;
     background-size: auto 100%;
 }
 @media screen and (max-width: 999px)
@@ -3170,7 +3166,7 @@ hr
 {
     border-right: 10px solid #4f9439;
     border-left: 10px solid #4f9439;
-    background: url('../images/menu_bg.png?v=1466489983424') repeat;
+    background: url('../images/menu_bg.png?v=1466581307173') repeat;
 }
 @media screen and (max-width: 999px)
 {
@@ -3613,7 +3609,7 @@ hr
     height: 38px;
     margin: 20px 0;
 
-    background: url('../images/ico_apple.png?v=1466489983424') no-repeat 50% 50%;
+    background: url('../images/ico_apple.png?v=1466581307173') no-repeat 50% 50%;
     background-size: 30px 38px;
 }
 @media screen and (min-width: 1280px)
@@ -3700,7 +3696,7 @@ hr
 
     content: '';
 
-    background: url('../images/border.png?v=1466489983424') repeat-y 0 0;
+    background: url('../images/border.png?v=1466581307173') repeat-y 0 0;
 }
 @media screen and (max-width: 999px)
 {
@@ -4204,7 +4200,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_cross.png?v=1466489983424') no-repeat 0 0;
+    background: url('../images/ico_cross.png?v=1466581307173') no-repeat 0 0;
 }
 
 .mosaic__menu
@@ -4294,7 +4290,7 @@ hr
 
 .books__view
 {
-    width: 192px;
+    width: 150px;
     padding: 8px 0 8px 2%;
 
     text-align: right;
@@ -4913,12 +4909,12 @@ hr
             transition:         transform .25s ease-out;
             transition:         transform .25s ease-out, -webkit-transform .25s ease-out; 
 
-    background: url('../images/ico_down.png?v=1466489983424') no-repeat 50% 50%;
+    background: url('../images/ico_down.png?v=1466581307173') no-repeat 50% 50%;
     background-size: cover;
 }
 .accordion__item_active .accordion__head
 {
-    background: url('../images/menu_bg.png?v=1466489983424') repeat;
+    background: url('../images/menu_bg.png?v=1466581307173') repeat;
 }
 .accordion__item_active .accordion__head:after
 {
