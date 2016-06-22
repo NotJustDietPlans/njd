@@ -49,6 +49,36 @@ $(function() {
 		accordionItem.toggleClass('accordion__item_active').siblings().removeClass('accordion__item_active');
 	});
 
+	$('.form_member').on('click', '.button', function(e){
+		e.preventDefault();
+
+		$('.table__body').append('<div class="table__row">' +
+			'<div class="table_td table_td_name">TestName</div>' +
+			'<div class="table_td table_td_email">TestName@gmail.com</div>' +
+			'<div class="table_td table_td_age">-</div>' +
+			'<div class="table_td table_td_menu"><a href="#">Menu Planner</a></div>' +
+			'<div class="table_td table_td_edit"><a class="table__action" href="#"><img class="table__ico" src="./public/images/ico_edit_green.png" alt=""></a></div>' +
+			'<div class="table_td table_td_cancel"><a class="table__action" href="#"><img class="table__ico" src="./public/images/ico_cancel_green.png" alt=""></a></div>' +
+			'</div>');
+
+		var familyCount = $('.table__body .table__row').size();
+
+		if(familyCount >= 5){
+			$('.panel_member').hide();
+		}
+	});
+
+	$('.table_family').on('click', '.table_td_cancel', function(e){
+		e.preventDefault();
+
+		$(this).closest('.table__row').remove();
+
+		var familyCount = $('.table__body .table__row').size();
+
+		if(familyCount < 5){
+			$('.panel_member').show();
+		}
+	});
 
 
 //	$('.js-popup').on('click', function(e) {
