@@ -33,10 +33,11 @@
 }
 
 .nav__list {
-	margin: 0;
+	max-width: $m_full + 40px;
+	margin: 0 auto;
 	padding: 0;
 	list-style: none;
-	text-align: center;
+	//text-align: center;
 }
 
 .nav__item {

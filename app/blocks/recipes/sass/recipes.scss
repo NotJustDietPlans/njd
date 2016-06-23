@@ -22,30 +22,30 @@
 		text-align: center;
 		vertical-align: top;
 	}
-
-	@media screen and (min-width: 1370px){
-		width: 25%;
-
-		.lt-ie10 & {
-			width: 20%;
-		}
-	}
-
-	@media screen and (min-width: 1700px){
-		width: 20%;
-
-		.lt-ie10 & {
-			width: 17%;
-		}
-	}
-
-	@include res(fablet) {
-		width: 100%;
-
-		.lt-ie10 & {
-			width: 100%;
-		}
-	}
+	//
+	//@media screen and (min-width: 1370px){
+	//	width: 25%;
+	//
+	//	.lt-ie10 & {
+	//		width: 20%;
+	//	}
+	//}
+	//
+	//@media screen and (min-width: 1700px){
+	//	width: 20%;
+	//
+	//	.lt-ie10 & {
+	//		width: 17%;
+	//	}
+	//}
+	//
+	//@include res(fablet) {
+	//	width: 100%;
+	//
+	//	.lt-ie10 & {
+	//		width: 100%;
+	//	}
+	//}
 }
 
 .panel + .section__wrapper .recipes__item {
@@ -63,17 +63,17 @@
 		}
 	}
 
-	@media screen and (min-width: 1450px){
-		width: 20%;
-	}
-
-	@include res(hd) {
-		width: 25%;
-	}
-
-	@media screen and (min-width: 1900px){
-		width: 20%;
-	}
+	//@media screen and (min-width: 1450px){
+	//	width: 20%;
+	//}
+	//
+	//@include res(hd) {
+	//	width: 25%;
+	//}
+	//
+	//@media screen and (min-width: 1900px){
+	//	width: 20%;
+	//}
 
 	@include res(pad) {
 		width: 25%;
@@ -120,10 +120,10 @@
 	box-shadow: 0 5px 13px rgba(#000, .2);
 	text-decoration: none;
 
-	@include res(hd) {
-		width: 300px;
-		height: 390px;
-	}
+	//@include res(hd) {
+	//	width: 300px;
+	//	height: 390px;
+	//}
 
 	@include res(smart) {
 		width: 340px;
@@ -140,10 +140,10 @@
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
-
-	@include res(hd) {
-		height: 226px;
-	}
+	//
+	//@include res(hd) {
+	//	height: 226px;
+	//}
 }
 
 
@@ -151,12 +151,12 @@
 	overflow: hidden;
 	height: 78px;
 	padding: 20px 16px 0;
-
-	@include res(hd) {
-		height: 70px;
-		padding-left: 30px;
-		padding-right: 30px;
-	}
+	//
+	//@include res(hd) {
+	//	height: 70px;
+	//	padding-left: 30px;
+	//	padding-right: 30px;
+	//}
 }
 
 .recipes__name {
@@ -164,10 +164,10 @@
 	color: #4c524b;
 	font-size: 14px;
 	font-weight: 600;
-
-	@include res(hd) {
-		font-size: 16px;
-	}
+	//
+	//@include res(hd) {
+	//	font-size: 16px;
+	//}
 }
 
 .recipes__assignment {
@@ -179,19 +179,19 @@
 	 b {
 		 font-weight: 600;
 	 }
-
-	@include res(hd) {
-		font-size: 16px;
-	}
+	//
+	//@include res(hd) {
+	//	font-size: 16px;
+	//}
 }
 
 .recipes__footer {
 	padding: 10px 16px 0;
-
-	@include res(hd) {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
+	//
+	//@include res(hd) {
+	//	padding-left: 30px;
+	//	padding-right: 30px;
+	//}
 }
 
 .recipes__logo {

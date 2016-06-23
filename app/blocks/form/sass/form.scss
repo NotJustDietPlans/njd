@@ -426,6 +426,10 @@
 		}
 	}
 
+	&_full {
+		width: 100% !important;
+	}
+
 	.form__line & {
 		display: inline-block;
 		margin-right: 60px;
@@ -485,12 +489,12 @@
 	}
 
 	.panel & {
-		padding-left: 30px;
+		padding-left: 24px;
 		color: #9a9a9a;
 		font-size: $fs_caption;
 
 		&:before {
-			margin: 2px 0 0 -30px;
+			margin: 2px 0 0 -24px;
 			width: 12px;
 			height: 12px;
 		}

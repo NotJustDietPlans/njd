@@ -1,6 +1,8 @@
 .section {
 	flex: 1 1 auto;
 	display: flex;
+	max-width: $m_full;
+	margin: 0 auto;
 	padding: $g_header + $g_nav 0 0;
 
 	.page_home & {
