@@ -10,6 +10,10 @@
 			margin-bottom: 20px;
 		}
 	}
+
+	&_forum {
+		margin-top: 10px;
+	}
 }
 
 .table__head {
@@ -54,12 +58,24 @@
 		}
 	}
 
-	.table_groups & {
+	.table_groups &,
+	.table_forum & {
 		@include res(smart) {
 			display: block;
 			padding-top: 20px;
 			padding-bottom: 20px;
+		}
+	}
+
+	.table_groups & {
+		@include res(smart) {
 			text-align: center;
+		}
+	}
+
+	.table_forum & {
+		&:first-child {
+			margin-top: 10px;
 		}
 	}
 }
@@ -81,7 +97,9 @@
 	&_edit,
 	&_cancel,
 	&_status,
-	&_weight {
+	&_weight,
+	&_topics,
+	&_posts {
 		width: 100px;
 		text-align: center;
 	}
@@ -96,6 +114,10 @@
 		width: 190px;
 	}
 
+	&_last {
+		width: 300px;
+	}
+
 	&_groups {
 		width: 35%;
 	}
@@ -104,7 +126,8 @@
 	&_name,
 	&_location,
 	&_plan,
-	&_date {
+	&_date,
+	&_forum {
 		width: auto;
 	}
 
@@ -138,7 +161,8 @@
 	vertical-align: bottom;
 
 	.table_family &,
-	.table_purchases & {
+	.table_purchases &,
+	.table_forum & {
 		text-transform: none;
 	}
 
@@ -175,7 +199,8 @@
 	}
 
 	&_name,
-	&_plan {
+	&_plan,
+	&_forum {
 		border-left: 5px solid $c_primary;
 	}
 
@@ -306,6 +331,80 @@
 			width: auto;
 		}
 	}
+
+	&_topics,
+	&_posts,
+	&_last {
+		border-left: 2px solid #e5e5e5;
+
+		@include res(smart) {
+			display: inline-block;
+			width: auto;
+			height: auto;
+			border: 0;
+			text-align: left;
+		}
+	}
+
+	&_forum,
+	&_last {
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		h4 {
+			margin: 0 0 7px;
+			font-weight: 600;
+
+			a {
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		p {
+			margin: 7px 0;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&_forum {
+		@include res(smart) {
+			display: block;
+			width: auto;
+			height: auto;
+			margin-bottom: 5px;
+			padding-top: 0;
+			padding-bottom: 10px;
+			border-left: 0;
+			border-bottom: 2px solid #e5e5e5;
+		}
+	}
+
+	&_last {
+		color: #717171;
+
+		b {
+			color: $c_text;
+		}
+
+		time {
+			font-size: $fs_caption;
+		}
+
+		@include res(smart) {
+			display: block;
+			margin-top: 5px;
+			padding-top: 20px;
+			padding-bottom: 0;
+			border-top: 2px solid #e5e5e5;
+		}
+	}
 }
 
 .table__ico {
@@ -320,9 +419,18 @@
 }
 
 
+.table__count {
+	font-size: 20px;
+	font-weight: 500;
+}
 
+.table__label {
+	display: none;
 
-
+	@include res(smart) {
+		display: inline;
+	}
+}
 
 
 

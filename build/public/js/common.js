@@ -38,7 +38,6 @@ $(function() {
 
 	// accordion
 	$('.accordion__head').click(function(){
-		console.log('123');
 		var accordionItem = $(this).parent();
 		if(accordionItem.hasClass("accordion__item_active")) {
 			accordionItem.find('.accordion__body').slideUp(300);
@@ -47,6 +46,17 @@ $(function() {
 			accordionItem.siblings().find('.accordion__body').slideUp(300);
 		}
 		accordionItem.toggleClass('accordion__item_active').siblings().removeClass('accordion__item_active');
+	});
+
+	// forum
+	$('.forum__head').click(function(){
+		var forumItem = $(this).parent();
+		if(forumItem.hasClass("forum__item_open")) {
+			forumItem.find('.forum__body').slideUp(300);
+		} else {
+			forumItem.find('.forum__body').slideDown(300);
+		}
+		forumItem.toggleClass('forum__item_open');
 	});
 
 	// members

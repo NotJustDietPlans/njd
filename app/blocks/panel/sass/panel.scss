@@ -111,10 +111,6 @@
 	display: inline-block;
 	margin-right: 10px;
 	vertical-align: middle;
-
-	@media screen and (min-width: 1100px) {
-		margin-right: 25px;
-	}
 }
 
 .panel__header-ico {
@@ -124,7 +120,7 @@
 
 .panel__name {
 	display: inline-block;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: 400;
 	vertical-align: middle;
 
