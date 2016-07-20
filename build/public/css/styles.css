@@ -1157,7 +1157,7 @@ hr
     content: '';
     pointer-events: none; 
 
-    background: #fff url('../images/ico_select.png?v=1468422351111') no-repeat 50% 50%;
+    background: #fff url('../images/ico_select.png?v=1468999072715') no-repeat 50% 50%;
 }
 .form__element_input-add:after
 {
@@ -1207,7 +1207,7 @@ hr
 
 .form__element_big.form__element_select:after
 {
-    bottom: 20px;
+    bottom: 12px;
 }
 
 .form__label,
@@ -1526,7 +1526,7 @@ hr
 
     color: #fff;
     border-color: #88bf3e;
-    background: #88bf3e url('../images/ico_check.png?v=1468422351111') no-repeat 50% 50%;
+    background: #88bf3e url('../images/ico_check.png?v=1468999072715') no-repeat 50% 50%;
     background-size: 13px 10px;
 }
 .panel .form__checkbox-box:checked + .form__checkbox-label:before
@@ -2300,7 +2300,7 @@ hr
             transition: .5s linear; 
 
     color: #fff;
-    background: #32422e url('../images/header_bg.jpg?v=1468422351111') repeat 50% 50%;
+    background: #32422e url('../images/header_bg.jpg?v=1468999072715') repeat 50% 50%;
     box-shadow: 0 62px 20px transparent;
 }
 .header_fixed
@@ -2548,7 +2548,7 @@ hr
     content: '';
     vertical-align: top; 
 
-    background: url('../images/ico_back.png?v=1468422351111') no-repeat 0 0;
+    background: url('../images/ico_back.png?v=1468999072715') no-repeat 0 0;
 }
 
 .nav
@@ -2681,57 +2681,57 @@ hr
 }
 .nav__item_recipes .nav__symbol
 {
-    background-image: url('../images/ico_recipes.png?v=1468422351111');
+    background-image: url('../images/ico_recipes.png?v=1468999072715');
 }
 .nav__item_recipes.nav__item_active .nav__symbol,
 .nav__item_recipes:hover .nav__symbol
 {
-    background-image: url('../images/ico_recipes_active.png?v=1468422351111');
+    background-image: url('../images/ico_recipes_active.png?v=1468999072715');
 }
 .nav__item_books .nav__symbol
 {
-    background-image: url('../images/ico_books.png?v=1468422351111');
+    background-image: url('../images/ico_books.png?v=1468999072715');
 }
 .nav__item_books.nav__item_active .nav__symbol,
 .nav__item_books:hover .nav__symbol
 {
-    background-image: url('../images/ico_books_active.png?v=1468422351111');
+    background-image: url('../images/ico_books_active.png?v=1468999072715');
 }
 .nav__item_forum .nav__symbol
 {
-    background-image: url('../images/ico_forum.png?v=1468422351111');
+    background-image: url('../images/ico_forum.png?v=1468999072715');
 }
 .nav__item_forum.nav__item_active .nav__symbol,
 .nav__item_forum:hover .nav__symbol
 {
-    background-image: url('../images/ico_forum_active.png?v=1468422351111');
+    background-image: url('../images/ico_forum_active.png?v=1468999072715');
 }
 .nav__item_family .nav__symbol
 {
-    background-image: url('../images/ico_member.png?v=1468422351111');
+    background-image: url('../images/ico_member.png?v=1468999072715');
 }
 .nav__item_family.nav__item_active .nav__symbol,
 .nav__item_family:hover .nav__symbol
 {
-    background-image: url('../images/ico_member_active.png?v=1468422351111');
+    background-image: url('../images/ico_member_active.png?v=1468999072715');
 }
 .nav__item_menu .nav__symbol
 {
-    background-image: url('../images/ico_menu.png?v=1468422351111');
+    background-image: url('../images/ico_menu.png?v=1468999072715');
 }
 .nav__item_menu.nav__item_active .nav__symbol,
 .nav__item_menu:hover .nav__symbol
 {
-    background-image: url('../images/ico_menu_active.png?v=1468422351111');
+    background-image: url('../images/ico_menu_active.png?v=1468999072715');
 }
 .nav__item_contact .nav__symbol
 {
-    background-image: url('../images/ico_contact.png?v=1468422351111');
+    background-image: url('../images/ico_contact.png?v=1468999072715');
 }
 .nav__item_contact.nav__item_active .nav__symbol,
 .nav__item_contact:hover .nav__symbol
 {
-    background-image: url('../images/ico_contact_active.png?v=1468422351111');
+    background-image: url('../images/ico_contact_active.png?v=1468999072715');
 }
 
 .nav__ico
@@ -3321,7 +3321,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_direct_green.png?v=1468422351111') no-repeat 0 50%;
+    background: url('../images/ico_direct_green.png?v=1468999072715') no-repeat 0 50%;
     background-size: auto 100%;
 }
 @media screen and (max-width: 999px)
@@ -3485,7 +3485,7 @@ hr
 {
     border-right: 10px solid #4f9439;
     border-left: 10px solid #4f9439;
-    background: url('../images/menu_bg.png?v=1468422351111') repeat;
+    background: url('../images/menu_bg.png?v=1468999072715') repeat;
 }
 @media screen and (max-width: 999px)
 {
@@ -3907,7 +3907,7 @@ hr
     height: 38px;
     margin: 20px 0;
 
-    background: url('../images/ico_apple.png?v=1468422351111') no-repeat 50% 50%;
+    background: url('../images/ico_apple.png?v=1468999072715') no-repeat 50% 50%;
     background-size: 30px 38px;
 }
 @media screen and (min-width: 1280px)
@@ -3994,7 +3994,7 @@ hr
 
     content: '';
 
-    background: url('../images/border.png?v=1468422351111') repeat-y 0 0;
+    background: url('../images/border.png?v=1468999072715') repeat-y 0 0;
 }
 .lt-ie10 .recipe__ingredients:before
 {
@@ -4507,7 +4507,7 @@ hr
 
     content: '';
 
-    background: url('../images/ico_cross.png?v=1468422351111') no-repeat 0 0;
+    background: url('../images/ico_cross.png?v=1468999072715') no-repeat 0 0;
 }
 
 .mosaic__menu
@@ -5244,12 +5244,12 @@ hr
             transition:         transform .25s ease-out;
             transition:         transform .25s ease-out, -webkit-transform .25s ease-out; 
 
-    background: url('../images/ico_down.png?v=1468422351111') no-repeat 50% 50%;
+    background: url('../images/ico_down.png?v=1468999072715') no-repeat 50% 50%;
     background-size: cover;
 }
 .accordion__item_active .accordion__head
 {
-    background: url('../images/menu_bg.png?v=1468422351111') repeat;
+    background: url('../images/menu_bg.png?v=1468999072715') repeat;
 }
 .accordion__item_active .accordion__head:after
 {
@@ -5322,6 +5322,20 @@ hr
 
     color: #88bf3e;
 }
+@media screen and (max-width: 767px)
+{
+    .schedule .form__label
+    {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .schedule .form__label
+    {
+        font-size: 18px;
+    }
+}
 
 .schedule__row
 {
@@ -5338,6 +5352,18 @@ hr
 
     border: 1px solid #e5e5e5;
 }
+@media screen and (max-width: 767px)
+{
+    .schedule__cell
+    {
+        padding-right: 20px; 
+        padding-left: 20px;
+    }
+    .schedule__cell:first-child
+    {
+        display: none;
+    }
+}
 
 .schedule__title
 {
@@ -5351,6 +5377,13 @@ hr
 .schedule__title_done
 {
     color: #b1b1b1;
+}
+@media screen and (max-width: 600px)
+{
+    .schedule__title
+    {
+        font-size: 20px;
+    }
 }
 
 .schedule__day
@@ -5390,10 +5423,41 @@ hr
 
     list-style: none;
 }
+.schedule__cell_chose .schedule__list
+{
+    display: none;
+
+    margin: 0 0 15px 0;
+}
+@media screen and (max-width: 767px)
+{
+    .schedule__cell_chose .schedule__list
+    {
+        display: block;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .schedule__list
+    {
+        display: block;
+    }
+}
 
 .schedule__item
 {
     display: table-row;
+}
+@media screen and (max-width: 600px)
+{
+    .schedule__item
+    {
+        position: relative;
+
+        display: block;
+
+        padding: 0 0 20px 50px;
+    }
 }
 
 .schedule__type,
@@ -5410,11 +5474,33 @@ hr
 
     color: #606060;
 }
+@media screen and (max-width: 600px)
+{
+    .schedule__type,
+    .schedule__view,
+    .schedule__text
+    {
+        display: block;
+
+        padding: 0;
+    }
+}
 
 .schedule__view
 {
     padding-right: 20px; 
     padding-left: 20px;
+}
+@media screen and (max-width: 600px)
+{
+    .schedule__view
+    {
+        position: absolute;
+        top: 3px;
+        left: 0;
+
+        padding: 0;
+    }
 }
 
 .schedule__photo
@@ -5453,7 +5539,7 @@ hr
 
     color: #fff;
     border-left: 5px solid #fff;
-    background: #4f9439 url('../images/line.png?v=1468422351111') repeat;
+    background: #4f9439 url('../images/line.png?v=1468999072715') repeat;
 }
 .forum__head:after
 {
@@ -5471,7 +5557,7 @@ hr
             transition:         transform .25s ease-out;
             transition:         transform .25s ease-out, -webkit-transform .25s ease-out; 
 
-    background: url('../images/ico_down_white.png?v=1468422351111') no-repeat 50% 50%;
+    background: url('../images/ico_down_white.png?v=1468999072715') no-repeat 50% 50%;
     background-size: cover;
 }
 .forum__item_open .forum__head
